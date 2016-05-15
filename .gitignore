@@ -1,0 +1,13 @@
+.DS_Store
+phpunit.xml
+.idea
+
+lib-cov
+
+pids
+logs
+results
+src/vendor
+
+node_modules
+npm-debug.log

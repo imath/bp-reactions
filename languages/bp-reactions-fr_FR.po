@@ -1,0 +1,6590 @@
+# Copyright (C) 2016 imath
+# This file is distributed under the GPL-2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: BP Reactions 1.0.0-alpha\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bp-reactions\n"
+"POT-Creation-Date: 2016-05-15 16:23:47+00:00\n"
+"PO-Revision-Date: 2016-05-15 18:24+0100\n"
+"Last-Translator: imath <mathchristo@yahoo.fr>\n"
+"Language-Team: ENGLISH <imath@chat.wordpress.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: bp-reactions.php:218
+msgid "%s requires at least version %s of BuddyPress."
+msgstr "%s requiert à minima la version %s de BuddyPress"
+
+#: bp-reactions.php:222
+msgid "%s requires the BuddyPress Activity component to be active."
+msgstr "%s requiert que le composant des Activités de BuddyPress soit activé."
+
+#: includes/actions.php:37 includes/actions.php:39
+msgid "React"
+msgstr "Réagir"
+
+#: includes/actions.php:86
+msgid "Popular updates"
+msgstr "Mises à jour populaires"
+
+#: includes/actions.php:87
+msgid "Popular"
+msgstr "Populaire"
+
+#: includes/ajax.php:24 includes/ajax.php:76
+msgid "The action was not sent correctly."
+msgstr "L&rsquo;action n&rsquo;a pas été envoyée correctement."
+
+#: includes/ajax.php:28 includes/ajax.php:80
+msgid "You are not allowed to perform this action."
+msgstr "Cette action n&rsquo;est pas autorisée."
+
+#: includes/ajax.php:57
+msgid "No registered reactions."
+msgstr "Aucune réaction disponible."
+
+#: includes/ajax.php:81
+msgid "Oops unknown action."
+msgstr "﻿Oups action inconnue."
+
+#: includes/ajax.php:112
+msgid "Saving the reaction failed."
+msgstr "L&rsquo;ajout de votre réaction a échoué."
+
+#: includes/functions.php:69
+msgid "Favorited an update"
+msgstr "A mis en favoris une mise à jour"
+
+#: includes/functions.php:70
+msgid "Favorites"
+msgstr "Favoris"
+
+#: includes/functions.php:77
+msgid "Liked an update"
+msgstr "A aimé une mise à jour"
+
+#: includes/functions.php:78
+msgid "Likes"
+msgstr "Likes"
+
+#: includes/functions.php:320
+msgid "%s favorited an update"
+msgstr "%s a mis en favoris une mise à jour"
+
+#: includes/functions.php:343
+msgid "%s liked an update"
+msgstr "%s a aimé une mise à jour"
+
+#. Plugin Name of the plugin/theme
+msgid "BP Reactions"
+msgstr "BP Reactions"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/imath/bp-reactions"
+msgstr "https://github.com/imath/bp-reactions"
+
+#. Description of the plugin/theme
+msgid "React to BuddyPress activities!"
+msgstr "Réagissez aux activités de BuddyPress !"
+
+#. Author of the plugin/theme
+msgid "imath"
+msgstr "imath"
+
+#. Author URI of the plugin/theme
+msgid "https://imathi.eu"
+msgstr "https://imathi.eu"
+
+#: includes/actions.php:65
+msgctxt "Displayed member activity reations sub nav"
+msgid "Reactions"
+msgstr "Réactions"
+
+#: includes/emojis.php:622
+msgctxt "Emoji shortname"
+msgid "100"
+msgstr "100"
+
+#: includes/emojis.php:736
+msgctxt "Emoji shortname"
+msgid "1234"
+msgstr "1234"
+
+#: includes/emojis.php:9
+msgctxt "Emoji shortname"
+msgid "bangbang"
+msgstr "bangbang"
+
+#: includes/emojis.php:10
+msgctxt "Emoji shortname"
+msgid "interrobang"
+msgstr "interrobang"
+
+#: includes/emojis.php:11
+msgctxt "Emoji shortname"
+msgid "information_source"
+msgstr "information"
+
+#: includes/emojis.php:12
+msgctxt "Emoji shortname"
+msgid "left_right_arrow"
+msgstr "fleche_droite_gauche"
+
+#: includes/emojis.php:13
+msgctxt "Emoji shortname"
+msgid "arrow_up_down"
+msgstr "fleche_haut_bas"
+
+#: includes/emojis.php:14
+msgctxt "Emoji shortname"
+msgid "arrow_upper_left"
+msgstr "fleche_haut_gauche"
+
+#: includes/emojis.php:15
+msgctxt "Emoji shortname"
+msgid "arrow_upper_right"
+msgstr "fleche_haut_droite"
+
+#: includes/emojis.php:16
+msgctxt "Emoji shortname"
+msgid "arrow_lower_right"
+msgstr "fleche_bas_droite"
+
+#: includes/emojis.php:17
+msgctxt "Emoji shortname"
+msgid "arrow_lower_left"
+msgstr "fleche_bas_gauche"
+
+#: includes/emojis.php:18
+msgctxt "Emoji shortname"
+msgid "leftwards_arrow_with_hook"
+msgstr "fleche_gauche_avec_crochet"
+
+#: includes/emojis.php:19
+msgctxt "Emoji shortname"
+msgid "arrow_right_hook"
+msgstr "fleche_droite_avec_crochet"
+
+#: includes/emojis.php:20
+msgctxt "Emoji shortname"
+msgid "watch"
+msgstr "montre"
+
+#: includes/emojis.php:21
+msgctxt "Emoji shortname"
+msgid "hourglass"
+msgstr "sablier"
+
+#: includes/emojis.php:22
+msgctxt "Emoji shortname"
+msgid "keyboard"
+msgstr "clavier"
+
+#: includes/emojis.php:23
+msgctxt "Emoji shortname"
+msgid "fast_forward"
+msgstr "avance_rapide"
+
+#: includes/emojis.php:24
+msgctxt "Emoji shortname"
+msgid "rewind"
+msgstr "rembobiner"
+
+#: includes/emojis.php:25
+msgctxt "Emoji shortname"
+msgid "arrow_double_up"
+msgstr "fleche_double_haute"
+
+#: includes/emojis.php:26
+msgctxt "Emoji shortname"
+msgid "arrow_double_down"
+msgstr "fleche_double_basse"
+
+#: includes/emojis.php:27
+msgctxt "Emoji shortname"
+msgid "black_right_pointing_double_triangle_with_vertical_bar"
+msgstr "double_triangle_noir_pointant_droite_barre_verticale"
+
+#: includes/emojis.php:28
+msgctxt "Emoji shortname"
+msgid "black_left_pointing_double_triangle_with_vertical_bar"
+msgstr "double_triangle_noir_pointant_gauche_barre_verticale"
+
+#: includes/emojis.php:29
+msgctxt "Emoji shortname"
+msgid "black_right_pointing_triangle_with_double_vertical_bar"
+msgstr "triangle_noir_pointant_droite_double_barre_verticale"
+
+#: includes/emojis.php:30
+msgctxt "Emoji shortname"
+msgid "alarm_clock"
+msgstr "reveil"
+
+#: includes/emojis.php:31
+msgctxt "Emoji shortname"
+msgid "stopwatch"
+msgstr "chronometre"
+
+#: includes/emojis.php:32
+msgctxt "Emoji shortname"
+msgid "timer_clock"
+msgstr "horloge"
+
+#: includes/emojis.php:33
+msgctxt "Emoji shortname"
+msgid "hourglass_flowing_sand"
+msgstr "sablier_sable_coulant"
+
+#: includes/emojis.php:34
+msgctxt "Emoji shortname"
+msgid "double_vertical_bar"
+msgstr "double_barre_verticale"
+
+#: includes/emojis.php:35
+msgctxt "Emoji shortname"
+msgid "black_square_for_stop"
+msgstr "carre_noir_arret"
+
+#: includes/emojis.php:36
+msgctxt "Emoji shortname"
+msgid "black_circle_for_record"
+msgstr "cercle_noir_enregistrer"
+
+#: includes/emojis.php:37
+msgctxt "Emoji shortname"
+msgid "m"
+msgstr "m"
+
+#: includes/emojis.php:38
+msgctxt "Emoji shortname"
+msgid "black_small_square"
+msgstr "petit_carre_noir"
+
+#: includes/emojis.php:39
+msgctxt "Emoji shortname"
+msgid "white_small_square"
+msgstr "petit_carre_blanc"
+
+#: includes/emojis.php:40
+msgctxt "Emoji shortname"
+msgid "arrow_forward"
+msgstr "fleche_avant"
+
+#: includes/emojis.php:41
+msgctxt "Emoji shortname"
+msgid "arrow_backward"
+msgstr "fleche_arriere"
+
+#: includes/emojis.php:42
+msgctxt "Emoji shortname"
+msgid "white_medium_square"
+msgstr "carre_moyen_blanc"
+
+#: includes/emojis.php:43
+msgctxt "Emoji shortname"
+msgid "black_medium_square"
+msgstr "carre_moyen_noir"
+
+#: includes/emojis.php:44
+msgctxt "Emoji shortname"
+msgid "white_medium_small_square"
+msgstr "carre_moyen_petit_blanc"
+
+#: includes/emojis.php:45
+msgctxt "Emoji shortname"
+msgid "black_medium_small_square"
+msgstr "carre_moyen_petit_noir"
+
+#: includes/emojis.php:46
+msgctxt "Emoji shortname"
+msgid "sunny"
+msgstr "ensoleille"
+
+#: includes/emojis.php:47
+msgctxt "Emoji shortname"
+msgid "cloud"
+msgstr "nuage"
+
+#: includes/emojis.php:48 includes/emojis.php:53
+msgctxt "Emoji shortname"
+msgid "umbrella"
+msgstr "parapluie"
+
+#: includes/emojis.php:49
+msgctxt "Emoji shortname"
+msgid "showman"
+msgstr "vedette"
+
+#: includes/emojis.php:50
+msgctxt "Emoji shortname"
+msgid "comet"
+msgstr "comete "
+
+#: includes/emojis.php:51
+msgctxt "Emoji shortname"
+msgid "phone"
+msgstr "telephone"
+
+#: includes/emojis.php:52
+msgctxt "Emoji shortname"
+msgid "ballot_box_with_check"
+msgstr "urne_avec_cheque"
+
+#: includes/emojis.php:54
+msgctxt "Emoji shortname"
+msgid "coffee"
+msgstr "cafe"
+
+#: includes/emojis.php:55
+msgctxt "Emoji shortname"
+msgid "shamrock"
+msgstr "trefle"
+
+#: includes/emojis.php:56
+msgctxt "Emoji shortname"
+msgid "point_up"
+msgstr "pointer_haut"
+
+#: includes/emojis.php:57
+msgctxt "Emoji shortname"
+msgid "skull_and_crossbones"
+msgstr "tete_de_mort"
+
+#: includes/emojis.php:58
+msgctxt "Emoji shortname"
+msgid "radioactive_sign"
+msgstr "radioactif"
+
+#: includes/emojis.php:59
+msgctxt "Emoji shortname"
+msgid "biohazard_sign"
+msgstr "danger_biologique"
+
+#: includes/emojis.php:60
+msgctxt "Emoji shortname"
+msgid "orthodox_cross"
+msgstr "croix_orthodoxe"
+
+#: includes/emojis.php:61
+msgctxt "Emoji shortname"
+msgid "star_and_crescent"
+msgstr "etoile_croissant"
+
+#: includes/emojis.php:62
+msgctxt "Emoji shortname"
+msgid "peace_symbol"
+msgstr "paix"
+
+#: includes/emojis.php:63
+msgctxt "Emoji shortname"
+msgid "yin_yang"
+msgstr "yinyang"
+
+#: includes/emojis.php:64
+msgctxt "Emoji shortname"
+msgid "wheel_of_dharma"
+msgstr "roue_du_dharma"
+
+#: includes/emojis.php:65
+msgctxt "Emoji shortname"
+msgid "white_frowning_face"
+msgstr "visage_blanc_renfrogne"
+
+#: includes/emojis.php:66
+msgctxt "Emoji shortname"
+msgid "relaxed"
+msgstr "detendu"
+
+#: includes/emojis.php:67
+msgctxt "Emoji shortname"
+msgid "aries"
+msgstr "belier"
+
+#: includes/emojis.php:68
+msgctxt "Emoji shortname"
+msgid "taurus"
+msgstr "taureau"
+
+#: includes/emojis.php:69
+msgctxt "Emoji shortname"
+msgid "gemini"
+msgstr "gemeaux"
+
+#: includes/emojis.php:70
+msgctxt "Emoji shortname"
+msgid "cancer"
+msgstr "cancer"
+
+#: includes/emojis.php:71
+msgctxt "Emoji shortname"
+msgid "leo"
+msgstr "lion"
+
+#: includes/emojis.php:72
+msgctxt "Emoji shortname"
+msgid "virgo"
+msgstr "vierge"
+
+#: includes/emojis.php:73
+msgctxt "Emoji shortname"
+msgid "libra"
+msgstr "balance"
+
+#: includes/emojis.php:74
+msgctxt "Emoji shortname"
+msgid "scorpius"
+msgstr "scorpion"
+
+#: includes/emojis.php:75
+msgctxt "Emoji shortname"
+msgid "sagittarius"
+msgstr "sagittaire"
+
+#: includes/emojis.php:76
+msgctxt "Emoji shortname"
+msgid "capricorn"
+msgstr "capricorne"
+
+#: includes/emojis.php:77
+msgctxt "Emoji shortname"
+msgid "aquarius"
+msgstr "verseau"
+
+#: includes/emojis.php:78
+msgctxt "Emoji shortname"
+msgid "pisces"
+msgstr "poisson"
+
+#: includes/emojis.php:79
+msgctxt "Emoji shortname"
+msgid "spades"
+msgstr "piques"
+
+#: includes/emojis.php:80
+msgctxt "Emoji shortname"
+msgid "clubs"
+msgstr "trefle_alt"
+
+#: includes/emojis.php:81
+msgctxt "Emoji shortname"
+msgid "hearts"
+msgstr "coeurs"
+
+#: includes/emojis.php:82
+msgctxt "Emoji shortname"
+msgid "diamonds"
+msgstr "diamants"
+
+#: includes/emojis.php:83
+msgctxt "Emoji shortname"
+msgid "hotsprings"
+msgstr "sources_chaudes"
+
+#: includes/emojis.php:84
+msgctxt "Emoji shortname"
+msgid "recycle"
+msgstr "recyclage"
+
+#: includes/emojis.php:85
+msgctxt "Emoji shortname"
+msgid "wheelchair"
+msgstr "fauteuil_roulant"
+
+#: includes/emojis.php:86
+msgctxt "Emoji shortname"
+msgid "hammer_and_pick"
+msgstr "marteau_et_pioche"
+
+#: includes/emojis.php:87
+msgctxt "Emoji shortname"
+msgid "anchor"
+msgstr "ancre"
+
+#: includes/emojis.php:88
+msgctxt "Emoji shortname"
+msgid "crossed_swords"
+msgstr "epee_croisee"
+
+#: includes/emojis.php:89
+msgctxt "Emoji shortname"
+msgid "scales"
+msgstr "balance_pour_peser"
+
+#: includes/emojis.php:90
+msgctxt "Emoji shortname"
+msgid "alembic"
+msgstr "alembic"
+
+#: includes/emojis.php:91
+msgctxt "Emoji shortname"
+msgid "gear"
+msgstr "equipement"
+
+#: includes/emojis.php:92
+msgctxt "Emoji shortname"
+msgid "atom_symbol"
+msgstr "atome"
+
+#: includes/emojis.php:93
+msgctxt "Emoji shortname"
+msgid "fleur_de_lis"
+msgstr "fleur_de_lis"
+
+#: includes/emojis.php:94
+msgctxt "Emoji shortname"
+msgid "warning"
+msgstr "attention"
+
+#: includes/emojis.php:95
+msgctxt "Emoji shortname"
+msgid "zap"
+msgstr "zapper"
+
+#: includes/emojis.php:96
+msgctxt "Emoji shortname"
+msgid "white_circle"
+msgstr "cercle_blanc"
+
+#: includes/emojis.php:97
+msgctxt "Emoji shortname"
+msgid "black_circle"
+msgstr "cercle_noir"
+
+#: includes/emojis.php:98
+msgctxt "Emoji shortname"
+msgid "coffin"
+msgstr "cercueil"
+
+#: includes/emojis.php:99
+msgctxt "Emoji shortname"
+msgid "funeral_urn"
+msgstr "urne_funeraire"
+
+#: includes/emojis.php:100
+msgctxt "Emoji shortname"
+msgid "soccer"
+msgstr "football"
+
+#: includes/emojis.php:101
+msgctxt "Emoji shortname"
+msgid "baseball"
+msgstr "baseball"
+
+#: includes/emojis.php:102
+msgctxt "Emoji shortname"
+msgid "snowman"
+msgstr "homme_des_neiges"
+
+#: includes/emojis.php:103
+msgctxt "Emoji shortname"
+msgid "partly_sunny"
+msgstr "partiellement_ensoleille"
+
+#: includes/emojis.php:104
+msgctxt "Emoji shortname"
+msgid "thunder_cloud_and_rain"
+msgstr "eclair_nuage_et_pluie"
+
+#: includes/emojis.php:105
+msgctxt "Emoji shortname"
+msgid "ophiuchus"
+msgstr "ophiuchus"
+
+#: includes/emojis.php:106
+msgctxt "Emoji shortname"
+msgid "pick"
+msgstr "pioche"
+
+#: includes/emojis.php:107
+msgctxt "Emoji shortname"
+msgid "helmet_with_white_cross"
+msgstr "casque_avec_croix_blanche"
+
+#: includes/emojis.php:108
+msgctxt "Emoji shortname"
+msgid "chains"
+msgstr "chaines"
+
+#: includes/emojis.php:109
+msgctxt "Emoji shortname"
+msgid "no_entry"
+msgstr "entree_interdite"
+
+#: includes/emojis.php:110
+msgctxt "Emoji shortname"
+msgid "shinto_shrine"
+msgstr "sanctuaire_shinto"
+
+#: includes/emojis.php:111
+msgctxt "Emoji shortname"
+msgid "church"
+msgstr "eglise"
+
+#: includes/emojis.php:112
+msgctxt "Emoji shortname"
+msgid "mountain"
+msgstr "montagne"
+
+#: includes/emojis.php:113
+msgctxt "Emoji shortname"
+msgid "umbrella_on_ground"
+msgstr "parasol"
+
+#: includes/emojis.php:114
+msgctxt "Emoji shortname"
+msgid "fountain"
+msgstr "fontaine"
+
+#: includes/emojis.php:115
+msgctxt "Emoji shortname"
+msgid "golf"
+msgstr "golf"
+
+#: includes/emojis.php:116
+msgctxt "Emoji shortname"
+msgid "ferry"
+msgstr "ferry"
+
+#: includes/emojis.php:117
+msgctxt "Emoji shortname"
+msgid "boat"
+msgstr "bateau"
+
+#: includes/emojis.php:118
+msgctxt "Emoji shortname"
+msgid "skier"
+msgstr "skieur"
+
+#: includes/emojis.php:119
+msgctxt "Emoji shortname"
+msgid "ice_skate"
+msgstr "patin_a_glace"
+
+#: includes/emojis.php:120
+msgctxt "Emoji shortname"
+msgid "person_with_ball"
+msgstr "personne_avec_balle"
+
+#: includes/emojis.php:121
+msgctxt "Emoji shortname"
+msgid "tent"
+msgstr "tente"
+
+#: includes/emojis.php:122
+msgctxt "Emoji shortname"
+msgid "fuelpump"
+msgstr "pompe_a_essence"
+
+#: includes/emojis.php:123
+msgctxt "Emoji shortname"
+msgid "scissors"
+msgstr "ciseaux"
+
+#: includes/emojis.php:124
+msgctxt "Emoji shortname"
+msgid "white_check_mark"
+msgstr "coche_blanche"
+
+#: includes/emojis.php:125
+msgctxt "Emoji shortname"
+msgid "airplane"
+msgstr "avion"
+
+#: includes/emojis.php:126
+msgctxt "Emoji shortname"
+msgid "email"
+msgstr "email"
+
+#: includes/emojis.php:127
+msgctxt "Emoji shortname"
+msgid "fist"
+msgstr "poing"
+
+#: includes/emojis.php:128
+msgctxt "Emoji shortname"
+msgid "hand"
+msgstr "main"
+
+#: includes/emojis.php:129
+msgctxt "Emoji shortname"
+msgid "v"
+msgstr "v"
+
+#: includes/emojis.php:130
+msgctxt "Emoji shortname"
+msgid "writing_hand"
+msgstr "main_ecrivant"
+
+#: includes/emojis.php:131
+msgctxt "Emoji shortname"
+msgid "pencil2"
+msgstr "stylo2"
+
+#: includes/emojis.php:132
+msgctxt "Emoji shortname"
+msgid "black_nib"
+msgstr "plume_noire"
+
+#: includes/emojis.php:133
+msgctxt "Emoji shortname"
+msgid "heavy_check_mark"
+msgstr "coche_prononcee"
+
+#: includes/emojis.php:134
+msgctxt "Emoji shortname"
+msgid "heavy_multiplication_x"
+msgstr "multiplication_prononcee"
+
+#: includes/emojis.php:135
+msgctxt "Emoji shortname"
+msgid "latin_cross"
+msgstr "croix_latine"
+
+#: includes/emojis.php:136
+msgctxt "Emoji shortname"
+msgid "star_of_david"
+msgstr "etoile_de_david"
+
+#: includes/emojis.php:137
+msgctxt "Emoji shortname"
+msgid "sparkles"
+msgstr "etincelles"
+
+#: includes/emojis.php:138
+msgctxt "Emoji shortname"
+msgid "eight_spoked_asterisk"
+msgstr "asterisk_huit_pointes"
+
+#: includes/emojis.php:139
+msgctxt "Emoji shortname"
+msgid "eight_pointed_black_star"
+msgstr "etoile_noire_huit_pointes"
+
+#: includes/emojis.php:140
+msgctxt "Emoji shortname"
+msgid "snowflake"
+msgstr "flocon_neige"
+
+#: includes/emojis.php:141
+msgctxt "Emoji shortname"
+msgid "sparkle"
+msgstr "eclat"
+
+#: includes/emojis.php:142
+msgctxt "Emoji shortname"
+msgid "x"
+msgstr "x"
+
+#: includes/emojis.php:143
+msgctxt "Emoji shortname"
+msgid "negative_squared_cross_mark"
+msgstr "negatif_marque_croix_carree"
+
+#: includes/emojis.php:144
+msgctxt "Emoji shortname"
+msgid "question"
+msgstr "question"
+
+#: includes/emojis.php:145
+msgctxt "Emoji shortname"
+msgid "grey_question"
+msgstr "question_grise"
+
+#: includes/emojis.php:146
+msgctxt "Emoji shortname"
+msgid "grey_exclamation"
+msgstr "exclamation_grise"
+
+#: includes/emojis.php:147
+msgctxt "Emoji shortname"
+msgid "exclamation"
+msgstr "exclamation"
+
+#: includes/emojis.php:148
+msgctxt "Emoji shortname"
+msgid "heavy_heart_exclamation_mark_ornament"
+msgstr "coeur_prononce_orne_marque_exclamation"
+
+#: includes/emojis.php:149
+msgctxt "Emoji shortname"
+msgid "heart"
+msgstr "coeur"
+
+#: includes/emojis.php:150
+msgctxt "Emoji shortname"
+msgid "heavy_plus_sign"
+msgstr "signe_plus_prononce"
+
+#: includes/emojis.php:151
+msgctxt "Emoji shortname"
+msgid "heavy_minus_sign"
+msgstr "signe_moins_prononce"
+
+#: includes/emojis.php:152
+msgctxt "Emoji shortname"
+msgid "heavy_division_sign"
+msgstr "signe_division_prononce"
+
+#: includes/emojis.php:153
+msgctxt "Emoji shortname"
+msgid "arrow_right"
+msgstr "fleche_droite"
+
+#: includes/emojis.php:154
+msgctxt "Emoji shortname"
+msgid "curly_loop"
+msgstr "boucle_bouclee"
+
+#: includes/emojis.php:155
+msgctxt "Emoji shortname"
+msgid "loop"
+msgstr "boucle"
+
+#: includes/emojis.php:156
+msgctxt "Emoji shortname"
+msgid "arrow_heading_up"
+msgstr "fleche_direction_haut"
+
+#: includes/emojis.php:157
+msgctxt "Emoji shortname"
+msgid "arrow_heading_down"
+msgstr "fleche_direction_bas"
+
+#: includes/emojis.php:158
+msgctxt "Emoji shortname"
+msgid "arrow_left"
+msgstr "fleche_gauche"
+
+#: includes/emojis.php:159
+msgctxt "Emoji shortname"
+msgid "arrow_up"
+msgstr "fleche_haute"
+
+#: includes/emojis.php:160
+msgctxt "Emoji shortname"
+msgid "arrow_down"
+msgstr "fleche_basse"
+
+#: includes/emojis.php:161
+msgctxt "Emoji shortname"
+msgid "black_large_square"
+msgstr "grand_carre_noir"
+
+#: includes/emojis.php:162
+msgctxt "Emoji shortname"
+msgid "white_large_square"
+msgstr "grand_carre_blanc"
+
+#: includes/emojis.php:163
+msgctxt "Emoji shortname"
+msgid "star"
+msgstr "etoile"
+
+#: includes/emojis.php:164
+msgctxt "Emoji shortname"
+msgid "o"
+msgstr "o"
+
+#: includes/emojis.php:165
+msgctxt "Emoji shortname"
+msgid "wavy_dash"
+msgstr "tableau_de_bord_ondule"
+
+#: includes/emojis.php:166
+msgctxt "Emoji shortname"
+msgid "part_alternation_mark"
+msgstr "marque_partielle_alternative"
+
+#: includes/emojis.php:167
+msgctxt "Emoji shortname"
+msgid "congratulations"
+msgstr "felicitations"
+
+#: includes/emojis.php:168
+msgctxt "Emoji shortname"
+msgid "secret"
+msgstr "secret"
+
+#: includes/emojis.php:169
+msgctxt "Emoji shortname"
+msgid "mahjong"
+msgstr "mahjong"
+
+#: includes/emojis.php:170
+msgctxt "Emoji shortname"
+msgid "black_joker"
+msgstr "joker_noir"
+
+#: includes/emojis.php:171
+msgctxt "Emoji shortname"
+msgid "a"
+msgstr "a"
+
+#: includes/emojis.php:172
+msgctxt "Emoji shortname"
+msgid "b"
+msgstr "b"
+
+#: includes/emojis.php:173
+msgctxt "Emoji shortname"
+msgid "o2"
+msgstr "o2"
+
+#: includes/emojis.php:174
+msgctxt "Emoji shortname"
+msgid "parking"
+msgstr "parking"
+
+#: includes/emojis.php:175
+msgctxt "Emoji shortname"
+msgid "ab"
+msgstr "ab"
+
+#: includes/emojis.php:176
+msgctxt "Emoji shortname"
+msgid "cl"
+msgstr "cl"
+
+#: includes/emojis.php:177
+msgctxt "Emoji shortname"
+msgid "cool"
+msgstr "cool"
+
+#: includes/emojis.php:178
+msgctxt "Emoji shortname"
+msgid "free"
+msgstr "libre"
+
+#: includes/emojis.php:179
+msgctxt "Emoji shortname"
+msgid "id"
+msgstr "id"
+
+#: includes/emojis.php:180
+msgctxt "Emoji shortname"
+msgid "new"
+msgstr "nouveau"
+
+#: includes/emojis.php:181
+msgctxt "Emoji shortname"
+msgid "ng"
+msgstr "ng"
+
+#: includes/emojis.php:182
+msgctxt "Emoji shortname"
+msgid "ok"
+msgstr "ok"
+
+#: includes/emojis.php:183
+msgctxt "Emoji shortname"
+msgid "sos"
+msgstr "sos"
+
+#: includes/emojis.php:184
+msgctxt "Emoji shortname"
+msgid "up"
+msgstr "haut"
+
+#: includes/emojis.php:185
+msgctxt "Emoji shortname"
+msgid "vs"
+msgstr "contre"
+
+#: includes/emojis.php:186
+msgctxt "Emoji shortname"
+msgid "koko"
+msgstr "koko"
+
+#: includes/emojis.php:187
+msgctxt "Emoji shortname"
+msgid "sa"
+msgstr "sa"
+
+#: includes/emojis.php:188
+msgctxt "Emoji shortname"
+msgid "u7121"
+msgstr "u7121"
+
+#: includes/emojis.php:189
+msgctxt "Emoji shortname"
+msgid "u6307"
+msgstr "u6307"
+
+#: includes/emojis.php:190
+msgctxt "Emoji shortname"
+msgid "u7981"
+msgstr "u7981"
+
+#: includes/emojis.php:191
+msgctxt "Emoji shortname"
+msgid "u7a7a"
+msgstr "u7a7a"
+
+#: includes/emojis.php:192
+msgctxt "Emoji shortname"
+msgid "u5408"
+msgstr "u5408"
+
+#: includes/emojis.php:193
+msgctxt "Emoji shortname"
+msgid "u6e80"
+msgstr "u6e80"
+
+#: includes/emojis.php:194
+msgctxt "Emoji shortname"
+msgid "u6709"
+msgstr "u6709"
+
+#: includes/emojis.php:195
+msgctxt "Emoji shortname"
+msgid "u6708"
+msgstr "u6708"
+
+#: includes/emojis.php:196
+msgctxt "Emoji shortname"
+msgid "u7533"
+msgstr "u7533"
+
+#: includes/emojis.php:197
+msgctxt "Emoji shortname"
+msgid "u5272"
+msgstr "u5272"
+
+#: includes/emojis.php:198
+msgctxt "Emoji shortname"
+msgid "u55b6"
+msgstr "u55b6"
+
+#: includes/emojis.php:199
+msgctxt "Emoji shortname"
+msgid "ideograph_advantage"
+msgstr "ideogramme_avantage"
+
+#: includes/emojis.php:200
+msgctxt "Emoji shortname"
+msgid "accept"
+msgstr "accepter"
+
+#: includes/emojis.php:201
+msgctxt "Emoji shortname"
+msgid "cyclone"
+msgstr "cyclone"
+
+#: includes/emojis.php:202
+msgctxt "Emoji shortname"
+msgid "foggy"
+msgstr "brumeux"
+
+#: includes/emojis.php:203
+msgctxt "Emoji shortname"
+msgid "closed_umbrella"
+msgstr "parapluie_ferme"
+
+#: includes/emojis.php:204
+msgctxt "Emoji shortname"
+msgid "night_with_stars"
+msgstr "nuit_avec_etoiles"
+
+#: includes/emojis.php:205
+msgctxt "Emoji shortname"
+msgid "sunrise_over_mountains"
+msgstr "lever_de_soleil_au_dessus_montagne"
+
+#: includes/emojis.php:206
+msgctxt "Emoji shortname"
+msgid "sunrise"
+msgstr "lever_soleil"
+
+#: includes/emojis.php:207
+msgctxt "Emoji shortname"
+msgid "city_sunset"
+msgstr "coucher_soeil_ville"
+
+#: includes/emojis.php:208
+msgctxt "Emoji shortname"
+msgid "city_sunrise"
+msgstr "lever_soleil_ville"
+
+#: includes/emojis.php:209
+msgctxt "Emoji shortname"
+msgid "rainbow"
+msgstr "arc_en_ciel"
+
+#: includes/emojis.php:210
+msgctxt "Emoji shortname"
+msgid "bridge_at_night"
+msgstr "pont_la_nuit"
+
+#: includes/emojis.php:211
+msgctxt "Emoji shortname"
+msgid "ocean"
+msgstr "ocean"
+
+#: includes/emojis.php:212
+msgctxt "Emoji shortname"
+msgid "volcano"
+msgstr "volcan"
+
+#: includes/emojis.php:213
+msgctxt "Emoji shortname"
+msgid "milky_way"
+msgstr "voie_lactee"
+
+#: includes/emojis.php:214
+msgctxt "Emoji shortname"
+msgid "earth_africa"
+msgstr "terre_afrique"
+
+#: includes/emojis.php:215
+msgctxt "Emoji shortname"
+msgid "earth_americas"
+msgstr "terre_ameriques"
+
+#: includes/emojis.php:216
+msgctxt "Emoji shortname"
+msgid "earth_asia"
+msgstr "terre_asie"
+
+#: includes/emojis.php:217
+msgctxt "Emoji shortname"
+msgid "globe_with_meridians"
+msgstr "globe_avec_meridiens"
+
+#: includes/emojis.php:218
+msgctxt "Emoji shortname"
+msgid "new_moon"
+msgstr "nouvelle_lune"
+
+#: includes/emojis.php:219
+msgctxt "Emoji shortname"
+msgid "waxing_crescent_moon"
+msgstr "croissant_de_lune_croissant"
+
+#: includes/emojis.php:220
+msgctxt "Emoji shortname"
+msgid "first_quarter_moon"
+msgstr "premier_quart_lune"
+
+#: includes/emojis.php:221
+msgctxt "Emoji shortname"
+msgid "moon"
+msgstr "lune"
+
+#: includes/emojis.php:222
+msgctxt "Emoji shortname"
+msgid "full_moon"
+msgstr "pleine_lune"
+
+#: includes/emojis.php:223
+msgctxt "Emoji shortname"
+msgid "waning_gibbous_moon"
+msgstr "lune_gibbeuse_decroissante"
+
+#: includes/emojis.php:224
+msgctxt "Emoji shortname"
+msgid "last_quarter_moon"
+msgstr "dernier_quart_de_lune"
+
+#: includes/emojis.php:225
+msgctxt "Emoji shortname"
+msgid "waning_crescent_moon"
+msgstr "croissant_de_lune_decroissant"
+
+#: includes/emojis.php:226
+msgctxt "Emoji shortname"
+msgid "crescent_moon"
+msgstr "croissant_de_lune"
+
+#: includes/emojis.php:227
+msgctxt "Emoji shortname"
+msgid "new_moon_with_face"
+msgstr "nouvelle_lune_avec_visage"
+
+#: includes/emojis.php:228
+msgctxt "Emoji shortname"
+msgid "first_quarter_moon_with_face"
+msgstr "premier_quart_lune_avec_visage"
+
+#: includes/emojis.php:229
+msgctxt "Emoji shortname"
+msgid "last_quarter_moon_with_face"
+msgstr "dernier_quart_lune_avec_visage"
+
+#: includes/emojis.php:230
+msgctxt "Emoji shortname"
+msgid "full_moon_with_face"
+msgstr "pleine_lune_avec_visage"
+
+#: includes/emojis.php:231
+msgctxt "Emoji shortname"
+msgid "sun_with_face"
+msgstr "soleil_avec_visage"
+
+#: includes/emojis.php:232
+msgctxt "Emoji shortname"
+msgid "star2"
+msgstr "etoile2"
+
+#: includes/emojis.php:233
+msgctxt "Emoji shortname"
+msgid "stars"
+msgstr "etoiles"
+
+#: includes/emojis.php:234
+msgctxt "Emoji shortname"
+msgid "thermometer"
+msgstr "﻿thermometre"
+
+#: includes/emojis.php:235
+msgctxt "Emoji shortname"
+msgid "mostly_sunny"
+msgstr "principalement_ensoleille"
+
+#: includes/emojis.php:236
+msgctxt "Emoji shortname"
+msgid "barely_sunny"
+msgstr "tout_juste_ensoleille"
+
+#: includes/emojis.php:237
+msgctxt "Emoji shortname"
+msgid "partly_sunny_rain"
+msgstr "partiellement_ensoleille_pluie"
+
+#: includes/emojis.php:238
+msgctxt "Emoji shortname"
+msgid "rain_cloud"
+msgstr "nuage_pluie"
+
+#: includes/emojis.php:239
+msgctxt "Emoji shortname"
+msgid "snow_cloud"
+msgstr "nuage_neige"
+
+#: includes/emojis.php:240
+msgctxt "Emoji shortname"
+msgid "lightning"
+msgstr "eclair"
+
+#: includes/emojis.php:241
+msgctxt "Emoji shortname"
+msgid "tornado"
+msgstr "tornade"
+
+#: includes/emojis.php:242
+msgctxt "Emoji shortname"
+msgid "fog"
+msgstr "brouillard"
+
+#: includes/emojis.php:243
+msgctxt "Emoji shortname"
+msgid "wind_blowing_face"
+msgstr "vent_souflant_sur_visage"
+
+#: includes/emojis.php:244
+msgctxt "Emoji shortname"
+msgid "hotdog"
+msgstr "hotdog"
+
+#: includes/emojis.php:245
+msgctxt "Emoji shortname"
+msgid "taco"
+msgstr "taco"
+
+#: includes/emojis.php:246
+msgctxt "Emoji shortname"
+msgid "burrito"
+msgstr "burrito"
+
+#: includes/emojis.php:247
+msgctxt "Emoji shortname"
+msgid "chestnut"
+msgstr "chataigne"
+
+#: includes/emojis.php:248
+msgctxt "Emoji shortname"
+msgid "seedling"
+msgstr "plants"
+
+#: includes/emojis.php:249
+msgctxt "Emoji shortname"
+msgid "evergreen_tree"
+msgstr "arbre_feuilles_persistantes"
+
+#: includes/emojis.php:250
+msgctxt "Emoji shortname"
+msgid "deciduous_tree"
+msgstr "arbre_feuilles_caduques"
+
+#: includes/emojis.php:251
+msgctxt "Emoji shortname"
+msgid "palm_tree"
+msgstr "palmier"
+
+#: includes/emojis.php:252
+msgctxt "Emoji shortname"
+msgid "cactus"
+msgstr "cactus"
+
+#: includes/emojis.php:253
+msgctxt "Emoji shortname"
+msgid "hot_pepper"
+msgstr "piment_fort"
+
+#: includes/emojis.php:254
+msgctxt "Emoji shortname"
+msgid "tulip"
+msgstr "tulipe"
+
+#: includes/emojis.php:255
+msgctxt "Emoji shortname"
+msgid "cherry_blossom"
+msgstr "fleur_de_cerisier"
+
+#: includes/emojis.php:256
+msgctxt "Emoji shortname"
+msgid "rose"
+msgstr "rose"
+
+#: includes/emojis.php:257
+msgctxt "Emoji shortname"
+msgid "hibiscus"
+msgstr "hibiscus"
+
+#: includes/emojis.php:258
+msgctxt "Emoji shortname"
+msgid "sunflower"
+msgstr "tournesol"
+
+#: includes/emojis.php:259
+msgctxt "Emoji shortname"
+msgid "blossom"
+msgstr "fleur"
+
+#: includes/emojis.php:260
+msgctxt "Emoji shortname"
+msgid "corn"
+msgstr "mais"
+
+#: includes/emojis.php:261
+msgctxt "Emoji shortname"
+msgid "ear_of_rice"
+msgstr "epi_de_riz"
+
+#: includes/emojis.php:262
+msgctxt "Emoji shortname"
+msgid "herb"
+msgstr "herbe"
+
+#: includes/emojis.php:263
+msgctxt "Emoji shortname"
+msgid "four_leaf_clover"
+msgstr "trefle_quatre_feuilles"
+
+#: includes/emojis.php:264
+msgctxt "Emoji shortname"
+msgid "maple_leaf"
+msgstr "feuille_erable"
+
+#: includes/emojis.php:265
+msgctxt "Emoji shortname"
+msgid "fallen_leaf"
+msgstr "feuille_tombee"
+
+#: includes/emojis.php:266
+msgctxt "Emoji shortname"
+msgid "leaves"
+msgstr "feuilles"
+
+#: includes/emojis.php:267
+msgctxt "Emoji shortname"
+msgid "mushroom"
+msgstr "champignon"
+
+#: includes/emojis.php:268
+msgctxt "Emoji shortname"
+msgid "tomato"
+msgstr "tomate"
+
+#: includes/emojis.php:269
+msgctxt "Emoji shortname"
+msgid "eggplant"
+msgstr "aubergine"
+
+#: includes/emojis.php:270
+msgctxt "Emoji shortname"
+msgid "grapes"
+msgstr "raisins"
+
+#: includes/emojis.php:271
+msgctxt "Emoji shortname"
+msgid "melon"
+msgstr "melon"
+
+#: includes/emojis.php:272
+msgctxt "Emoji shortname"
+msgid "watermelon"
+msgstr "pasteque"
+
+#: includes/emojis.php:273
+msgctxt "Emoji shortname"
+msgid "tangerine"
+msgstr "mandarine"
+
+#: includes/emojis.php:274
+msgctxt "Emoji shortname"
+msgid "lemon"
+msgstr "citron"
+
+#: includes/emojis.php:275
+msgctxt "Emoji shortname"
+msgid "banana"
+msgstr "banane"
+
+#: includes/emojis.php:276
+msgctxt "Emoji shortname"
+msgid "pineapple"
+msgstr "ananas"
+
+#: includes/emojis.php:277
+msgctxt "Emoji shortname"
+msgid "apple"
+msgstr "pomme"
+
+#: includes/emojis.php:278
+msgctxt "Emoji shortname"
+msgid "green_apple"
+msgstr "pomme_verte"
+
+#: includes/emojis.php:279
+msgctxt "Emoji shortname"
+msgid "pear"
+msgstr "poire"
+
+#: includes/emojis.php:280
+msgctxt "Emoji shortname"
+msgid "peach"
+msgstr "peche"
+
+#: includes/emojis.php:281
+msgctxt "Emoji shortname"
+msgid "cherries"
+msgstr "cerises"
+
+#: includes/emojis.php:282
+msgctxt "Emoji shortname"
+msgid "strawberry"
+msgstr "fraises"
+
+#: includes/emojis.php:283
+msgctxt "Emoji shortname"
+msgid "hamburger"
+msgstr "hamburger"
+
+#: includes/emojis.php:284
+msgctxt "Emoji shortname"
+msgid "pizza"
+msgstr "pizza"
+
+#: includes/emojis.php:285
+msgctxt "Emoji shortname"
+msgid "meat_on_bone"
+msgstr "viande_a_os"
+
+#: includes/emojis.php:286
+msgctxt "Emoji shortname"
+msgid "poultry_leg"
+msgstr "cuisse_volaille"
+
+#: includes/emojis.php:287
+msgctxt "Emoji shortname"
+msgid "rice_cracker"
+msgstr "galette_de_riz"
+
+#: includes/emojis.php:288
+msgctxt "Emoji shortname"
+msgid "rice_ball"
+msgstr "boulette_de_riz"
+
+#: includes/emojis.php:289
+msgctxt "Emoji shortname"
+msgid "rice"
+msgstr "riz"
+
+#: includes/emojis.php:290
+msgctxt "Emoji shortname"
+msgid "curry"
+msgstr "curry"
+
+#: includes/emojis.php:291
+msgctxt "Emoji shortname"
+msgid "ramen"
+msgstr "nouilles_orientales"
+
+#: includes/emojis.php:292
+msgctxt "Emoji shortname"
+msgid "spaghetti"
+msgstr "spaghetti"
+
+#: includes/emojis.php:293
+msgctxt "Emoji shortname"
+msgid "bread"
+msgstr "pain"
+
+#: includes/emojis.php:294
+msgctxt "Emoji shortname"
+msgid "fries"
+msgstr "frites"
+
+#: includes/emojis.php:295
+msgctxt "Emoji shortname"
+msgid "sweet_potato"
+msgstr "frites"
+
+#: includes/emojis.php:296
+msgctxt "Emoji shortname"
+msgid "dango"
+msgstr "dango"
+
+#: includes/emojis.php:297
+msgctxt "Emoji shortname"
+msgid "oden"
+msgstr "oden"
+
+#: includes/emojis.php:298
+msgctxt "Emoji shortname"
+msgid "sushi"
+msgstr "sushi"
+
+#: includes/emojis.php:299
+msgctxt "Emoji shortname"
+msgid "fried_shrimp"
+msgstr "crevettes_cuites"
+
+#: includes/emojis.php:300
+msgctxt "Emoji shortname"
+msgid "fish_cake"
+msgstr "gateau_au_poisson"
+
+#: includes/emojis.php:301
+msgctxt "Emoji shortname"
+msgid "icecream"
+msgstr "glace"
+
+#: includes/emojis.php:302
+msgctxt "Emoji shortname"
+msgid "shaved_ice"
+msgstr "glace_pilee"
+
+#: includes/emojis.php:303
+msgctxt "Emoji shortname"
+msgid "ice_cream"
+msgstr "creme_glacee"
+
+#: includes/emojis.php:304
+msgctxt "Emoji shortname"
+msgid "doughnut"
+msgstr "beignet"
+
+#: includes/emojis.php:305
+msgctxt "Emoji shortname"
+msgid "cookie"
+msgstr "cookie"
+
+#: includes/emojis.php:306
+msgctxt "Emoji shortname"
+msgid "chocolate_bar"
+msgstr "barre_chocolattee"
+
+#: includes/emojis.php:307
+msgctxt "Emoji shortname"
+msgid "candy"
+msgstr "bonbon"
+
+#: includes/emojis.php:308
+msgctxt "Emoji shortname"
+msgid "lollipop"
+msgstr "sucette"
+
+#: includes/emojis.php:309
+msgctxt "Emoji shortname"
+msgid "custard"
+msgstr "creme_anglaise"
+
+#: includes/emojis.php:310
+msgctxt "Emoji shortname"
+msgid "honey_pot"
+msgstr "pot_de_miel"
+
+#: includes/emojis.php:311
+msgctxt "Emoji shortname"
+msgid "cake"
+msgstr "gateau"
+
+#: includes/emojis.php:312
+msgctxt "Emoji shortname"
+msgid "bento"
+msgstr "bento"
+
+#: includes/emojis.php:313
+msgctxt "Emoji shortname"
+msgid "stew"
+msgstr "ragout"
+
+#: includes/emojis.php:314
+msgctxt "Emoji shortname"
+msgid "egg"
+msgstr "oeufs"
+
+#: includes/emojis.php:315
+msgctxt "Emoji shortname"
+msgid "fork_and_knife"
+msgstr "fourchette_et_couteau"
+
+#: includes/emojis.php:316
+msgctxt "Emoji shortname"
+msgid "tea"
+msgstr "the"
+
+#: includes/emojis.php:317
+msgctxt "Emoji shortname"
+msgid "sake"
+msgstr "sake"
+
+#: includes/emojis.php:318
+msgctxt "Emoji shortname"
+msgid "wine_glass"
+msgstr "verre_de_vin"
+
+#: includes/emojis.php:319
+msgctxt "Emoji shortname"
+msgid "cocktail"
+msgstr "cocktail"
+
+#: includes/emojis.php:320
+msgctxt "Emoji shortname"
+msgid "tropical_drink"
+msgstr "boisson_tropicale"
+
+#: includes/emojis.php:321
+msgctxt "Emoji shortname"
+msgid "beer"
+msgstr "biere"
+
+#: includes/emojis.php:322
+msgctxt "Emoji shortname"
+msgid "beers"
+msgstr "bieres"
+
+#: includes/emojis.php:323
+msgctxt "Emoji shortname"
+msgid "baby_bottle"
+msgstr "biberon"
+
+#: includes/emojis.php:324
+msgctxt "Emoji shortname"
+msgid "knife_fork_plate"
+msgstr "couteau_fourchette_assiette"
+
+#: includes/emojis.php:325
+msgctxt "Emoji shortname"
+msgid "champagne"
+msgstr "champagne"
+
+#: includes/emojis.php:326
+msgctxt "Emoji shortname"
+msgid "popcorn"
+msgstr "popcorn"
+
+#: includes/emojis.php:327
+msgctxt "Emoji shortname"
+msgid "ribbon"
+msgstr "ruban"
+
+#: includes/emojis.php:328
+msgctxt "Emoji shortname"
+msgid "gift"
+msgstr "cadeau"
+
+#: includes/emojis.php:329
+msgctxt "Emoji shortname"
+msgid "birthday"
+msgstr "anniversaire"
+
+#: includes/emojis.php:330
+msgctxt "Emoji shortname"
+msgid "jack_o_lantern"
+msgstr "citrouille_halloween"
+
+#: includes/emojis.php:331
+msgctxt "Emoji shortname"
+msgid "christmas_tree"
+msgstr "sapin_de_noel"
+
+#: includes/emojis.php:332
+msgctxt "Emoji shortname"
+msgid "santa"
+msgstr "pere_noel"
+
+#: includes/emojis.php:333
+msgctxt "Emoji shortname"
+msgid "fireworks"
+msgstr "feu_d_artifice"
+
+#: includes/emojis.php:334
+msgctxt "Emoji shortname"
+msgid "sparkler"
+msgstr "cierge_magique"
+
+#: includes/emojis.php:335
+msgctxt "Emoji shortname"
+msgid "balloon"
+msgstr "ballon"
+
+#: includes/emojis.php:336
+msgctxt "Emoji shortname"
+msgid "tada"
+msgstr "tada"
+
+#: includes/emojis.php:337
+msgctxt "Emoji shortname"
+msgid "confetti_ball"
+msgstr "confettis"
+
+#: includes/emojis.php:338
+msgctxt "Emoji shortname"
+msgid "tanabata_tree"
+msgstr "arbre_tanabata"
+
+#: includes/emojis.php:339
+msgctxt "Emoji shortname"
+msgid "crossed_flags"
+msgstr "drapeaux_croises"
+
+#: includes/emojis.php:340
+msgctxt "Emoji shortname"
+msgid "bamboo"
+msgstr "bambou"
+
+#: includes/emojis.php:341
+msgctxt "Emoji shortname"
+msgid "dolls"
+msgstr "poupee"
+
+#: includes/emojis.php:342
+msgctxt "Emoji shortname"
+msgid "flags"
+msgstr "drapeaux"
+
+#: includes/emojis.php:343
+msgctxt "Emoji shortname"
+msgid "wind_chime"
+msgstr "carillon_de_vent"
+
+#: includes/emojis.php:344
+msgctxt "Emoji shortname"
+msgid "rice_scene"
+msgstr "scene_de_riz"
+
+#: includes/emojis.php:345
+msgctxt "Emoji shortname"
+msgid "school_satchel"
+msgstr "cartable_d_ecole"
+
+#: includes/emojis.php:346
+msgctxt "Emoji shortname"
+msgid "mortar_board"
+msgstr "tableau_de_mortier"
+
+#: includes/emojis.php:347
+msgctxt "Emoji shortname"
+msgid "medal"
+msgstr "medaille"
+
+#: includes/emojis.php:348
+msgctxt "Emoji shortname"
+msgid "reminder_ribbon"
+msgstr "pense_bete"
+
+#: includes/emojis.php:349
+msgctxt "Emoji shortname"
+msgid "studio_microphone"
+msgstr "microphone_de_studio"
+
+#: includes/emojis.php:350
+msgctxt "Emoji shortname"
+msgid "level_slider"
+msgstr "egaliseur"
+
+#: includes/emojis.php:351
+msgctxt "Emoji shortname"
+msgid "control_knobs"
+msgstr "bouton_de_commande"
+
+#: includes/emojis.php:352
+msgctxt "Emoji shortname"
+msgid "film_frames"
+msgstr "pellicule_de_film"
+
+#: includes/emojis.php:353
+msgctxt "Emoji shortname"
+msgid "admission_tickets"
+msgstr "tickets_admission"
+
+#: includes/emojis.php:354
+msgctxt "Emoji shortname"
+msgid "carousel_horse"
+msgstr "manege"
+
+#: includes/emojis.php:355
+msgctxt "Emoji shortname"
+msgid "ferris_wheel"
+msgstr "grande_roue"
+
+#: includes/emojis.php:356
+msgctxt "Emoji shortname"
+msgid "roller_coaster"
+msgstr "montagnes_russes"
+
+#: includes/emojis.php:357
+msgctxt "Emoji shortname"
+msgid "fishing_pole_and_fish"
+msgstr "canne_a_peche_et_poissons"
+
+#: includes/emojis.php:358
+msgctxt "Emoji shortname"
+msgid "microphone"
+msgstr "microphone"
+
+#: includes/emojis.php:359
+msgctxt "Emoji shortname"
+msgid "movie_camera"
+msgstr "camera"
+
+#: includes/emojis.php:360
+msgctxt "Emoji shortname"
+msgid "cinema"
+msgstr "cinema"
+
+#: includes/emojis.php:361
+msgctxt "Emoji shortname"
+msgid "headphones"
+msgstr "casque_audio"
+
+#: includes/emojis.php:362
+msgctxt "Emoji shortname"
+msgid "art"
+msgstr "art"
+
+#: includes/emojis.php:363
+msgctxt "Emoji shortname"
+msgid "tophat"
+msgstr "haut_de_forme"
+
+#: includes/emojis.php:364
+msgctxt "Emoji shortname"
+msgid "circus_tent"
+msgstr "chapiteau"
+
+#: includes/emojis.php:365
+msgctxt "Emoji shortname"
+msgid "ticket"
+msgstr "ticket"
+
+#: includes/emojis.php:366
+msgctxt "Emoji shortname"
+msgid "clapper"
+msgstr "applaudisseuse"
+
+#: includes/emojis.php:367
+msgctxt "Emoji shortname"
+msgid "performing_arts"
+msgstr "spectacles"
+
+#: includes/emojis.php:368
+msgctxt "Emoji shortname"
+msgid "video_game"
+msgstr "jeu_video"
+
+#: includes/emojis.php:369
+msgctxt "Emoji shortname"
+msgid "dart"
+msgstr "dard"
+
+#: includes/emojis.php:370
+msgctxt "Emoji shortname"
+msgid "slot_machine"
+msgstr "machine_a_sous"
+
+#: includes/emojis.php:371
+msgctxt "Emoji shortname"
+msgid "8ball"
+msgstr "boule_huit"
+
+#: includes/emojis.php:372
+msgctxt "Emoji shortname"
+msgid "game_die"
+msgstr "jeu_de_de"
+
+#: includes/emojis.php:373
+msgctxt "Emoji shortname"
+msgid "bowling"
+msgstr "bowling"
+
+#: includes/emojis.php:374
+msgctxt "Emoji shortname"
+msgid "flower_playing_cards"
+msgstr "cartes_a_jouer"
+
+#: includes/emojis.php:375
+msgctxt "Emoji shortname"
+msgid "musical_note"
+msgstr "note_musicale"
+
+#: includes/emojis.php:376
+msgctxt "Emoji shortname"
+msgid "notes"
+msgstr "notes"
+
+#: includes/emojis.php:377
+msgctxt "Emoji shortname"
+msgid "saxophone"
+msgstr "saxophone"
+
+#: includes/emojis.php:378
+msgctxt "Emoji shortname"
+msgid "guitar"
+msgstr "guitar"
+
+#: includes/emojis.php:379
+msgctxt "Emoji shortname"
+msgid "musical_keyboard"
+msgstr "clavier_musical"
+
+#: includes/emojis.php:380
+msgctxt "Emoji shortname"
+msgid "trumpet"
+msgstr "trompette"
+
+#: includes/emojis.php:381
+msgctxt "Emoji shortname"
+msgid "violin"
+msgstr "violon"
+
+#: includes/emojis.php:382
+msgctxt "Emoji shortname"
+msgid "musical_score"
+msgstr "partition_musicale"
+
+#: includes/emojis.php:383
+msgctxt "Emoji shortname"
+msgid "running_shirt_with_sash"
+msgstr "maillot_de_course_avec_ceinture"
+
+#: includes/emojis.php:384
+msgctxt "Emoji shortname"
+msgid "tennis"
+msgstr "tennis"
+
+#: includes/emojis.php:385
+msgctxt "Emoji shortname"
+msgid "ski"
+msgstr "ski"
+
+#: includes/emojis.php:386
+msgctxt "Emoji shortname"
+msgid "basketball"
+msgstr "basketball"
+
+#: includes/emojis.php:387
+msgctxt "Emoji shortname"
+msgid "checkered_flag"
+msgstr "drapeau_a_damier"
+
+#: includes/emojis.php:388
+msgctxt "Emoji shortname"
+msgid "snowboarder"
+msgstr "snowboarder"
+
+#: includes/emojis.php:389
+msgctxt "Emoji shortname"
+msgid "runner"
+msgstr "joggeur"
+
+#: includes/emojis.php:390
+msgctxt "Emoji shortname"
+msgid "surfer"
+msgstr "surfeur"
+
+#: includes/emojis.php:391
+msgctxt "Emoji shortname"
+msgid "sports_medal"
+msgstr "medaille_de_sport"
+
+#: includes/emojis.php:392
+msgctxt "Emoji shortname"
+msgid "trophy"
+msgstr "trophee"
+
+#: includes/emojis.php:393
+msgctxt "Emoji shortname"
+msgid "horse_racing"
+msgstr "course_de_chevaux"
+
+#: includes/emojis.php:394
+msgctxt "Emoji shortname"
+msgid "football"
+msgstr "football"
+
+#: includes/emojis.php:395
+msgctxt "Emoji shortname"
+msgid "rugby_football"
+msgstr "rugby"
+
+#: includes/emojis.php:396
+msgctxt "Emoji shortname"
+msgid "swimmer"
+msgstr "nageur"
+
+#: includes/emojis.php:397
+msgctxt "Emoji shortname"
+msgid "weight_lifter"
+msgstr "halterophile"
+
+#: includes/emojis.php:398
+msgctxt "Emoji shortname"
+msgid "golfer"
+msgstr "golfeur"
+
+#: includes/emojis.php:399
+msgctxt "Emoji shortname"
+msgid "racing_motorcycle"
+msgstr "moto_de_course"
+
+#: includes/emojis.php:400
+msgctxt "Emoji shortname"
+msgid "racing_car"
+msgstr "voiture_de_course"
+
+#: includes/emojis.php:401
+msgctxt "Emoji shortname"
+msgid "cricket_bat_and_ball"
+msgstr "batte_cricket_et_balle"
+
+#: includes/emojis.php:402
+msgctxt "Emoji shortname"
+msgid "volleyball"
+msgstr "volleyball"
+
+#: includes/emojis.php:403
+msgctxt "Emoji shortname"
+msgid "field_hockey_stick_and_ball"
+msgstr "crosse_et_balle_hockey_sur_gazon"
+
+#: includes/emojis.php:404
+msgctxt "Emoji shortname"
+msgid "ice_hockey_stick_and_puck"
+msgstr "crosse_et_palet_hockey_sur_glace"
+
+#: includes/emojis.php:405
+msgctxt "Emoji shortname"
+msgid "table_tennis_paddle_and_ball"
+msgstr "raquette_et_balle_pingpong"
+
+#: includes/emojis.php:406
+msgctxt "Emoji shortname"
+msgid "snow_capped_mountain"
+msgstr "sommet_enneige"
+
+#: includes/emojis.php:407
+msgctxt "Emoji shortname"
+msgid "camping"
+msgstr "camping"
+
+#: includes/emojis.php:408
+msgctxt "Emoji shortname"
+msgid "beach_with_umbrella"
+msgstr "parasol_a_la_plage"
+
+#: includes/emojis.php:409
+msgctxt "Emoji shortname"
+msgid "building_construction"
+msgstr "construction_immeuble"
+
+#: includes/emojis.php:410
+msgctxt "Emoji shortname"
+msgid "house_buildings"
+msgstr "construction_maison"
+
+#: includes/emojis.php:411
+msgctxt "Emoji shortname"
+msgid "cityscape"
+msgstr "paysage_de_ville"
+
+#: includes/emojis.php:412
+msgctxt "Emoji shortname"
+msgid "derelict_house_building"
+msgstr "construction_abandonnee_de_maison "
+
+#: includes/emojis.php:413
+msgctxt "Emoji shortname"
+msgid "classical_building"
+msgstr "immeuble_classique"
+
+#: includes/emojis.php:414
+msgctxt "Emoji shortname"
+msgid "desert"
+msgstr "desert"
+
+#: includes/emojis.php:415
+msgctxt "Emoji shortname"
+msgid "desert_island"
+msgstr "ile_desertique"
+
+#: includes/emojis.php:416
+msgctxt "Emoji shortname"
+msgid "national_park"
+msgstr "parc_national"
+
+#: includes/emojis.php:417
+msgctxt "Emoji shortname"
+msgid "stadium"
+msgstr "stade"
+
+#: includes/emojis.php:418
+msgctxt "Emoji shortname"
+msgid "house"
+msgstr "maison"
+
+#: includes/emojis.php:419
+msgctxt "Emoji shortname"
+msgid "house_with_garden"
+msgstr "maison_avec_jardin"
+
+#: includes/emojis.php:420
+msgctxt "Emoji shortname"
+msgid "office"
+msgstr "bureau"
+
+#: includes/emojis.php:421
+msgctxt "Emoji shortname"
+msgid "post_office"
+msgstr "bureau_de_poste"
+
+#: includes/emojis.php:422
+msgctxt "Emoji shortname"
+msgid "european_post_office"
+msgstr "bureau_de_poste_europeen"
+
+#: includes/emojis.php:423
+msgctxt "Emoji shortname"
+msgid "hospital"
+msgstr "hopital"
+
+#: includes/emojis.php:424
+msgctxt "Emoji shortname"
+msgid "bank"
+msgstr "banque"
+
+#: includes/emojis.php:425
+msgctxt "Emoji shortname"
+msgid "atm"
+msgstr "guichet_automatique"
+
+#: includes/emojis.php:426
+msgctxt "Emoji shortname"
+msgid "hotel"
+msgstr "hotel"
+
+#: includes/emojis.php:427
+msgctxt "Emoji shortname"
+msgid "love_hotel"
+msgstr "chambre_d_amour"
+
+#: includes/emojis.php:428
+msgctxt "Emoji shortname"
+msgid "convenience_store"
+msgstr "depanneur"
+
+#: includes/emojis.php:429
+msgctxt "Emoji shortname"
+msgid "school"
+msgstr "ecole"
+
+#: includes/emojis.php:430
+msgctxt "Emoji shortname"
+msgid "department_store"
+msgstr "grand_magasin"
+
+#: includes/emojis.php:431
+msgctxt "Emoji shortname"
+msgid "factory"
+msgstr "usine"
+
+#: includes/emojis.php:432
+msgctxt "Emoji shortname"
+msgid "izakaya_lantern"
+msgstr "lanterne_izakaya"
+
+#: includes/emojis.php:433
+msgctxt "Emoji shortname"
+msgid "japanese_castle"
+msgstr "palais_japonais"
+
+#: includes/emojis.php:434
+msgctxt "Emoji shortname"
+msgid "european_castle"
+msgstr "chateau_europeen"
+
+#: includes/emojis.php:435
+msgctxt "Emoji shortname"
+msgid "waving_white_flag"
+msgstr "drapeau_blanc_remuant"
+
+#: includes/emojis.php:436
+msgctxt "Emoji shortname"
+msgid "waving_black_flag"
+msgstr "drapeau_noir_remuant"
+
+#: includes/emojis.php:437
+msgctxt "Emoji shortname"
+msgid "rosette"
+msgstr "rosace"
+
+#: includes/emojis.php:438
+msgctxt "Emoji shortname"
+msgid "label"
+msgstr "marque"
+
+#: includes/emojis.php:439
+msgctxt "Emoji shortname"
+msgid "badminton_racquet_and_shuttlecock"
+msgstr "raquette et volant de badminton"
+
+#: includes/emojis.php:440
+msgctxt "Emoji shortname"
+msgid "bow_and_arrow"
+msgstr "arc_et_fleches"
+
+#: includes/emojis.php:441
+msgctxt "Emoji shortname"
+msgid "amphora"
+msgstr "amphore"
+
+#: includes/emojis.php:442
+msgctxt "Emoji shortname"
+msgid "skin-tone-2"
+msgstr "ton-de-peau-2"
+
+#: includes/emojis.php:443
+msgctxt "Emoji shortname"
+msgid "skin-tone-3"
+msgstr "ton-de-peau-3"
+
+#: includes/emojis.php:444
+msgctxt "Emoji shortname"
+msgid "skin-tone-4"
+msgstr "ton-de-peau-4"
+
+#: includes/emojis.php:445
+msgctxt "Emoji shortname"
+msgid "skin-tone-5"
+msgstr "ton-de-peau-5"
+
+#: includes/emojis.php:446
+msgctxt "Emoji shortname"
+msgid "skin-tone-6"
+msgstr "ton-de-peau-6"
+
+#: includes/emojis.php:447
+msgctxt "Emoji shortname"
+msgid "rat"
+msgstr "rat"
+
+#: includes/emojis.php:448
+msgctxt "Emoji shortname"
+msgid "mouse2"
+msgstr "souris2"
+
+#: includes/emojis.php:449
+msgctxt "Emoji shortname"
+msgid "ox"
+msgstr "ox"
+
+#: includes/emojis.php:450
+msgctxt "Emoji shortname"
+msgid "water_buffalo"
+msgstr "buffle_d_eau"
+
+#: includes/emojis.php:451
+msgctxt "Emoji shortname"
+msgid "cow2"
+msgstr "vache2"
+
+#: includes/emojis.php:452
+msgctxt "Emoji shortname"
+msgid "tiger2"
+msgstr "tigre2"
+
+#: includes/emojis.php:453
+msgctxt "Emoji shortname"
+msgid "leopard"
+msgstr "leopard"
+
+#: includes/emojis.php:454
+msgctxt "Emoji shortname"
+msgid "rabbit2"
+msgstr "lapin2"
+
+#: includes/emojis.php:455
+msgctxt "Emoji shortname"
+msgid "cat2"
+msgstr "chat2"
+
+#: includes/emojis.php:456
+msgctxt "Emoji shortname"
+msgid "dragon"
+msgstr "dragon"
+
+#: includes/emojis.php:457
+msgctxt "Emoji shortname"
+msgid "crocodile"
+msgstr "crocodile"
+
+#: includes/emojis.php:458
+msgctxt "Emoji shortname"
+msgid "whale2"
+msgstr "baleine2"
+
+#: includes/emojis.php:459
+msgctxt "Emoji shortname"
+msgid "snail"
+msgstr "escargot"
+
+#: includes/emojis.php:460
+msgctxt "Emoji shortname"
+msgid "snake"
+msgstr "serpent"
+
+#: includes/emojis.php:461
+msgctxt "Emoji shortname"
+msgid "racehorse"
+msgstr "cheval_de_course"
+
+#: includes/emojis.php:462
+msgctxt "Emoji shortname"
+msgid "ram"
+msgstr "belier"
+
+#: includes/emojis.php:463
+msgctxt "Emoji shortname"
+msgid "goat"
+msgstr "chevre"
+
+#: includes/emojis.php:464
+msgctxt "Emoji shortname"
+msgid "sheep"
+msgstr "mouton"
+
+#: includes/emojis.php:465
+msgctxt "Emoji shortname"
+msgid "monkey"
+msgstr "singe"
+
+#: includes/emojis.php:466
+msgctxt "Emoji shortname"
+msgid "rooster"
+msgstr "coq"
+
+#: includes/emojis.php:467
+msgctxt "Emoji shortname"
+msgid "chicken"
+msgstr "poulet"
+
+#: includes/emojis.php:468
+msgctxt "Emoji shortname"
+msgid "dog2"
+msgstr "chien2"
+
+#: includes/emojis.php:469
+msgctxt "Emoji shortname"
+msgid "pig2"
+msgstr "porc2"
+
+#: includes/emojis.php:470
+msgctxt "Emoji shortname"
+msgid "boar"
+msgstr "sanglier"
+
+#: includes/emojis.php:471
+msgctxt "Emoji shortname"
+msgid "elephant"
+msgstr "elephant"
+
+#: includes/emojis.php:472
+msgctxt "Emoji shortname"
+msgid "octopus"
+msgstr "pieuvre"
+
+#: includes/emojis.php:473
+msgctxt "Emoji shortname"
+msgid "shell"
+msgstr "coquille"
+
+#: includes/emojis.php:474
+msgctxt "Emoji shortname"
+msgid "bug"
+msgstr "insecte"
+
+#: includes/emojis.php:475
+msgctxt "Emoji shortname"
+msgid "ant"
+msgstr "fourmi"
+
+#: includes/emojis.php:476
+msgctxt "Emoji shortname"
+msgid "bee"
+msgstr "abeille"
+
+#: includes/emojis.php:477
+msgctxt "Emoji shortname"
+msgid "beetle"
+msgstr "scarabee"
+
+#: includes/emojis.php:478
+msgctxt "Emoji shortname"
+msgid "fish"
+msgstr "poisson"
+
+#: includes/emojis.php:479
+msgctxt "Emoji shortname"
+msgid "tropical_fish"
+msgstr "poisson_tropical"
+
+#: includes/emojis.php:480
+msgctxt "Emoji shortname"
+msgid "blowfish"
+msgstr "poisson_ballon"
+
+#: includes/emojis.php:481
+msgctxt "Emoji shortname"
+msgid "turtle"
+msgstr "tortue"
+
+#: includes/emojis.php:482
+msgctxt "Emoji shortname"
+msgid "hatching_chick"
+msgstr "eclosion_poussin"
+
+#: includes/emojis.php:483
+msgctxt "Emoji shortname"
+msgid "baby_chick"
+msgstr "poussin"
+
+#: includes/emojis.php:484
+msgctxt "Emoji shortname"
+msgid "hatched_chick"
+msgstr "poussin_eclos"
+
+#: includes/emojis.php:485
+msgctxt "Emoji shortname"
+msgid "bird"
+msgstr "oiseau"
+
+#: includes/emojis.php:486
+msgctxt "Emoji shortname"
+msgid "penguin"
+msgstr "pingouin"
+
+#: includes/emojis.php:487
+msgctxt "Emoji shortname"
+msgid "koala"
+msgstr "koala"
+
+#: includes/emojis.php:488
+msgctxt "Emoji shortname"
+msgid "poodle"
+msgstr "caniche"
+
+#: includes/emojis.php:489
+msgctxt "Emoji shortname"
+msgid "dromedary_camel"
+msgstr "dromadaire"
+
+#: includes/emojis.php:490
+msgctxt "Emoji shortname"
+msgid "camel"
+msgstr "chameau"
+
+#: includes/emojis.php:491
+msgctxt "Emoji shortname"
+msgid "dolphin"
+msgstr "dauphin"
+
+#: includes/emojis.php:492
+msgctxt "Emoji shortname"
+msgid "mouse"
+msgstr "souris"
+
+#: includes/emojis.php:493
+msgctxt "Emoji shortname"
+msgid "cow"
+msgstr "vache"
+
+#: includes/emojis.php:494
+msgctxt "Emoji shortname"
+msgid "tiger"
+msgstr "tigre"
+
+#: includes/emojis.php:495
+msgctxt "Emoji shortname"
+msgid "rabbit"
+msgstr "lapin"
+
+#: includes/emojis.php:496
+msgctxt "Emoji shortname"
+msgid "cat"
+msgstr "chat"
+
+#: includes/emojis.php:497
+msgctxt "Emoji shortname"
+msgid "dragon_face"
+msgstr "tete_de_dragon"
+
+#: includes/emojis.php:498
+msgctxt "Emoji shortname"
+msgid "whale"
+msgstr "baleine"
+
+#: includes/emojis.php:499
+msgctxt "Emoji shortname"
+msgid "horse"
+msgstr "cheval"
+
+#: includes/emojis.php:500
+msgctxt "Emoji shortname"
+msgid "monkey_face"
+msgstr "tete_de_singe"
+
+#: includes/emojis.php:501
+msgctxt "Emoji shortname"
+msgid "dog"
+msgstr "chien"
+
+#: includes/emojis.php:502
+msgctxt "Emoji shortname"
+msgid "pig"
+msgstr "porc"
+
+#: includes/emojis.php:503
+msgctxt "Emoji shortname"
+msgid "frog"
+msgstr "grenouille"
+
+#: includes/emojis.php:504
+msgctxt "Emoji shortname"
+msgid "hamster"
+msgstr "hamster"
+
+#: includes/emojis.php:505
+msgctxt "Emoji shortname"
+msgid "wolf"
+msgstr "loup"
+
+#: includes/emojis.php:506
+msgctxt "Emoji shortname"
+msgid "bear"
+msgstr "ours"
+
+#: includes/emojis.php:507
+msgctxt "Emoji shortname"
+msgid "panda_face"
+msgstr "tete_de_panda"
+
+#: includes/emojis.php:508
+msgctxt "Emoji shortname"
+msgid "pig_nose"
+msgstr "grouin_de_cochon"
+
+#: includes/emojis.php:509
+msgctxt "Emoji shortname"
+msgid "feet"
+msgstr "pieds"
+
+#: includes/emojis.php:510
+msgctxt "Emoji shortname"
+msgid "chipmunk"
+msgstr "chipmunk"
+
+#: includes/emojis.php:511
+msgctxt "Emoji shortname"
+msgid "eyes"
+msgstr "yeux"
+
+#: includes/emojis.php:512
+msgctxt "Emoji shortname"
+msgid "eye"
+msgstr "oeil"
+
+#: includes/emojis.php:513
+msgctxt "Emoji shortname"
+msgid "ear"
+msgstr "oreille"
+
+#: includes/emojis.php:514
+msgctxt "Emoji shortname"
+msgid "nose"
+msgstr "nez"
+
+#: includes/emojis.php:515
+msgctxt "Emoji shortname"
+msgid "lips"
+msgstr "levres"
+
+#: includes/emojis.php:516
+msgctxt "Emoji shortname"
+msgid "tongue"
+msgstr "langue"
+
+#: includes/emojis.php:517
+msgctxt "Emoji shortname"
+msgid "point_up_2"
+msgstr "point_haut_2"
+
+#: includes/emojis.php:518
+msgctxt "Emoji shortname"
+msgid "point_down"
+msgstr "point_bas"
+
+#: includes/emojis.php:519
+msgctxt "Emoji shortname"
+msgid "point_left"
+msgstr "point_gauche"
+
+#: includes/emojis.php:520
+msgctxt "Emoji shortname"
+msgid "point_right"
+msgstr "point_droite"
+
+#: includes/emojis.php:521
+msgctxt "Emoji shortname"
+msgid "facepunch"
+msgstr "poing_dans_visage"
+
+#: includes/emojis.php:522
+msgctxt "Emoji shortname"
+msgid "wave"
+msgstr "vague"
+
+#: includes/emojis.php:523
+msgctxt "Emoji shortname"
+msgid "ok_hand"
+msgstr "main_ok"
+
+#: includes/emojis.php:524
+msgctxt "Emoji shortname"
+msgid "+1"
+msgstr "+1"
+
+#: includes/emojis.php:525
+msgctxt "Emoji shortname"
+msgid "-1"
+msgstr "-1"
+
+#: includes/emojis.php:526
+msgctxt "Emoji shortname"
+msgid "clap"
+msgstr "applaudissements"
+
+#: includes/emojis.php:527
+msgctxt "Emoji shortname"
+msgid "open_hands"
+msgstr "mains_ouvertes"
+
+#: includes/emojis.php:528
+msgctxt "Emoji shortname"
+msgid "crown"
+msgstr "couronne"
+
+#: includes/emojis.php:529
+msgctxt "Emoji shortname"
+msgid "womans_hat"
+msgstr "chapeau_de_femme"
+
+#: includes/emojis.php:530
+msgctxt "Emoji shortname"
+msgid "eyeglasses"
+msgstr "lunettes"
+
+#: includes/emojis.php:531
+msgctxt "Emoji shortname"
+msgid "necktie"
+msgstr "cravatte"
+
+#: includes/emojis.php:532
+msgctxt "Emoji shortname"
+msgid "shirt"
+msgstr "chemise"
+
+#: includes/emojis.php:533
+msgctxt "Emoji shortname"
+msgid "jeans"
+msgstr "jeans"
+
+#: includes/emojis.php:534
+msgctxt "Emoji shortname"
+msgid "dress"
+msgstr "robe"
+
+#: includes/emojis.php:535
+msgctxt "Emoji shortname"
+msgid "kimono"
+msgstr "kimono"
+
+#: includes/emojis.php:536
+msgctxt "Emoji shortname"
+msgid "bikini"
+msgstr "bikini"
+
+#: includes/emojis.php:537
+msgctxt "Emoji shortname"
+msgid "womans_clothes"
+msgstr "vetements_femme"
+
+#: includes/emojis.php:538
+msgctxt "Emoji shortname"
+msgid "purse"
+msgstr "porte_monnaie"
+
+#: includes/emojis.php:539
+msgctxt "Emoji shortname"
+msgid "handbag"
+msgstr "sac_a_main"
+
+#: includes/emojis.php:540
+msgctxt "Emoji shortname"
+msgid "pouch"
+msgstr "poche"
+
+#: includes/emojis.php:541
+msgctxt "Emoji shortname"
+msgid "mans_shoe"
+msgstr "chaussure_d_homme"
+
+#: includes/emojis.php:542
+msgctxt "Emoji shortname"
+msgid "athletic_shoe"
+msgstr "chaussure_de_sport"
+
+#: includes/emojis.php:543
+msgctxt "Emoji shortname"
+msgid "high_heel"
+msgstr "talons_hauts"
+
+#: includes/emojis.php:544
+msgctxt "Emoji shortname"
+msgid "sandal"
+msgstr "sandale"
+
+#: includes/emojis.php:545
+msgctxt "Emoji shortname"
+msgid "boot"
+msgstr "botte"
+
+#: includes/emojis.php:546
+msgctxt "Emoji shortname"
+msgid "footprints"
+msgstr "empreinte"
+
+#: includes/emojis.php:547
+msgctxt "Emoji shortname"
+msgid "bust_in_silhouette"
+msgstr "silhouette_de_buste"
+
+#: includes/emojis.php:548
+msgctxt "Emoji shortname"
+msgid "busts_in_silhouette"
+msgstr "silhouette_de_bustes"
+
+#: includes/emojis.php:549
+msgctxt "Emoji shortname"
+msgid "boy"
+msgstr "garçon"
+
+#: includes/emojis.php:550
+msgctxt "Emoji shortname"
+msgid "girl"
+msgstr "fille"
+
+#: includes/emojis.php:551
+msgctxt "Emoji shortname"
+msgid "man"
+msgstr "homme"
+
+#: includes/emojis.php:552
+msgctxt "Emoji shortname"
+msgid "woman"
+msgstr "femme"
+
+#: includes/emojis.php:553
+msgctxt "Emoji shortname"
+msgid "family"
+msgstr "famille"
+
+#: includes/emojis.php:554
+msgctxt "Emoji shortname"
+msgid "couple"
+msgstr "couple"
+
+#: includes/emojis.php:555
+msgctxt "Emoji shortname"
+msgid "two_men_holding_hands"
+msgstr "deux_hommes_se_tenant_les_mains"
+
+#: includes/emojis.php:556
+msgctxt "Emoji shortname"
+msgid "two_women_holding_hands"
+msgstr "deux_femmes_se_tenant_les_mains"
+
+#: includes/emojis.php:557
+msgctxt "Emoji shortname"
+msgid "cop"
+msgstr "policier"
+
+#: includes/emojis.php:558
+msgctxt "Emoji shortname"
+msgid "dancers"
+msgstr "danseurs"
+
+#: includes/emojis.php:559
+msgctxt "Emoji shortname"
+msgid "bride_with_veil"
+msgstr "mariee_avec_voile"
+
+#: includes/emojis.php:560
+msgctxt "Emoji shortname"
+msgid "person_with_blond_hair"
+msgstr "personne_a_cheveux_blonds"
+
+#: includes/emojis.php:561
+msgctxt "Emoji shortname"
+msgid "man_with_gua_pi_mao"
+msgstr "homme_portant_calotte_guapi_mao"
+
+#: includes/emojis.php:562
+msgctxt "Emoji shortname"
+msgid "man_with_turban"
+msgstr "homme_portant_turban"
+
+#: includes/emojis.php:563
+msgctxt "Emoji shortname"
+msgid "older_man"
+msgstr "vieil_homme"
+
+#: includes/emojis.php:564
+msgctxt "Emoji shortname"
+msgid "older_woman"
+msgstr "vieille_femme"
+
+#: includes/emojis.php:565
+msgctxt "Emoji shortname"
+msgid "baby"
+msgstr "bebe"
+
+#: includes/emojis.php:566
+msgctxt "Emoji shortname"
+msgid "construction_worker"
+msgstr "ouvrier"
+
+#: includes/emojis.php:567
+msgctxt "Emoji shortname"
+msgid "princess"
+msgstr "princesse"
+
+#: includes/emojis.php:568
+msgctxt "Emoji shortname"
+msgid "japanese_ogre"
+msgstr "ogre_japonais"
+
+#: includes/emojis.php:569
+msgctxt "Emoji shortname"
+msgid "japanese_goblin"
+msgstr "goblin_japonais"
+
+#: includes/emojis.php:570
+msgctxt "Emoji shortname"
+msgid "ghost"
+msgstr "fantome"
+
+#: includes/emojis.php:571
+msgctxt "Emoji shortname"
+msgid "angel"
+msgstr "ange"
+
+#: includes/emojis.php:572
+msgctxt "Emoji shortname"
+msgid "alien"
+msgstr "extraterrrestre"
+
+#: includes/emojis.php:573
+msgctxt "Emoji shortname"
+msgid "space_invader"
+msgstr "monstre_extraterrestre"
+
+#: includes/emojis.php:574
+msgctxt "Emoji shortname"
+msgid "imp"
+msgstr "lutin"
+
+#: includes/emojis.php:575
+msgctxt "Emoji shortname"
+msgid "skull"
+msgstr "crane"
+
+#: includes/emojis.php:576
+msgctxt "Emoji shortname"
+msgid "information_desk_person"
+msgstr "guichetier"
+
+#: includes/emojis.php:577
+msgctxt "Emoji shortname"
+msgid "guardsman"
+msgstr "vigile"
+
+#: includes/emojis.php:578
+msgctxt "Emoji shortname"
+msgid "dancer"
+msgstr "danseur"
+
+#: includes/emojis.php:579
+msgctxt "Emoji shortname"
+msgid "lipstick"
+msgstr "rouge_a_levre"
+
+#: includes/emojis.php:580
+msgctxt "Emoji shortname"
+msgid "nail_care"
+msgstr "manucure"
+
+#: includes/emojis.php:581
+msgctxt "Emoji shortname"
+msgid "massage"
+msgstr "massage"
+
+#: includes/emojis.php:582
+msgctxt "Emoji shortname"
+msgid "haircut"
+msgstr "coupe_de_cheveux"
+
+#: includes/emojis.php:583
+msgctxt "Emoji shortname"
+msgid "barber"
+msgstr "coiffeur"
+
+#: includes/emojis.php:584
+msgctxt "Emoji shortname"
+msgid "syringe"
+msgstr "seringue"
+
+#: includes/emojis.php:585
+msgctxt "Emoji shortname"
+msgid "pill"
+msgstr "pilule"
+
+#: includes/emojis.php:586
+msgctxt "Emoji shortname"
+msgid "kiss"
+msgstr "embrasser"
+
+#: includes/emojis.php:587
+msgctxt "Emoji shortname"
+msgid "love_letter"
+msgstr "lettre_d_amour"
+
+#: includes/emojis.php:588
+msgctxt "Emoji shortname"
+msgid "ring"
+msgstr "bague"
+
+#: includes/emojis.php:589
+msgctxt "Emoji shortname"
+msgid "gem"
+msgstr "pierre_precieuse"
+
+#: includes/emojis.php:590
+msgctxt "Emoji shortname"
+msgid "couplekiss"
+msgstr "couple_s_embrassant"
+
+#: includes/emojis.php:591
+msgctxt "Emoji shortname"
+msgid "bouquet"
+msgstr "bouquet"
+
+#: includes/emojis.php:592
+msgctxt "Emoji shortname"
+msgid "couple_with_heart"
+msgstr "couple_amoureux"
+
+#: includes/emojis.php:593
+msgctxt "Emoji shortname"
+msgid "wedding"
+msgstr "mariage"
+
+#: includes/emojis.php:594
+msgctxt "Emoji shortname"
+msgid "heartbeat"
+msgstr "battements_de_coeur"
+
+#: includes/emojis.php:595
+msgctxt "Emoji shortname"
+msgid "broken_heart"
+msgstr "coeur_brise"
+
+#: includes/emojis.php:596
+msgctxt "Emoji shortname"
+msgid "two_hearts"
+msgstr "deux_coeurs"
+
+#: includes/emojis.php:597
+msgctxt "Emoji shortname"
+msgid "sparkling_heart"
+msgstr "coeurs_petillants"
+
+#: includes/emojis.php:598
+msgctxt "Emoji shortname"
+msgid "heartpulse"
+msgstr "pouls_cardiaque"
+
+#: includes/emojis.php:599
+msgctxt "Emoji shortname"
+msgid "cupid"
+msgstr "cupidon"
+
+#: includes/emojis.php:600
+msgctxt "Emoji shortname"
+msgid "blue_heart"
+msgstr "coeur_bleu"
+
+#: includes/emojis.php:601
+msgctxt "Emoji shortname"
+msgid "green_heart"
+msgstr "coeur_vert"
+
+#: includes/emojis.php:602
+msgctxt "Emoji shortname"
+msgid "yellow_heart"
+msgstr "coeur_jaune"
+
+#: includes/emojis.php:603
+msgctxt "Emoji shortname"
+msgid "purple_heart"
+msgstr "coeur_pourpre"
+
+#: includes/emojis.php:604
+msgctxt "Emoji shortname"
+msgid "gift_heart"
+msgstr "cadeau_de_coeur"
+
+#: includes/emojis.php:605
+msgctxt "Emoji shortname"
+msgid "revolving_hearts"
+msgstr "coeur_grandissant"
+
+#: includes/emojis.php:606
+msgctxt "Emoji shortname"
+msgid "heart_decoration"
+msgstr "coeur_decore"
+
+#: includes/emojis.php:607
+msgctxt "Emoji shortname"
+msgid "diamond_shape_with_a_dot_inside"
+msgstr "diamant_avec_point_dedans"
+
+#: includes/emojis.php:608
+msgctxt "Emoji shortname"
+msgid "bulb"
+msgstr "ampoule"
+
+#: includes/emojis.php:609
+msgctxt "Emoji shortname"
+msgid "anger"
+msgstr "colere"
+
+#: includes/emojis.php:610
+msgctxt "Emoji shortname"
+msgid "bomb"
+msgstr "bombe"
+
+#: includes/emojis.php:611
+msgctxt "Emoji shortname"
+msgid "zzz"
+msgstr "zzz_dormir"
+
+#: includes/emojis.php:612
+msgctxt "Emoji shortname"
+msgid "boom"
+msgstr "explosion"
+
+#: includes/emojis.php:613
+msgctxt "Emoji shortname"
+msgid "sweat_drops"
+msgstr "gouttes_de_sueur"
+
+#: includes/emojis.php:614
+msgctxt "Emoji shortname"
+msgid "droplet"
+msgstr "gouttelette"
+
+#: includes/emojis.php:615
+msgctxt "Emoji shortname"
+msgid "dash"
+msgstr "tiret"
+
+#: includes/emojis.php:616
+msgctxt "Emoji shortname"
+msgid "hankey"
+msgstr "etron"
+
+#: includes/emojis.php:617
+msgctxt "Emoji shortname"
+msgid "muscle"
+msgstr "muscle"
+
+#: includes/emojis.php:618
+msgctxt "Emoji shortname"
+msgid "dizzy"
+msgstr "etourdi"
+
+#: includes/emojis.php:619
+msgctxt "Emoji shortname"
+msgid "speech_balloon"
+msgstr "bulle_de_parole"
+
+#: includes/emojis.php:620
+msgctxt "Emoji shortname"
+msgid "thought_balloon"
+msgstr "bulle_de_pensee"
+
+#: includes/emojis.php:621
+msgctxt "Emoji shortname"
+msgid "white_flower"
+msgstr "fleur_blanche"
+
+#: includes/emojis.php:623
+msgctxt "Emoji shortname"
+msgid "moneybag"
+msgstr "sac_d_argent"
+
+#: includes/emojis.php:624
+msgctxt "Emoji shortname"
+msgid "currency_exchange"
+msgstr "change_de_monnaie"
+
+#: includes/emojis.php:625
+msgctxt "Emoji shortname"
+msgid "heavy_dollar_sign"
+msgstr "signe_dollar_prononce"
+
+#: includes/emojis.php:626
+msgctxt "Emoji shortname"
+msgid "credit_card"
+msgstr "carte_credit"
+
+#: includes/emojis.php:627
+msgctxt "Emoji shortname"
+msgid "yen"
+msgstr "yen"
+
+#: includes/emojis.php:628
+msgctxt "Emoji shortname"
+msgid "dollar"
+msgstr "dollar"
+
+#: includes/emojis.php:629
+msgctxt "Emoji shortname"
+msgid "euro"
+msgstr "euro"
+
+#: includes/emojis.php:630
+msgctxt "Emoji shortname"
+msgid "pound"
+msgstr "livre"
+
+#: includes/emojis.php:631
+msgctxt "Emoji shortname"
+msgid "money_with_wings"
+msgstr "billets_volants"
+
+#: includes/emojis.php:632
+msgctxt "Emoji shortname"
+msgid "chart"
+msgstr "graphique"
+
+#: includes/emojis.php:633
+msgctxt "Emoji shortname"
+msgid "seat"
+msgstr "siege"
+
+#: includes/emojis.php:634
+msgctxt "Emoji shortname"
+msgid "computer"
+msgstr "ordinateur"
+
+#: includes/emojis.php:635
+msgctxt "Emoji shortname"
+msgid "briefcase"
+msgstr "porte-documents"
+
+#: includes/emojis.php:636
+msgctxt "Emoji shortname"
+msgid "minidisc"
+msgstr "minidisc"
+
+#: includes/emojis.php:637
+msgctxt "Emoji shortname"
+msgid "floppy_disk"
+msgstr "disquette"
+
+#: includes/emojis.php:638
+msgctxt "Emoji shortname"
+msgid "cd"
+msgstr "cd"
+
+#: includes/emojis.php:639
+msgctxt "Emoji shortname"
+msgid "dvd"
+msgstr "dvd"
+
+#: includes/emojis.php:640
+msgctxt "Emoji shortname"
+msgid "file_folder"
+msgstr "dossier_de_fichiers"
+
+#: includes/emojis.php:641
+msgctxt "Emoji shortname"
+msgid "open_file_folder"
+msgstr "dossier_de_fichiers_ouvert"
+
+#: includes/emojis.php:642
+msgctxt "Emoji shortname"
+msgid "page_with_curl"
+msgstr "page_ecornee"
+
+#: includes/emojis.php:643
+msgctxt "Emoji shortname"
+msgid "page_facing_up"
+msgstr "page_visible"
+
+#: includes/emojis.php:644
+msgctxt "Emoji shortname"
+msgid "date"
+msgstr "date"
+
+#: includes/emojis.php:645
+msgctxt "Emoji shortname"
+msgid "calendar"
+msgstr "calendrier"
+
+#: includes/emojis.php:646
+msgctxt "Emoji shortname"
+msgid "card_index"
+msgstr "fiche"
+
+#: includes/emojis.php:647
+msgctxt "Emoji shortname"
+msgid "chart_with_upwards_trend"
+msgstr "courbe_croissante"
+
+#: includes/emojis.php:648
+msgctxt "Emoji shortname"
+msgid "chart_with_downwards_trend"
+msgstr "courbe_decroissante"
+
+#: includes/emojis.php:649
+msgctxt "Emoji shortname"
+msgid "bar_chart"
+msgstr "histogramme"
+
+#: includes/emojis.php:650
+msgctxt "Emoji shortname"
+msgid "clipboard"
+msgstr "presse-papier"
+
+#: includes/emojis.php:651
+msgctxt "Emoji shortname"
+msgid "pushpin"
+msgstr "punaise"
+
+#: includes/emojis.php:652
+msgctxt "Emoji shortname"
+msgid "round_pushpin"
+msgstr "punaise_ronde"
+
+#: includes/emojis.php:653
+msgctxt "Emoji shortname"
+msgid "paperclip"
+msgstr "trombone"
+
+#: includes/emojis.php:654
+msgctxt "Emoji shortname"
+msgid "straight_ruler"
+msgstr "regle_droite"
+
+#: includes/emojis.php:655
+msgctxt "Emoji shortname"
+msgid "triangular_ruler"
+msgstr "equerre"
+
+#: includes/emojis.php:656
+msgctxt "Emoji shortname"
+msgid "bookmark_tabs"
+msgstr "marque_pages"
+
+#: includes/emojis.php:657
+msgctxt "Emoji shortname"
+msgid "ledger"
+msgstr "grand-livre"
+
+#: includes/emojis.php:658
+msgctxt "Emoji shortname"
+msgid "notebook"
+msgstr "calepin"
+
+#: includes/emojis.php:659
+msgctxt "Emoji shortname"
+msgid "notebook_with_decorative_cover"
+msgstr "calepin_avec_couverture_decoree"
+
+#: includes/emojis.php:660
+msgctxt "Emoji shortname"
+msgid "closed_book"
+msgstr "livre_ferme"
+
+#: includes/emojis.php:661
+msgctxt "Emoji shortname"
+msgid "book"
+msgstr "livre"
+
+#: includes/emojis.php:662
+msgctxt "Emoji shortname"
+msgid "green_book"
+msgstr "livre_vert"
+
+#: includes/emojis.php:663
+msgctxt "Emoji shortname"
+msgid "blue_book"
+msgstr "livre_bleu"
+
+#: includes/emojis.php:664
+msgctxt "Emoji shortname"
+msgid "orange_book"
+msgstr "livre_orange"
+
+#: includes/emojis.php:665
+msgctxt "Emoji shortname"
+msgid "books"
+msgstr "livres"
+
+#: includes/emojis.php:666
+msgctxt "Emoji shortname"
+msgid "name_badge"
+msgstr "badge_identification"
+
+#: includes/emojis.php:667
+msgctxt "Emoji shortname"
+msgid "scroll"
+msgstr "defilement"
+
+#: includes/emojis.php:668
+msgctxt "Emoji shortname"
+msgid "memo"
+msgstr "note"
+
+#: includes/emojis.php:669
+msgctxt "Emoji shortname"
+msgid "telephone_receiver"
+msgstr "combine_telephone"
+
+#: includes/emojis.php:670
+msgctxt "Emoji shortname"
+msgid "pager"
+msgstr "alphapage"
+
+#: includes/emojis.php:671
+msgctxt "Emoji shortname"
+msgid "fax"
+msgstr "fax"
+
+#: includes/emojis.php:672
+msgctxt "Emoji shortname"
+msgid "satellite_antenna"
+msgstr "antenne_satelitte"
+
+#: includes/emojis.php:673
+msgctxt "Emoji shortname"
+msgid "loudspeaker"
+msgstr "haut_parleur"
+
+#: includes/emojis.php:674
+msgctxt "Emoji shortname"
+msgid "mega"
+msgstr "megaphone"
+
+#: includes/emojis.php:675
+msgctxt "Emoji shortname"
+msgid "outbox_tray"
+msgstr "boite_emission"
+
+#: includes/emojis.php:676
+msgctxt "Emoji shortname"
+msgid "inbox_tray"
+msgstr "boite_reception"
+
+#: includes/emojis.php:677
+msgctxt "Emoji shortname"
+msgid "package"
+msgstr "paquet"
+
+#: includes/emojis.php:678
+msgctxt "Emoji shortname"
+msgid "e-mail"
+msgstr "e-mail"
+
+#: includes/emojis.php:679
+msgctxt "Emoji shortname"
+msgid "incoming_envelope"
+msgstr "enveloppe_livre"
+
+#: includes/emojis.php:680
+msgctxt "Emoji shortname"
+msgid "envelope_with_arrow"
+msgstr "enveloppe_avec_fleche"
+
+#: includes/emojis.php:681
+msgctxt "Emoji shortname"
+msgid "mailbox_closed"
+msgstr "messagerie_fermee"
+
+#: includes/emojis.php:682
+msgctxt "Emoji shortname"
+msgid "mailbox"
+msgstr "messagerie"
+
+#: includes/emojis.php:683
+msgctxt "Emoji shortname"
+msgid "mailbox_with_mail"
+msgstr "messagerie_pleine"
+
+#: includes/emojis.php:684
+msgctxt "Emoji shortname"
+msgid "mailbox_with_no_mail"
+msgstr "messagerie_vide"
+
+#: includes/emojis.php:685
+msgctxt "Emoji shortname"
+msgid "postbox"
+msgstr "boite_aux_lettres"
+
+#: includes/emojis.php:686
+msgctxt "Emoji shortname"
+msgid "postal_horn"
+msgstr "cor_postal"
+
+#: includes/emojis.php:687
+msgctxt "Emoji shortname"
+msgid "newspaper"
+msgstr "journal"
+
+#: includes/emojis.php:688
+msgctxt "Emoji shortname"
+msgid "iphone"
+msgstr "iPhone"
+
+#: includes/emojis.php:689
+msgctxt "Emoji shortname"
+msgid "calling"
+msgstr "appeler"
+
+#: includes/emojis.php:690
+msgctxt "Emoji shortname"
+msgid "vibration_mode"
+msgstr "mode_vibreur"
+
+#: includes/emojis.php:691
+msgctxt "Emoji shortname"
+msgid "mobile_phone_off"
+msgstr "telephone_mobile_eteint"
+
+#: includes/emojis.php:692
+msgctxt "Emoji shortname"
+msgid "no_mobile_phones"
+msgstr "telephone_mobile_interdit"
+
+#: includes/emojis.php:693
+msgctxt "Emoji shortname"
+msgid "signal_strength"
+msgstr "force_du_signal"
+
+#: includes/emojis.php:694
+msgctxt "Emoji shortname"
+msgid "camera"
+msgstr "appareil_photo"
+
+#: includes/emojis.php:695
+msgctxt "Emoji shortname"
+msgid "camera_with_flash"
+msgstr "appareil_photo_avec_flash"
+
+#: includes/emojis.php:696
+msgctxt "Emoji shortname"
+msgid "video_camera"
+msgstr "camera_video"
+
+#: includes/emojis.php:697
+msgctxt "Emoji shortname"
+msgid "tv"
+msgstr "television"
+
+#: includes/emojis.php:698
+msgctxt "Emoji shortname"
+msgid "radio"
+msgstr "radio"
+
+#: includes/emojis.php:699
+msgctxt "Emoji shortname"
+msgid "vhs"
+msgstr "vhs"
+
+#: includes/emojis.php:700
+msgctxt "Emoji shortname"
+msgid "film_projector"
+msgstr "projecteur"
+
+#: includes/emojis.php:701
+msgctxt "Emoji shortname"
+msgid "prayer_beads"
+msgstr "chapelet_de_priere"
+
+#: includes/emojis.php:702
+msgctxt "Emoji shortname"
+msgid "twisted_rightwards_arrows"
+msgstr "fleches_tordues_droite"
+
+#: includes/emojis.php:703
+msgctxt "Emoji shortname"
+msgid "repeat"
+msgstr "repeter"
+
+#: includes/emojis.php:704
+msgctxt "Emoji shortname"
+msgid "repeat_one"
+msgstr "repeter_une_fois"
+
+#: includes/emojis.php:705
+msgctxt "Emoji shortname"
+msgid "arrows_clockwise"
+msgstr "fleches_dans_le_sens_horaire"
+
+#: includes/emojis.php:706
+msgctxt "Emoji shortname"
+msgid "arrows_counterclockwise"
+msgstr "fleches_dans_le_sens_antihoraire"
+
+#: includes/emojis.php:707
+msgctxt "Emoji shortname"
+msgid "low_brightness"
+msgstr "faible_luminosite"
+
+#: includes/emojis.php:708
+msgctxt "Emoji shortname"
+msgid "high_brightness"
+msgstr "forte_luminosite"
+
+#: includes/emojis.php:709
+msgctxt "Emoji shortname"
+msgid "mute"
+msgstr "muet"
+
+#: includes/emojis.php:710
+msgctxt "Emoji shortname"
+msgid "speaker"
+msgstr "enceinte"
+
+#: includes/emojis.php:711
+msgctxt "Emoji shortname"
+msgid "sound"
+msgstr "son"
+
+#: includes/emojis.php:712
+msgctxt "Emoji shortname"
+msgid "loud_sound"
+msgstr "son_fort"
+
+#: includes/emojis.php:713
+msgctxt "Emoji shortname"
+msgid "battery"
+msgstr "batterie"
+
+#: includes/emojis.php:714
+msgctxt "Emoji shortname"
+msgid "electric_plug"
+msgstr "prise_electrique"
+
+#: includes/emojis.php:715
+msgctxt "Emoji shortname"
+msgid "mag"
+msgstr "mag"
+
+#: includes/emojis.php:716
+msgctxt "Emoji shortname"
+msgid "mag_right"
+msgstr "droit_de_mag"
+
+#: includes/emojis.php:717
+msgctxt "Emoji shortname"
+msgid "lock_with_ink_pen"
+msgstr "serrure_avec_stylo_encre"
+
+#: includes/emojis.php:718
+msgctxt "Emoji shortname"
+msgid "closed_lock_with_key"
+msgstr "serrure_fermee_avec_cle"
+
+#: includes/emojis.php:719
+msgctxt "Emoji shortname"
+msgid "key"
+msgstr "cle"
+
+#: includes/emojis.php:720
+msgctxt "Emoji shortname"
+msgid "lock"
+msgstr "verrouiller"
+
+#: includes/emojis.php:721
+msgctxt "Emoji shortname"
+msgid "unlock"
+msgstr "deverrouiller"
+
+#: includes/emojis.php:722
+msgctxt "Emoji shortname"
+msgid "bell"
+msgstr "cloche"
+
+#: includes/emojis.php:723
+msgctxt "Emoji shortname"
+msgid "no_bell"
+msgstr "pas_de_cloche"
+
+#: includes/emojis.php:724
+msgctxt "Emoji shortname"
+msgid "bookmark"
+msgstr "signet"
+
+#: includes/emojis.php:725
+msgctxt "Emoji shortname"
+msgid "link"
+msgstr "lien"
+
+#: includes/emojis.php:726
+msgctxt "Emoji shortname"
+msgid "radio_button"
+msgstr "bouton_radio"
+
+#: includes/emojis.php:727
+msgctxt "Emoji shortname"
+msgid "back"
+msgstr "retour"
+
+#: includes/emojis.php:728
+msgctxt "Emoji shortname"
+msgid "end"
+msgstr "fin"
+
+#: includes/emojis.php:729
+msgctxt "Emoji shortname"
+msgid "on"
+msgstr "actif"
+
+#: includes/emojis.php:730
+msgctxt "Emoji shortname"
+msgid "soon"
+msgstr "prochainement"
+
+#: includes/emojis.php:731
+msgctxt "Emoji shortname"
+msgid "top"
+msgstr "top"
+
+#: includes/emojis.php:732
+msgctxt "Emoji shortname"
+msgid "underage"
+msgstr "mineur"
+
+#: includes/emojis.php:733
+msgctxt "Emoji shortname"
+msgid "keycap_ten"
+msgstr "touche_dix"
+
+#: includes/emojis.php:734
+msgctxt "Emoji shortname"
+msgid "capital_abcd"
+msgstr "abcd_majuscules"
+
+#: includes/emojis.php:735
+msgctxt "Emoji shortname"
+msgid "abcd"
+msgstr "abcd"
+
+#: includes/emojis.php:737
+msgctxt "Emoji shortname"
+msgid "symbols"
+msgstr "symboles"
+
+#: includes/emojis.php:738
+msgctxt "Emoji shortname"
+msgid "abc"
+msgstr "abc"
+
+#: includes/emojis.php:739
+msgctxt "Emoji shortname"
+msgid "fire"
+msgstr "feu"
+
+#: includes/emojis.php:740
+msgctxt "Emoji shortname"
+msgid "flashlight"
+msgstr "lampe_de_poche"
+
+#: includes/emojis.php:741
+msgctxt "Emoji shortname"
+msgid "wrench"
+msgstr "cle_anglaise"
+
+#: includes/emojis.php:742
+msgctxt "Emoji shortname"
+msgid "hammer"
+msgstr "marteau"
+
+#: includes/emojis.php:743
+msgctxt "Emoji shortname"
+msgid "nut_and_bolt"
+msgstr "boulon_et_ecrou"
+
+#: includes/emojis.php:744
+msgctxt "Emoji shortname"
+msgid "hocho"
+msgstr "hocho"
+
+#: includes/emojis.php:745
+msgctxt "Emoji shortname"
+msgid "gun"
+msgstr "pistolet"
+
+#: includes/emojis.php:746
+msgctxt "Emoji shortname"
+msgid "microscope"
+msgstr "microscope"
+
+#: includes/emojis.php:747
+msgctxt "Emoji shortname"
+msgid "telescope"
+msgstr "telescope"
+
+#: includes/emojis.php:748
+msgctxt "Emoji shortname"
+msgid "crystal_ball"
+msgstr "boule_de_crystal"
+
+#: includes/emojis.php:749
+msgctxt "Emoji shortname"
+msgid "six_pointed_star"
+msgstr "etoile_a_six_pointes"
+
+#: includes/emojis.php:750
+msgctxt "Emoji shortname"
+msgid "beginner"
+msgstr "debutant"
+
+#: includes/emojis.php:751
+msgctxt "Emoji shortname"
+msgid "trident"
+msgstr "trident"
+
+#: includes/emojis.php:752
+msgctxt "Emoji shortname"
+msgid "black_square_button"
+msgstr "bouton_carre_noir"
+
+#: includes/emojis.php:753
+msgctxt "Emoji shortname"
+msgid "white_square_button"
+msgstr "bouton_carre_blanc"
+
+#: includes/emojis.php:754
+msgctxt "Emoji shortname"
+msgid "red_circle"
+msgstr "cercle_rouge"
+
+#: includes/emojis.php:755
+msgctxt "Emoji shortname"
+msgid "large_blue_circle"
+msgstr "grand_cercle_bleu"
+
+#: includes/emojis.php:756
+msgctxt "Emoji shortname"
+msgid "large_orange_diamond"
+msgstr "grand_diamant_orange"
+
+#: includes/emojis.php:757
+msgctxt "Emoji shortname"
+msgid "large_blue_diamond"
+msgstr "grand_diamant_bleu"
+
+#: includes/emojis.php:758
+msgctxt "Emoji shortname"
+msgid "small_orange_diamond"
+msgstr "petit_diamant_orange"
+
+#: includes/emojis.php:759
+msgctxt "Emoji shortname"
+msgid "small_blue_diamond"
+msgstr "petit_diamant_bleu"
+
+#: includes/emojis.php:760
+msgctxt "Emoji shortname"
+msgid "small_red_triangle"
+msgstr "petit_triangle_rouge"
+
+#: includes/emojis.php:761
+msgctxt "Emoji shortname"
+msgid "small_red_triangle_down"
+msgstr "petit_triangle_rouge_bas"
+
+#: includes/emojis.php:762
+msgctxt "Emoji shortname"
+msgid "arrow_up_small"
+msgstr "petite_fleche_haute"
+
+#: includes/emojis.php:763
+msgctxt "Emoji shortname"
+msgid "arrow_down_small"
+msgstr "petite_fleche_basse"
+
+#: includes/emojis.php:764
+msgctxt "Emoji shortname"
+msgid "om_symbol"
+msgstr "om_symbole"
+
+#: includes/emojis.php:765
+msgctxt "Emoji shortname"
+msgid "dove_of_peace"
+msgstr "colombe_de_la_paix"
+
+#: includes/emojis.php:766
+msgctxt "Emoji shortname"
+msgid "kaaba"
+msgstr "kaaba"
+
+#: includes/emojis.php:767
+msgctxt "Emoji shortname"
+msgid "mosque"
+msgstr "mosque"
+
+#: includes/emojis.php:768
+msgctxt "Emoji shortname"
+msgid "synagogue"
+msgstr "synagogue"
+
+#: includes/emojis.php:769
+msgctxt "Emoji shortname"
+msgid "menorah_with_nine_branches"
+msgstr "menora_avec_neuf_branches"
+
+#: includes/emojis.php:770
+msgctxt "Emoji shortname"
+msgid "clock1"
+msgstr "horloge1"
+
+#: includes/emojis.php:771
+msgctxt "Emoji shortname"
+msgid "clock2"
+msgstr "horloge2"
+
+#: includes/emojis.php:772
+msgctxt "Emoji shortname"
+msgid "clock3"
+msgstr "horloge3"
+
+#: includes/emojis.php:773
+msgctxt "Emoji shortname"
+msgid "clock4"
+msgstr "horloge4"
+
+#: includes/emojis.php:774
+msgctxt "Emoji shortname"
+msgid "clock5"
+msgstr "horloge5"
+
+#: includes/emojis.php:775
+msgctxt "Emoji shortname"
+msgid "clock6"
+msgstr "horloge6"
+
+#: includes/emojis.php:776
+msgctxt "Emoji shortname"
+msgid "clock7"
+msgstr "horloge7"
+
+#: includes/emojis.php:777
+msgctxt "Emoji shortname"
+msgid "clock8"
+msgstr "horloge8"
+
+#: includes/emojis.php:778
+msgctxt "Emoji shortname"
+msgid "clock9"
+msgstr "horloge9"
+
+#: includes/emojis.php:779
+msgctxt "Emoji shortname"
+msgid "clock10"
+msgstr "horloge10"
+
+#: includes/emojis.php:780
+msgctxt "Emoji shortname"
+msgid "clock11"
+msgstr "horloge11"
+
+#: includes/emojis.php:781
+msgctxt "Emoji shortname"
+msgid "clock12"
+msgstr "horloge12"
+
+#: includes/emojis.php:782
+msgctxt "Emoji shortname"
+msgid "clock130"
+msgstr "horloge130"
+
+#: includes/emojis.php:783
+msgctxt "Emoji shortname"
+msgid "clock230"
+msgstr "horloge230"
+
+#: includes/emojis.php:784
+msgctxt "Emoji shortname"
+msgid "clock330"
+msgstr "horloge330"
+
+#: includes/emojis.php:785
+msgctxt "Emoji shortname"
+msgid "clock430"
+msgstr "horloge430"
+
+#: includes/emojis.php:786
+msgctxt "Emoji shortname"
+msgid "clock530"
+msgstr "horloge530"
+
+#: includes/emojis.php:787
+msgctxt "Emoji shortname"
+msgid "clock630"
+msgstr "horloge630"
+
+#: includes/emojis.php:788
+msgctxt "Emoji shortname"
+msgid "clock730"
+msgstr "horloge730"
+
+#: includes/emojis.php:789
+msgctxt "Emoji shortname"
+msgid "clock830"
+msgstr "horloge830"
+
+#: includes/emojis.php:790
+msgctxt "Emoji shortname"
+msgid "clock930"
+msgstr "horloge930"
+
+#: includes/emojis.php:791
+msgctxt "Emoji shortname"
+msgid "clock1030"
+msgstr "horloge1030"
+
+#: includes/emojis.php:792
+msgctxt "Emoji shortname"
+msgid "clock1130"
+msgstr "horloge1130"
+
+#: includes/emojis.php:793
+msgctxt "Emoji shortname"
+msgid "clock1230"
+msgstr "horloge1230"
+
+#: includes/emojis.php:794
+msgctxt "Emoji shortname"
+msgid "candle"
+msgstr "bougie"
+
+#: includes/emojis.php:795
+msgctxt "Emoji shortname"
+msgid "mantelpiece_clock"
+msgstr "horloge_cheminee"
+
+#: includes/emojis.php:796
+msgctxt "Emoji shortname"
+msgid "hole"
+msgstr "trou"
+
+#: includes/emojis.php:797
+msgctxt "Emoji shortname"
+msgid "man_in_business_suit_levitating"
+msgstr "homme_en_costume_d_affaires_levitant"
+
+#: includes/emojis.php:798
+msgctxt "Emoji shortname"
+msgid "sleuth_or_spy"
+msgstr "detective_ou_espion"
+
+#: includes/emojis.php:799
+msgctxt "Emoji shortname"
+msgid "dark_sunglasses"
+msgstr "lunettes_noires"
+
+#: includes/emojis.php:800
+msgctxt "Emoji shortname"
+msgid "spider"
+msgstr "araignee"
+
+#: includes/emojis.php:801
+msgctxt "Emoji shortname"
+msgid "spider_web"
+msgstr "toile_araignee"
+
+#: includes/emojis.php:802
+msgctxt "Emoji shortname"
+msgid "joystick"
+msgstr "manette_de_jeu"
+
+#: includes/emojis.php:803
+msgctxt "Emoji shortname"
+msgid "linked_paperclips"
+msgstr "trombones_enchaines"
+
+#: includes/emojis.php:804
+msgctxt "Emoji shortname"
+msgid "lower_left_ballpoint_pen"
+msgstr "stylo_bille_bas_gauche"
+
+#: includes/emojis.php:805
+msgctxt "Emoji shortname"
+msgid "lower_left_fountain_pen"
+msgstr "stylo_plume_bas_gauche"
+
+#: includes/emojis.php:806
+msgctxt "Emoji shortname"
+msgid "lower_left_paintbrush"
+msgstr "pinceau_bas_gauche"
+
+#: includes/emojis.php:807
+msgctxt "Emoji shortname"
+msgid "lower_left_crayon"
+msgstr "crayon_bas_gauche"
+
+#: includes/emojis.php:808
+msgctxt "Emoji shortname"
+msgid "raised_hand_with_fingers_splayed"
+msgstr "main_levee_avec_doigts_evase"
+
+#: includes/emojis.php:809
+msgctxt "Emoji shortname"
+msgid "middle_finger"
+msgstr "doigt_du_milieu"
+
+#: includes/emojis.php:810
+msgctxt "Emoji shortname"
+msgid "spock-hand"
+msgstr "salut_vulcain"
+
+#: includes/emojis.php:811
+msgctxt "Emoji shortname"
+msgid "desktop_computer"
+msgstr "ordinateur_de_bureau"
+
+#: includes/emojis.php:812
+msgctxt "Emoji shortname"
+msgid "printer"
+msgstr "imprimante"
+
+#: includes/emojis.php:813
+msgctxt "Emoji shortname"
+msgid "three_button_mouse"
+msgstr "souris_a_trois_boutons"
+
+#: includes/emojis.php:814
+msgctxt "Emoji shortname"
+msgid "trackball"
+msgstr "trackball"
+
+#: includes/emojis.php:815
+msgctxt "Emoji shortname"
+msgid "frame_with_picture"
+msgstr "cadre_avec_image"
+
+#: includes/emojis.php:816
+msgctxt "Emoji shortname"
+msgid "card_index_dividers"
+msgstr "intercalaires_de_fiche"
+
+#: includes/emojis.php:817
+msgctxt "Emoji shortname"
+msgid "card_file_box"
+msgstr "boîte_de_fiches"
+
+#: includes/emojis.php:818
+msgctxt "Emoji shortname"
+msgid "file_cabinet"
+msgstr "classeur"
+
+#: includes/emojis.php:819
+msgctxt "Emoji shortname"
+msgid "wastebasket"
+msgstr "poubelle"
+
+#: includes/emojis.php:820
+msgctxt "Emoji shortname"
+msgid "spiral_note_pad"
+msgstr "cahier_spirales"
+
+#: includes/emojis.php:821
+msgctxt "Emoji shortname"
+msgid "spiral_calendar_pad"
+msgstr "calendrier_spirales"
+
+#: includes/emojis.php:822
+msgctxt "Emoji shortname"
+msgid "compression"
+msgstr "compression"
+
+#: includes/emojis.php:823
+msgctxt "Emoji shortname"
+msgid "old_key"
+msgstr "cle_ancienne"
+
+#: includes/emojis.php:824
+msgctxt "Emoji shortname"
+msgid "rolled_up_newspaper"
+msgstr "journal_emballe"
+
+#: includes/emojis.php:825
+msgctxt "Emoji shortname"
+msgid "dagger_knife"
+msgstr "poignard"
+
+#: includes/emojis.php:826
+msgctxt "Emoji shortname"
+msgid "speaking_head_in_silhouette"
+msgstr "silhouette_tete_parle"
+
+#: includes/emojis.php:827
+msgctxt "Emoji shortname"
+msgid "left_speech_bubble"
+msgstr "bulle_parole_gauche"
+
+#: includes/emojis.php:828
+msgctxt "Emoji shortname"
+msgid "right_anger_bubble"
+msgstr "bulle_colere_droite"
+
+#: includes/emojis.php:829
+msgctxt "Emoji shortname"
+msgid "ballot_box_with_ballot"
+msgstr "boite_scrutin_avec_vote"
+
+#: includes/emojis.php:830
+msgctxt "Emoji shortname"
+msgid "world_map"
+msgstr "map_monde"
+
+#: includes/emojis.php:831
+msgctxt "Emoji shortname"
+msgid "mount_fuji"
+msgstr "mont_fuji"
+
+#: includes/emojis.php:832
+msgctxt "Emoji shortname"
+msgid "tokyo_tower"
+msgstr "tour_de_tokyo"
+
+#: includes/emojis.php:833
+msgctxt "Emoji shortname"
+msgid "statue_of_liberty"
+msgstr "statue_de_la_liberte"
+
+#: includes/emojis.php:834
+msgctxt "Emoji shortname"
+msgid "japan"
+msgstr "japon"
+
+#: includes/emojis.php:835
+msgctxt "Emoji shortname"
+msgid "moyai"
+msgstr "moyai"
+
+#: includes/emojis.php:836
+msgctxt "Emoji shortname"
+msgid "grinning"
+msgstr "grimaçant"
+
+#: includes/emojis.php:837
+msgctxt "Emoji shortname"
+msgid "grin"
+msgstr "grimace"
+
+#: includes/emojis.php:838
+msgctxt "Emoji shortname"
+msgid "joy"
+msgstr "joie"
+
+#: includes/emojis.php:839
+msgctxt "Emoji shortname"
+msgid "smiley"
+msgstr "smiley"
+
+#: includes/emojis.php:840
+msgctxt "Emoji shortname"
+msgid "smile"
+msgstr "sourire"
+
+#: includes/emojis.php:841
+msgctxt "Emoji shortname"
+msgid "sweat_smile"
+msgstr "sourire en sueur"
+
+#: includes/emojis.php:842
+msgctxt "Emoji shortname"
+msgid "laughing"
+msgstr "rigolant"
+
+#: includes/emojis.php:843
+msgctxt "Emoji shortname"
+msgid "innocent"
+msgstr "innocent"
+
+#: includes/emojis.php:844
+msgctxt "Emoji shortname"
+msgid "smiling_imp"
+msgstr "lutin souriant"
+
+#: includes/emojis.php:845
+msgctxt "Emoji shortname"
+msgid "wink"
+msgstr "clin_d_oeil"
+
+#: includes/emojis.php:846
+msgctxt "Emoji shortname"
+msgid "blush"
+msgstr "rougir"
+
+#: includes/emojis.php:847
+msgctxt "Emoji shortname"
+msgid "yum"
+msgstr "miam-miam"
+
+#: includes/emojis.php:848
+msgctxt "Emoji shortname"
+msgid "relieved"
+msgstr "soulage"
+
+#: includes/emojis.php:849
+msgctxt "Emoji shortname"
+msgid "heart_eyes"
+msgstr "yeux_d_amour"
+
+#: includes/emojis.php:850
+msgctxt "Emoji shortname"
+msgid "sunglasses"
+msgstr "lunettes_soleil"
+
+#: includes/emojis.php:851
+msgctxt "Emoji shortname"
+msgid "smirk"
+msgstr "petit_sourire_satisfait"
+
+#: includes/emojis.php:852
+msgctxt "Emoji shortname"
+msgid "neutral_face"
+msgstr "visage_neutre"
+
+#: includes/emojis.php:853
+msgctxt "Emoji shortname"
+msgid "expressionless"
+msgstr "sans_expression"
+
+#: includes/emojis.php:854
+msgctxt "Emoji shortname"
+msgid "unamused"
+msgstr "pince_sans_rire"
+
+#: includes/emojis.php:855
+msgctxt "Emoji shortname"
+msgid "sweat"
+msgstr "sueur"
+
+#: includes/emojis.php:856
+msgctxt "Emoji shortname"
+msgid "pensive"
+msgstr "pensif"
+
+#: includes/emojis.php:857
+msgctxt "Emoji shortname"
+msgid "confused"
+msgstr "confus"
+
+#: includes/emojis.php:858
+msgctxt "Emoji shortname"
+msgid "confounded"
+msgstr "deconcerte"
+
+#: includes/emojis.php:859
+msgctxt "Emoji shortname"
+msgid "kissing"
+msgstr "embrassant"
+
+#: includes/emojis.php:860
+msgctxt "Emoji shortname"
+msgid "kissing_heart"
+msgstr "coeur_embrassant"
+
+#: includes/emojis.php:861
+msgctxt "Emoji shortname"
+msgid "kissing_smiling_eyes"
+msgstr "yeux_rieurs_embrassant"
+
+#: includes/emojis.php:862
+msgctxt "Emoji shortname"
+msgid "kissing_closed_eyes"
+msgstr "yeux_fermes_embrassant"
+
+#: includes/emojis.php:863
+msgctxt "Emoji shortname"
+msgid "stuck_out_tongue"
+msgstr "langue_tiree"
+
+#: includes/emojis.php:864
+msgctxt "Emoji shortname"
+msgid "stuck_out_tongue_winking_eye"
+msgstr "langue_tiree_clin_d_oeil"
+
+#: includes/emojis.php:865
+msgctxt "Emoji shortname"
+msgid "stuck_out_tongue_closed_eyes"
+msgstr "langue_tiree_yeux_fermes"
+
+#: includes/emojis.php:866
+msgctxt "Emoji shortname"
+msgid "disappointed"
+msgstr "deçu"
+
+#: includes/emojis.php:867
+msgctxt "Emoji shortname"
+msgid "worried"
+msgstr "inquiet"
+
+#: includes/emojis.php:868
+msgctxt "Emoji shortname"
+msgid "angry"
+msgstr "fache"
+
+#: includes/emojis.php:869
+msgctxt "Emoji shortname"
+msgid "rage"
+msgstr "furie"
+
+#: includes/emojis.php:870
+msgctxt "Emoji shortname"
+msgid "cry"
+msgstr "pleurer"
+
+#: includes/emojis.php:871
+msgctxt "Emoji shortname"
+msgid "persevere"
+msgstr "perseverer"
+
+#: includes/emojis.php:872
+msgctxt "Emoji shortname"
+msgid "triumph"
+msgstr "triomphe"
+
+#: includes/emojis.php:873
+msgctxt "Emoji shortname"
+msgid "disappointed_relieved"
+msgstr "deçu_soulage"
+
+#: includes/emojis.php:874
+msgctxt "Emoji shortname"
+msgid "frowning"
+msgstr "renfrogne"
+
+#: includes/emojis.php:875
+msgctxt "Emoji shortname"
+msgid "anguished"
+msgstr "angoisse"
+
+#: includes/emojis.php:876
+msgctxt "Emoji shortname"
+msgid "fearful"
+msgstr "craintif"
+
+#: includes/emojis.php:877
+msgctxt "Emoji shortname"
+msgid "weary"
+msgstr "fatigue"
+
+#: includes/emojis.php:878
+msgctxt "Emoji shortname"
+msgid "sleepy"
+msgstr "endormi"
+
+#: includes/emojis.php:879
+msgctxt "Emoji shortname"
+msgid "tired_face"
+msgstr "visage_fatigue"
+
+#: includes/emojis.php:880
+msgctxt "Emoji shortname"
+msgid "grimacing"
+msgstr "grimaçant"
+
+#: includes/emojis.php:881
+msgctxt "Emoji shortname"
+msgid "sob"
+msgstr "sangloter"
+
+#: includes/emojis.php:882
+msgctxt "Emoji shortname"
+msgid "open_mouth"
+msgstr "bouche_ouverte"
+
+#: includes/emojis.php:883
+msgctxt "Emoji shortname"
+msgid "hushed"
+msgstr "calme"
+
+#: includes/emojis.php:884
+msgctxt "Emoji shortname"
+msgid "cold_sweat"
+msgstr "sueurs_froides"
+
+#: includes/emojis.php:885
+msgctxt "Emoji shortname"
+msgid "scream"
+msgstr "hurlement"
+
+#: includes/emojis.php:886
+msgctxt "Emoji shortname"
+msgid "astonished"
+msgstr "etonne"
+
+#: includes/emojis.php:887
+msgctxt "Emoji shortname"
+msgid "flushed"
+msgstr "rougir_colere"
+
+#: includes/emojis.php:888
+msgctxt "Emoji shortname"
+msgid "sleeping"
+msgstr "dormant"
+
+#: includes/emojis.php:889
+msgctxt "Emoji shortname"
+msgid "dizzy_face"
+msgstr "vertiges"
+
+#: includes/emojis.php:890
+msgctxt "Emoji shortname"
+msgid "no_mouth"
+msgstr "pas_de_bouche"
+
+#: includes/emojis.php:891
+msgctxt "Emoji shortname"
+msgid "mask"
+msgstr "masque"
+
+#: includes/emojis.php:892
+msgctxt "Emoji shortname"
+msgid "smile_cat"
+msgstr "chat_souriant"
+
+#: includes/emojis.php:893
+msgctxt "Emoji shortname"
+msgid "joy_cat"
+msgstr "chat_joyeux"
+
+#: includes/emojis.php:894
+msgctxt "Emoji shortname"
+msgid "smiley_cat"
+msgstr "chat_smiley"
+
+#: includes/emojis.php:895
+msgctxt "Emoji shortname"
+msgid "heart_eyes_cat"
+msgstr "chat_yeux_d_amour"
+
+#: includes/emojis.php:896
+msgctxt "Emoji shortname"
+msgid "smirk_cat"
+msgstr "chat_ petit_sourire_satisfait"
+
+#: includes/emojis.php:897
+msgctxt "Emoji shortname"
+msgid "kissing_cat"
+msgstr "chat_embrassant"
+
+#: includes/emojis.php:898
+msgctxt "Emoji shortname"
+msgid "pouting_cat"
+msgstr "chat_boudeur"
+
+#: includes/emojis.php:899
+msgctxt "Emoji shortname"
+msgid "crying_cat_face"
+msgstr "chat_pleurant"
+
+#: includes/emojis.php:900
+msgctxt "Emoji shortname"
+msgid "scream_cat"
+msgstr "chat_hurlant"
+
+#: includes/emojis.php:901
+msgctxt "Emoji shortname"
+msgid "slightly_frowning_face"
+msgstr "visage_fronçant_legerement_les_sourcils"
+
+#: includes/emojis.php:902
+msgctxt "Emoji shortname"
+msgid "slightly_smiling_face"
+msgstr "visage_souriant_legerement"
+
+#: includes/emojis.php:903
+msgctxt "Emoji shortname"
+msgid "upside_down_face"
+msgstr "visage_a_l_envers"
+
+#: includes/emojis.php:904
+msgctxt "Emoji shortname"
+msgid "face_with_rolling_eyes"
+msgstr "visage_yeux_boules_de_billard"
+
+#: includes/emojis.php:905
+msgctxt "Emoji shortname"
+msgid "no_good"
+msgstr "pas_bien"
+
+#: includes/emojis.php:906
+msgctxt "Emoji shortname"
+msgid "ok_woman"
+msgstr "ok_femme"
+
+#: includes/emojis.php:907
+msgctxt "Emoji shortname"
+msgid "bow"
+msgstr "arc"
+
+#: includes/emojis.php:908
+msgctxt "Emoji shortname"
+msgid "see_no_evil"
+msgstr "n_y_vois_pas_de_mal"
+
+#: includes/emojis.php:909
+msgctxt "Emoji shortname"
+msgid "hear_no_evil"
+msgstr "n_y_entends_aucun_mal"
+
+#: includes/emojis.php:910
+msgctxt "Emoji shortname"
+msgid "speak_no_evil"
+msgstr "ne_parles_pas_mal"
+
+#: includes/emojis.php:911
+msgctxt "Emoji shortname"
+msgid "raising_hand"
+msgstr "levant_main"
+
+#: includes/emojis.php:912
+msgctxt "Emoji shortname"
+msgid "raised_hands"
+msgstr "mains_levees"
+
+#: includes/emojis.php:913
+msgctxt "Emoji shortname"
+msgid "person_frowning"
+msgstr "personne_renfrognee"
+
+#: includes/emojis.php:914
+msgctxt "Emoji shortname"
+msgid "person_with_pouting_face"
+msgstr "personne_boudant"
+
+#: includes/emojis.php:915
+msgctxt "Emoji shortname"
+msgid "pray"
+msgstr "prier"
+
+#: includes/emojis.php:916
+msgctxt "Emoji shortname"
+msgid "rocket"
+msgstr "fusee"
+
+#: includes/emojis.php:917
+msgctxt "Emoji shortname"
+msgid "helicopter"
+msgstr "helicopter"
+
+#: includes/emojis.php:918
+msgctxt "Emoji shortname"
+msgid "steam_locomotive"
+msgstr "locomotive_vapeur"
+
+#: includes/emojis.php:919
+msgctxt "Emoji shortname"
+msgid "railway_car"
+msgstr "vehicule_ferroviaire"
+
+#: includes/emojis.php:920
+msgctxt "Emoji shortname"
+msgid "bullettrain_side"
+msgstr "tgv_de_cote"
+
+#: includes/emojis.php:921
+msgctxt "Emoji shortname"
+msgid "bullettrain_front"
+msgstr "tgv_de_face"
+
+#: includes/emojis.php:922
+msgctxt "Emoji shortname"
+msgid "train2"
+msgstr "train2"
+
+#: includes/emojis.php:923
+msgctxt "Emoji shortname"
+msgid "metro"
+msgstr "metro"
+
+#: includes/emojis.php:924
+msgctxt "Emoji shortname"
+msgid "light_rail"
+msgstr "metro_leger"
+
+#: includes/emojis.php:925
+msgctxt "Emoji shortname"
+msgid "station"
+msgstr "gare"
+
+#: includes/emojis.php:926
+msgctxt "Emoji shortname"
+msgid "tram"
+msgstr "tram"
+
+#: includes/emojis.php:927
+msgctxt "Emoji shortname"
+msgid "train"
+msgstr "train"
+
+#: includes/emojis.php:928
+msgctxt "Emoji shortname"
+msgid "bus"
+msgstr "bus"
+
+#: includes/emojis.php:929
+msgctxt "Emoji shortname"
+msgid "oncoming_bus"
+msgstr "bus_approchant"
+
+#: includes/emojis.php:930
+msgctxt "Emoji shortname"
+msgid "trolleybus"
+msgstr "trolleybus"
+
+#: includes/emojis.php:931
+msgctxt "Emoji shortname"
+msgid "busstop"
+msgstr "arret_de_bus"
+
+#: includes/emojis.php:932
+msgctxt "Emoji shortname"
+msgid "minibus"
+msgstr "minibus"
+
+#: includes/emojis.php:933
+msgctxt "Emoji shortname"
+msgid "ambulance"
+msgstr "ambulance"
+
+#: includes/emojis.php:934
+msgctxt "Emoji shortname"
+msgid "fire_engine"
+msgstr "camion_pompier"
+
+#: includes/emojis.php:935
+msgctxt "Emoji shortname"
+msgid "police_car"
+msgstr "voiture_police"
+
+#: includes/emojis.php:936
+msgctxt "Emoji shortname"
+msgid "oncoming_police_car"
+msgstr "voiture_police_approchant"
+
+#: includes/emojis.php:937
+msgctxt "Emoji shortname"
+msgid "taxi"
+msgstr "taxi"
+
+#: includes/emojis.php:938
+msgctxt "Emoji shortname"
+msgid "oncoming_taxi"
+msgstr "taxi_approchant"
+
+#: includes/emojis.php:939
+msgctxt "Emoji shortname"
+msgid "car"
+msgstr "voiture"
+
+#: includes/emojis.php:940
+msgctxt "Emoji shortname"
+msgid "oncoming_automobile"
+msgstr "automobile_approchant"
+
+#: includes/emojis.php:941
+msgctxt "Emoji shortname"
+msgid "blue_car"
+msgstr "voiture_bleue"
+
+#: includes/emojis.php:942
+msgctxt "Emoji shortname"
+msgid "truck"
+msgstr "camion"
+
+#: includes/emojis.php:943
+msgctxt "Emoji shortname"
+msgid "articulated_lorry"
+msgstr "camion_semi_remorque"
+
+#: includes/emojis.php:944
+msgctxt "Emoji shortname"
+msgid "tractor"
+msgstr "tracteur"
+
+#: includes/emojis.php:945
+msgctxt "Emoji shortname"
+msgid "monorail"
+msgstr "telepherique"
+
+#: includes/emojis.php:946
+msgctxt "Emoji shortname"
+msgid "mountain_railway"
+msgstr "telecabine"
+
+#: includes/emojis.php:947
+msgctxt "Emoji shortname"
+msgid "suspension_railway"
+msgstr "train_suspendu"
+
+#: includes/emojis.php:948
+msgctxt "Emoji shortname"
+msgid "mountain_cableway"
+msgstr "train_montagne"
+
+#: includes/emojis.php:949
+msgctxt "Emoji shortname"
+msgid "aerial_tramway"
+msgstr "tramway_aerien"
+
+#: includes/emojis.php:950
+msgctxt "Emoji shortname"
+msgid "ship"
+msgstr "vaisseau"
+
+#: includes/emojis.php:951
+msgctxt "Emoji shortname"
+msgid "rowboat"
+msgstr "bateau"
+
+#: includes/emojis.php:952
+msgctxt "Emoji shortname"
+msgid "speedboat"
+msgstr "hors_bord"
+
+#: includes/emojis.php:953
+msgctxt "Emoji shortname"
+msgid "traffic_light"
+msgstr "feux_circulation"
+
+#: includes/emojis.php:954
+msgctxt "Emoji shortname"
+msgid "vertical_traffic_light"
+msgstr "feux_circulation_vertical"
+
+#: includes/emojis.php:955
+msgctxt "Emoji shortname"
+msgid "construction"
+msgstr "construction"
+
+#: includes/emojis.php:956
+msgctxt "Emoji shortname"
+msgid "rotating_light"
+msgstr "sirene"
+
+#: includes/emojis.php:957
+msgctxt "Emoji shortname"
+msgid "triangular_flag_on_post"
+msgstr "drapeau_triangulaire"
+
+#: includes/emojis.php:958
+msgctxt "Emoji shortname"
+msgid "door"
+msgstr "porte"
+
+#: includes/emojis.php:959
+msgctxt "Emoji shortname"
+msgid "no_entry_sign"
+msgstr "signe_defense_entrer"
+
+#: includes/emojis.php:960
+msgctxt "Emoji shortname"
+msgid "smoking"
+msgstr "fumer"
+
+#: includes/emojis.php:961
+msgctxt "Emoji shortname"
+msgid "no_smoking"
+msgstr "interdit_de_fumer"
+
+#: includes/emojis.php:962
+msgctxt "Emoji shortname"
+msgid "put_litter_in_its_place"
+msgstr "mettre_la_litiere_a_sa_place"
+
+#: includes/emojis.php:963
+msgctxt "Emoji shortname"
+msgid "do_not_litter"
+msgstr "ne_pas_jeter"
+
+#: includes/emojis.php:964
+msgctxt "Emoji shortname"
+msgid "potable_water"
+msgstr "eau_potable"
+
+#: includes/emojis.php:965
+msgctxt "Emoji shortname"
+msgid "non-potable_water"
+msgstr "eau_non_potable"
+
+#: includes/emojis.php:966
+msgctxt "Emoji shortname"
+msgid "bike"
+msgstr "velo"
+
+#: includes/emojis.php:967
+msgctxt "Emoji shortname"
+msgid "no_bicycles"
+msgstr "pas_de_bicyclettes"
+
+#: includes/emojis.php:968
+msgctxt "Emoji shortname"
+msgid "bicyclist"
+msgstr "cycliste"
+
+#: includes/emojis.php:969
+msgctxt "Emoji shortname"
+msgid "mountain_bicyclist"
+msgstr "cycliste_montagne"
+
+#: includes/emojis.php:970
+msgctxt "Emoji shortname"
+msgid "walking"
+msgstr "marchant"
+
+#: includes/emojis.php:971
+msgctxt "Emoji shortname"
+msgid "no_pedestrians"
+msgstr "pas_de_pietons"
+
+#: includes/emojis.php:972
+msgctxt "Emoji shortname"
+msgid "children_crossing"
+msgstr "passage_pour_enfants"
+
+#: includes/emojis.php:973
+msgctxt "Emoji shortname"
+msgid "mens"
+msgstr "hommes"
+
+#: includes/emojis.php:974
+msgctxt "Emoji shortname"
+msgid "womens"
+msgstr "femmes"
+
+#: includes/emojis.php:975
+msgctxt "Emoji shortname"
+msgid "restroom"
+msgstr "chambre_repos"
+
+#: includes/emojis.php:976
+msgctxt "Emoji shortname"
+msgid "baby_symbol"
+msgstr "symbole_bebe"
+
+#: includes/emojis.php:977
+msgctxt "Emoji shortname"
+msgid "toilet"
+msgstr "toilettes"
+
+#: includes/emojis.php:978
+msgctxt "Emoji shortname"
+msgid "wc"
+msgstr "wc"
+
+#: includes/emojis.php:979
+msgctxt "Emoji shortname"
+msgid "shower"
+msgstr "douche"
+
+#: includes/emojis.php:980
+msgctxt "Emoji shortname"
+msgid "bath"
+msgstr "bain"
+
+#: includes/emojis.php:981
+msgctxt "Emoji shortname"
+msgid "bathtub"
+msgstr "baignoire"
+
+#: includes/emojis.php:982
+msgctxt "Emoji shortname"
+msgid "passport_control"
+msgstr "controle_passeport"
+
+#: includes/emojis.php:983
+msgctxt "Emoji shortname"
+msgid "customs"
+msgstr "douanes"
+
+#: includes/emojis.php:984
+msgctxt "Emoji shortname"
+msgid "baggage_claim"
+msgstr "reclamations_bagage"
+
+#: includes/emojis.php:985
+msgctxt "Emoji shortname"
+msgid "left_luggage"
+msgstr "bagages_perdus"
+
+#: includes/emojis.php:986
+msgctxt "Emoji shortname"
+msgid "couch_and_lamp"
+msgstr "canape_et_lampe"
+
+#: includes/emojis.php:987
+msgctxt "Emoji shortname"
+msgid "sleeping_accommodation"
+msgstr "chambre_pour_la_nuit"
+
+#: includes/emojis.php:988
+msgctxt "Emoji shortname"
+msgid "shopping_bags"
+msgstr "sacs_de_shopping"
+
+#: includes/emojis.php:989
+msgctxt "Emoji shortname"
+msgid "bellhop_bell"
+msgstr "cloche_groom"
+
+#: includes/emojis.php:990
+msgctxt "Emoji shortname"
+msgid "bed"
+msgstr "lit"
+
+#: includes/emojis.php:991
+msgctxt "Emoji shortname"
+msgid "place_of_worship"
+msgstr "lieu_de_culte"
+
+#: includes/emojis.php:992
+msgctxt "Emoji shortname"
+msgid "hammer_and_wrench"
+msgstr "marteau_et_cle_anglaise"
+
+#: includes/emojis.php:993
+msgctxt "Emoji shortname"
+msgid "shield"
+msgstr "bouclier"
+
+#: includes/emojis.php:994
+msgctxt "Emoji shortname"
+msgid "oil_drum"
+msgstr "bidon_huile"
+
+#: includes/emojis.php:995
+msgctxt "Emoji shortname"
+msgid "motorway"
+msgstr "autoroute"
+
+#: includes/emojis.php:996
+msgctxt "Emoji shortname"
+msgid "railway_track"
+msgstr "voie_ferree"
+
+#: includes/emojis.php:997
+msgctxt "Emoji shortname"
+msgid "motor_boat"
+msgstr "bateau_a_moteur"
+
+#: includes/emojis.php:998
+msgctxt "Emoji shortname"
+msgid "small_airplane"
+msgstr "petit_avion"
+
+#: includes/emojis.php:999
+msgctxt "Emoji shortname"
+msgid "airplane_departure"
+msgstr "decollage_avion"
+
+#: includes/emojis.php:1000
+msgctxt "Emoji shortname"
+msgid "airplane_arriving"
+msgstr "atterrissage_avion"
+
+#: includes/emojis.php:1001
+msgctxt "Emoji shortname"
+msgid "satellite"
+msgstr "satelitte"
+
+#: includes/emojis.php:1002
+msgctxt "Emoji shortname"
+msgid "passenger_ship"
+msgstr "paquebot"
+
+#: includes/emojis.php:1003
+msgctxt "Emoji shortname"
+msgid "zipper_mouth_face"
+msgstr "visage_fermeture_eclaire"
+
+#: includes/emojis.php:1004
+msgctxt "Emoji shortname"
+msgid "money_mouth_face"
+msgstr "visage_bouche_monnaie"
+
+#: includes/emojis.php:1005
+msgctxt "Emoji shortname"
+msgid "face_with_thermometer"
+msgstr "visage_avec_thermometre"
+
+#: includes/emojis.php:1006
+msgctxt "Emoji shortname"
+msgid "nerd_face"
+msgstr "visage_nerd"
+
+#: includes/emojis.php:1007
+msgctxt "Emoji shortname"
+msgid "thinking_face"
+msgstr "visage_pensant"
+
+#: includes/emojis.php:1008
+msgctxt "Emoji shortname"
+msgid "face_with_head_bandage"
+msgstr "visage_avec_bandage"
+
+#: includes/emojis.php:1009
+msgctxt "Emoji shortname"
+msgid "robot_face"
+msgstr "visage_robot"
+
+#: includes/emojis.php:1010
+msgctxt "Emoji shortname"
+msgid "hugging_face"
+msgstr "visage_calin"
+
+#: includes/emojis.php:1011
+msgctxt "Emoji shortname"
+msgid "the_horns"
+msgstr "les_cornes"
+
+#: includes/emojis.php:1012
+msgctxt "Emoji shortname"
+msgid "crab"
+msgstr "crabe"
+
+#: includes/emojis.php:1013
+msgctxt "Emoji shortname"
+msgid "lion_face"
+msgstr "visage_lion"
+
+#: includes/emojis.php:1014
+msgctxt "Emoji shortname"
+msgid "scorpion"
+msgstr "scorpion"
+
+#: includes/emojis.php:1015
+msgctxt "Emoji shortname"
+msgid "turkey"
+msgstr "dinde"
+
+#: includes/emojis.php:1016
+msgctxt "Emoji shortname"
+msgid "unicorn_face"
+msgstr "visage_licorne"
+
+#: includes/emojis.php:1017
+msgctxt "Emoji shortname"
+msgid "cheese_wedge"
+msgstr "morceau_fromage"
+
+#: includes/emojis.php:1018
+msgctxt "Emoji shortname"
+msgid "hash"
+msgstr "hache"
+
+#: includes/emojis.php:1019
+msgctxt "Emoji shortname"
+msgid "keycap_star"
+msgstr "touche_etoile"
+
+#: includes/emojis.php:1020
+msgctxt "Emoji shortname"
+msgid "zero"
+msgstr "zero"
+
+#: includes/emojis.php:1021
+msgctxt "Emoji shortname"
+msgid "one"
+msgstr "un"
+
+#: includes/emojis.php:1022
+msgctxt "Emoji shortname"
+msgid "two"
+msgstr "deux"
+
+#: includes/emojis.php:1023
+msgctxt "Emoji shortname"
+msgid "three"
+msgstr "trois"
+
+#: includes/emojis.php:1024
+msgctxt "Emoji shortname"
+msgid "four"
+msgstr "quatre"
+
+#: includes/emojis.php:1025
+msgctxt "Emoji shortname"
+msgid "five"
+msgstr "cinq"
+
+#: includes/emojis.php:1026
+msgctxt "Emoji shortname"
+msgid "six"
+msgstr "six"
+
+#: includes/emojis.php:1027
+msgctxt "Emoji shortname"
+msgid "seven"
+msgstr "sept"
+
+#: includes/emojis.php:1028
+msgctxt "Emoji shortname"
+msgid "eight"
+msgstr "huit"
+
+#: includes/emojis.php:1029
+msgctxt "Emoji shortname"
+msgid "nine"
+msgstr "neuf"
+
+#: includes/emojis.php:1030
+msgctxt "Emoji shortname"
+msgid "flag-ac"
+msgstr "drapeau-ac"
+
+#: includes/emojis.php:1031
+msgctxt "Emoji shortname"
+msgid "flag-ad"
+msgstr "drapeau-ad"
+
+#: includes/emojis.php:1032
+msgctxt "Emoji shortname"
+msgid "flag-ae"
+msgstr "drapeau-ae"
+
+#: includes/emojis.php:1033
+msgctxt "Emoji shortname"
+msgid "flag-af"
+msgstr "drapeau-af"
+
+#: includes/emojis.php:1034
+msgctxt "Emoji shortname"
+msgid "flag-ag"
+msgstr "drapeau-ag"
+
+#: includes/emojis.php:1035
+msgctxt "Emoji shortname"
+msgid "flag-ai"
+msgstr "drapeau-ai"
+
+#: includes/emojis.php:1036
+msgctxt "Emoji shortname"
+msgid "flag-al"
+msgstr "drapeau-al"
+
+#: includes/emojis.php:1037
+msgctxt "Emoji shortname"
+msgid "flag-am"
+msgstr "drapeau-am"
+
+#: includes/emojis.php:1038
+msgctxt "Emoji shortname"
+msgid "flag-ao"
+msgstr "drapeau-ao"
+
+#: includes/emojis.php:1039
+msgctxt "Emoji shortname"
+msgid "flag-aq"
+msgstr "drapeau-aq"
+
+#: includes/emojis.php:1040
+msgctxt "Emoji shortname"
+msgid "flag-ar"
+msgstr "drapeau-ar"
+
+#: includes/emojis.php:1041
+msgctxt "Emoji shortname"
+msgid "flag-as"
+msgstr "drapeau-as"
+
+#: includes/emojis.php:1042
+msgctxt "Emoji shortname"
+msgid "flag-at"
+msgstr "drapeau-at"
+
+#: includes/emojis.php:1043
+msgctxt "Emoji shortname"
+msgid "flag-au"
+msgstr "drapeau-au"
+
+#: includes/emojis.php:1044
+msgctxt "Emoji shortname"
+msgid "flag-aw"
+msgstr "drapeau-aw"
+
+#: includes/emojis.php:1045
+msgctxt "Emoji shortname"
+msgid "flag-ax"
+msgstr "drapeau-ax"
+
+#: includes/emojis.php:1046
+msgctxt "Emoji shortname"
+msgid "flag-az"
+msgstr "drapeau-az"
+
+#: includes/emojis.php:1047
+msgctxt "Emoji shortname"
+msgid "flag-ba"
+msgstr "drapeau-ba"
+
+#: includes/emojis.php:1048
+msgctxt "Emoji shortname"
+msgid "flag-bb"
+msgstr "drapeau-bb"
+
+#: includes/emojis.php:1049
+msgctxt "Emoji shortname"
+msgid "flag-bd"
+msgstr "drapeau-bd"
+
+#: includes/emojis.php:1050
+msgctxt "Emoji shortname"
+msgid "flag-be"
+msgstr "drapeau-be"
+
+#: includes/emojis.php:1051
+msgctxt "Emoji shortname"
+msgid "flag-bf"
+msgstr "drapeau-bf"
+
+#: includes/emojis.php:1052
+msgctxt "Emoji shortname"
+msgid "flag-bg"
+msgstr "drapeau-bg"
+
+#: includes/emojis.php:1053
+msgctxt "Emoji shortname"
+msgid "flag-bh"
+msgstr "drapeau-bh"
+
+#: includes/emojis.php:1054
+msgctxt "Emoji shortname"
+msgid "flag-bi"
+msgstr "drapeau-bi"
+
+#: includes/emojis.php:1055
+msgctxt "Emoji shortname"
+msgid "flag-bj"
+msgstr "drapeau-bj"
+
+#: includes/emojis.php:1056
+msgctxt "Emoji shortname"
+msgid "flag-bl"
+msgstr "drapeau-bl"
+
+#: includes/emojis.php:1057
+msgctxt "Emoji shortname"
+msgid "flag-bm"
+msgstr "drapeau-bm"
+
+#: includes/emojis.php:1058
+msgctxt "Emoji shortname"
+msgid "flag-bn"
+msgstr "drapeau-bn"
+
+#: includes/emojis.php:1059
+msgctxt "Emoji shortname"
+msgid "flag-bo"
+msgstr "drapeau-bo"
+
+#: includes/emojis.php:1060
+msgctxt "Emoji shortname"
+msgid "flag-bq"
+msgstr "drapeau-bq"
+
+#: includes/emojis.php:1061
+msgctxt "Emoji shortname"
+msgid "flag-br"
+msgstr "drapeau-br"
+
+#: includes/emojis.php:1062
+msgctxt "Emoji shortname"
+msgid "flag-bs"
+msgstr "drapeau-bs"
+
+#: includes/emojis.php:1063
+msgctxt "Emoji shortname"
+msgid "flag-bt"
+msgstr "drapeau-bt"
+
+#: includes/emojis.php:1064
+msgctxt "Emoji shortname"
+msgid "flag-bv"
+msgstr "drapeau-bv"
+
+#: includes/emojis.php:1065
+msgctxt "Emoji shortname"
+msgid "flag-bw"
+msgstr "drapeau-bw"
+
+#: includes/emojis.php:1066
+msgctxt "Emoji shortname"
+msgid "flag-by"
+msgstr "drapeau-by"
+
+#: includes/emojis.php:1067
+msgctxt "Emoji shortname"
+msgid "flag-bz"
+msgstr "drapeau-bz"
+
+#: includes/emojis.php:1068
+msgctxt "Emoji shortname"
+msgid "flag-ca"
+msgstr "drapeau-ca"
+
+#: includes/emojis.php:1069
+msgctxt "Emoji shortname"
+msgid "flag-cc"
+msgstr "drapeau-cc"
+
+#: includes/emojis.php:1070
+msgctxt "Emoji shortname"
+msgid "flag-cd"
+msgstr "drapeau-cd"
+
+#: includes/emojis.php:1071
+msgctxt "Emoji shortname"
+msgid "flag-cf"
+msgstr "drapeau-cf"
+
+#: includes/emojis.php:1072
+msgctxt "Emoji shortname"
+msgid "flag-cg"
+msgstr "drapeau-cg"
+
+#: includes/emojis.php:1073
+msgctxt "Emoji shortname"
+msgid "flag-ch"
+msgstr "drapeau-ch"
+
+#: includes/emojis.php:1074
+msgctxt "Emoji shortname"
+msgid "flag-ci"
+msgstr "drapeau-ci"
+
+#: includes/emojis.php:1075
+msgctxt "Emoji shortname"
+msgid "flag-ck"
+msgstr "drapeau-ck"
+
+#: includes/emojis.php:1076
+msgctxt "Emoji shortname"
+msgid "flag-cl"
+msgstr "drapeau-cl"
+
+#: includes/emojis.php:1077
+msgctxt "Emoji shortname"
+msgid "flag-cm"
+msgstr "drapeau-cm"
+
+#: includes/emojis.php:1078
+msgctxt "Emoji shortname"
+msgid "flag-cn"
+msgstr "drapeau-cn"
+
+#: includes/emojis.php:1079
+msgctxt "Emoji shortname"
+msgid "flag-co"
+msgstr "drapeau-co"
+
+#: includes/emojis.php:1080
+msgctxt "Emoji shortname"
+msgid "flag-cp"
+msgstr "drapeau-cp"
+
+#: includes/emojis.php:1081
+msgctxt "Emoji shortname"
+msgid "flag-cr"
+msgstr "drapeau-cr"
+
+#: includes/emojis.php:1082
+msgctxt "Emoji shortname"
+msgid "flag-cu"
+msgstr "drapeau-cu"
+
+#: includes/emojis.php:1083
+msgctxt "Emoji shortname"
+msgid "flag-cv"
+msgstr "drapeau-cv"
+
+#: includes/emojis.php:1084
+msgctxt "Emoji shortname"
+msgid "flag-cw"
+msgstr "drapeau-cw"
+
+#: includes/emojis.php:1085
+msgctxt "Emoji shortname"
+msgid "flag-cx"
+msgstr "drapeau-cx"
+
+#: includes/emojis.php:1086
+msgctxt "Emoji shortname"
+msgid "flag-cy"
+msgstr "drapeau-cy"
+
+#: includes/emojis.php:1087
+msgctxt "Emoji shortname"
+msgid "flag-cz"
+msgstr "drapeau-cz"
+
+#: includes/emojis.php:1088
+msgctxt "Emoji shortname"
+msgid "flag-de"
+msgstr "drapeau-de"
+
+#: includes/emojis.php:1089
+msgctxt "Emoji shortname"
+msgid "flag-dg"
+msgstr "drapeau-dg"
+
+#: includes/emojis.php:1090
+msgctxt "Emoji shortname"
+msgid "flag-dj"
+msgstr "drapeau-dj"
+
+#: includes/emojis.php:1091
+msgctxt "Emoji shortname"
+msgid "flag-dk"
+msgstr "drapeau-dk"
+
+#: includes/emojis.php:1092
+msgctxt "Emoji shortname"
+msgid "flag-dm"
+msgstr "drapeau-dm"
+
+#: includes/emojis.php:1093
+msgctxt "Emoji shortname"
+msgid "flag-do"
+msgstr "drapeau-do"
+
+#: includes/emojis.php:1094
+msgctxt "Emoji shortname"
+msgid "flag-dz"
+msgstr "drapeau-dz"
+
+#: includes/emojis.php:1095
+msgctxt "Emoji shortname"
+msgid "flag-ea"
+msgstr "drapeau-ea"
+
+#: includes/emojis.php:1096
+msgctxt "Emoji shortname"
+msgid "flag-ec"
+msgstr "drapeau-ec"
+
+#: includes/emojis.php:1097
+msgctxt "Emoji shortname"
+msgid "flag-ee"
+msgstr "drapeau-ee"
+
+#: includes/emojis.php:1098
+msgctxt "Emoji shortname"
+msgid "flag-eg"
+msgstr "drapeau-eg"
+
+#: includes/emojis.php:1099
+msgctxt "Emoji shortname"
+msgid "flag-eh"
+msgstr "drapeau-eh"
+
+#: includes/emojis.php:1100
+msgctxt "Emoji shortname"
+msgid "flag-er"
+msgstr "drapeau-er"
+
+#: includes/emojis.php:1101
+msgctxt "Emoji shortname"
+msgid "flag-es"
+msgstr "drapeau-es"
+
+#: includes/emojis.php:1102
+msgctxt "Emoji shortname"
+msgid "flag-et"
+msgstr "drapeau-et"
+
+#: includes/emojis.php:1103
+msgctxt "Emoji shortname"
+msgid "flag-eu"
+msgstr "drapeau-eu"
+
+#: includes/emojis.php:1104
+msgctxt "Emoji shortname"
+msgid "flag-fi"
+msgstr "drapeau-fi"
+
+#: includes/emojis.php:1105
+msgctxt "Emoji shortname"
+msgid "flag-fj"
+msgstr "drapeau-fj"
+
+#: includes/emojis.php:1106
+msgctxt "Emoji shortname"
+msgid "flag-fk"
+msgstr "drapeau-fk"
+
+#: includes/emojis.php:1107
+msgctxt "Emoji shortname"
+msgid "flag-fm"
+msgstr "drapeau-fm"
+
+#: includes/emojis.php:1108
+msgctxt "Emoji shortname"
+msgid "flag-fo"
+msgstr "drapeau-fo"
+
+#: includes/emojis.php:1109
+msgctxt "Emoji shortname"
+msgid "flag-fr"
+msgstr "drapeau-fr"
+
+#: includes/emojis.php:1110
+msgctxt "Emoji shortname"
+msgid "flag-ga"
+msgstr "drapeau-ga"
+
+#: includes/emojis.php:1111
+msgctxt "Emoji shortname"
+msgid "flag-gb"
+msgstr "drapeau-gb"
+
+#: includes/emojis.php:1112
+msgctxt "Emoji shortname"
+msgid "flag-gd"
+msgstr "drapeau-gd"
+
+#: includes/emojis.php:1113
+msgctxt "Emoji shortname"
+msgid "flag-ge"
+msgstr "drapeau-ge"
+
+#: includes/emojis.php:1114
+msgctxt "Emoji shortname"
+msgid "flag-gf"
+msgstr "drapeau-gf"
+
+#: includes/emojis.php:1115
+msgctxt "Emoji shortname"
+msgid "flag-gg"
+msgstr "drapeau-gg"
+
+#: includes/emojis.php:1116
+msgctxt "Emoji shortname"
+msgid "flag-gh"
+msgstr "drapeau-gh"
+
+#: includes/emojis.php:1117
+msgctxt "Emoji shortname"
+msgid "flag-gi"
+msgstr "drapeau-gi"
+
+#: includes/emojis.php:1118
+msgctxt "Emoji shortname"
+msgid "flag-gl"
+msgstr "drapeau-gl"
+
+#: includes/emojis.php:1119
+msgctxt "Emoji shortname"
+msgid "flag-gm"
+msgstr "drapeau-gm"
+
+#: includes/emojis.php:1120
+msgctxt "Emoji shortname"
+msgid "flag-gn"
+msgstr "drapeau-gn"
+
+#: includes/emojis.php:1121
+msgctxt "Emoji shortname"
+msgid "flag-gp"
+msgstr "drapeau-gp"
+
+#: includes/emojis.php:1122
+msgctxt "Emoji shortname"
+msgid "flag-gq"
+msgstr "drapeau-gq"
+
+#: includes/emojis.php:1123
+msgctxt "Emoji shortname"
+msgid "flag-gr"
+msgstr "drapeau-gr"
+
+#: includes/emojis.php:1124
+msgctxt "Emoji shortname"
+msgid "flag-gs"
+msgstr "drapeau-gs"
+
+#: includes/emojis.php:1125
+msgctxt "Emoji shortname"
+msgid "flag-gt"
+msgstr "drapeau-gt"
+
+#: includes/emojis.php:1126
+msgctxt "Emoji shortname"
+msgid "flag-gu"
+msgstr "drapeau-gu"
+
+#: includes/emojis.php:1127
+msgctxt "Emoji shortname"
+msgid "flag-gw"
+msgstr "drapeau-gw"
+
+#: includes/emojis.php:1128
+msgctxt "Emoji shortname"
+msgid "flag-gy"
+msgstr "drapeau-gy"
+
+#: includes/emojis.php:1129
+msgctxt "Emoji shortname"
+msgid "flag-hk"
+msgstr "drapeau-hk"
+
+#: includes/emojis.php:1130
+msgctxt "Emoji shortname"
+msgid "flag-hm"
+msgstr "drapeau-hm"
+
+#: includes/emojis.php:1131
+msgctxt "Emoji shortname"
+msgid "flag-hn"
+msgstr "drapeau-hn"
+
+#: includes/emojis.php:1132
+msgctxt "Emoji shortname"
+msgid "flag-hr"
+msgstr "drapeau-hr"
+
+#: includes/emojis.php:1133
+msgctxt "Emoji shortname"
+msgid "flag-ht"
+msgstr "drapeau-ht"
+
+#: includes/emojis.php:1134
+msgctxt "Emoji shortname"
+msgid "flag-hu"
+msgstr "drapeau-hu"
+
+#: includes/emojis.php:1135
+msgctxt "Emoji shortname"
+msgid "flag-ic"
+msgstr "drapeau-ic"
+
+#: includes/emojis.php:1136
+msgctxt "Emoji shortname"
+msgid "flag-id"
+msgstr "drapeau-id"
+
+#: includes/emojis.php:1137
+msgctxt "Emoji shortname"
+msgid "flag-ie"
+msgstr "drapeau-ie"
+
+#: includes/emojis.php:1138
+msgctxt "Emoji shortname"
+msgid "flag-il"
+msgstr "drapeau-il"
+
+#: includes/emojis.php:1139
+msgctxt "Emoji shortname"
+msgid "flag-im"
+msgstr "drapeau-im"
+
+#: includes/emojis.php:1140
+msgctxt "Emoji shortname"
+msgid "flag-in"
+msgstr "drapeau-in"
+
+#: includes/emojis.php:1141
+msgctxt "Emoji shortname"
+msgid "flag-io"
+msgstr "drapeau-io"
+
+#: includes/emojis.php:1142
+msgctxt "Emoji shortname"
+msgid "flag-iq"
+msgstr "drapeau-iq"
+
+#: includes/emojis.php:1143
+msgctxt "Emoji shortname"
+msgid "flag-ir"
+msgstr "drapeau-ir"
+
+#: includes/emojis.php:1144
+msgctxt "Emoji shortname"
+msgid "flag-is"
+msgstr "drapeau-is"
+
+#: includes/emojis.php:1145
+msgctxt "Emoji shortname"
+msgid "flag-it"
+msgstr "drapeau-it"
+
+#: includes/emojis.php:1146
+msgctxt "Emoji shortname"
+msgid "flag-je"
+msgstr "drapeau-je"
+
+#: includes/emojis.php:1147
+msgctxt "Emoji shortname"
+msgid "flag-jm"
+msgstr "drapeau-jm"
+
+#: includes/emojis.php:1148
+msgctxt "Emoji shortname"
+msgid "flag-jo"
+msgstr "drapeau-jo"
+
+#: includes/emojis.php:1149
+msgctxt "Emoji shortname"
+msgid "flag-jp"
+msgstr "drapeau-jp"
+
+#: includes/emojis.php:1150
+msgctxt "Emoji shortname"
+msgid "flag-ke"
+msgstr "drapeau-ke"
+
+#: includes/emojis.php:1151
+msgctxt "Emoji shortname"
+msgid "flag-kg"
+msgstr "drapeau-kg"
+
+#: includes/emojis.php:1152
+msgctxt "Emoji shortname"
+msgid "flag-kh"
+msgstr "drapeau-kh"
+
+#: includes/emojis.php:1153
+msgctxt "Emoji shortname"
+msgid "flag-ki"
+msgstr "drapeau-ki"
+
+#: includes/emojis.php:1154
+msgctxt "Emoji shortname"
+msgid "flag-km"
+msgstr "drapeau-km"
+
+#: includes/emojis.php:1155
+msgctxt "Emoji shortname"
+msgid "flag-kn"
+msgstr "drapeau-kn"
+
+#: includes/emojis.php:1156
+msgctxt "Emoji shortname"
+msgid "flag-kp"
+msgstr "drapeau-kp"
+
+#: includes/emojis.php:1157
+msgctxt "Emoji shortname"
+msgid "flag-kr"
+msgstr "drapeau-kr"
+
+#: includes/emojis.php:1158
+msgctxt "Emoji shortname"
+msgid "flag-kw"
+msgstr "drapeau-kw"
+
+#: includes/emojis.php:1159
+msgctxt "Emoji shortname"
+msgid "flag-ky"
+msgstr "drapeau-ky"
+
+#: includes/emojis.php:1160
+msgctxt "Emoji shortname"
+msgid "flag-kz"
+msgstr "drapeau-kz"
+
+#: includes/emojis.php:1161
+msgctxt "Emoji shortname"
+msgid "flag-la"
+msgstr "drapeau-la"
+
+#: includes/emojis.php:1162
+msgctxt "Emoji shortname"
+msgid "flag-lb"
+msgstr "drapeau-lb"
+
+#: includes/emojis.php:1163
+msgctxt "Emoji shortname"
+msgid "flag-lc"
+msgstr "drapeau-lc"
+
+#: includes/emojis.php:1164
+msgctxt "Emoji shortname"
+msgid "flag-li"
+msgstr "drapeau-li"
+
+#: includes/emojis.php:1165
+msgctxt "Emoji shortname"
+msgid "flag-lk"
+msgstr "drapeau-lk"
+
+#: includes/emojis.php:1166
+msgctxt "Emoji shortname"
+msgid "flag-lr"
+msgstr "drapeau-lr"
+
+#: includes/emojis.php:1167
+msgctxt "Emoji shortname"
+msgid "flag-ls"
+msgstr "drapeau-ls"
+
+#: includes/emojis.php:1168
+msgctxt "Emoji shortname"
+msgid "flag-lt"
+msgstr "drapeau-lt"
+
+#: includes/emojis.php:1169
+msgctxt "Emoji shortname"
+msgid "flag-lu"
+msgstr "drapeau-lu"
+
+#: includes/emojis.php:1170
+msgctxt "Emoji shortname"
+msgid "flag-lv"
+msgstr "drapeau-lv"
+
+#: includes/emojis.php:1171
+msgctxt "Emoji shortname"
+msgid "flag-ly"
+msgstr "drapeau-ly"
+
+#: includes/emojis.php:1172
+msgctxt "Emoji shortname"
+msgid "flag-ma"
+msgstr "drapeau-ma"
+
+#: includes/emojis.php:1173
+msgctxt "Emoji shortname"
+msgid "flag-mc"
+msgstr "drapeau-mc"
+
+#: includes/emojis.php:1174
+msgctxt "Emoji shortname"
+msgid "flag-md"
+msgstr "drapeau-md"
+
+#: includes/emojis.php:1175
+msgctxt "Emoji shortname"
+msgid "flag-me"
+msgstr "drapeau-me"
+
+#: includes/emojis.php:1176
+msgctxt "Emoji shortname"
+msgid "flag-mf"
+msgstr "drapeau-mf"
+
+#: includes/emojis.php:1177
+msgctxt "Emoji shortname"
+msgid "flag-mg"
+msgstr "drapeau-mg"
+
+#: includes/emojis.php:1178
+msgctxt "Emoji shortname"
+msgid "flag-mh"
+msgstr "drapeau-mh"
+
+#: includes/emojis.php:1179
+msgctxt "Emoji shortname"
+msgid "flag-mk"
+msgstr "drapeau-mk"
+
+#: includes/emojis.php:1180
+msgctxt "Emoji shortname"
+msgid "flag-ml"
+msgstr "drapeau-ml"
+
+#: includes/emojis.php:1181
+msgctxt "Emoji shortname"
+msgid "flag-mm"
+msgstr "drapeau-mm"
+
+#: includes/emojis.php:1182
+msgctxt "Emoji shortname"
+msgid "flag-mn"
+msgstr "drapeau-mn"
+
+#: includes/emojis.php:1183
+msgctxt "Emoji shortname"
+msgid "flag-mo"
+msgstr "drapeau-mo"
+
+#: includes/emojis.php:1184
+msgctxt "Emoji shortname"
+msgid "flag-mp"
+msgstr "drapeau-mp"
+
+#: includes/emojis.php:1185
+msgctxt "Emoji shortname"
+msgid "flag-mq"
+msgstr "drapeau-mq"
+
+#: includes/emojis.php:1186
+msgctxt "Emoji shortname"
+msgid "flag-mr"
+msgstr "drapeau-mr"
+
+#: includes/emojis.php:1187
+msgctxt "Emoji shortname"
+msgid "flag-ms"
+msgstr "drapeau-ms"
+
+#: includes/emojis.php:1188
+msgctxt "Emoji shortname"
+msgid "flag-mt"
+msgstr "drapeau-mt"
+
+#: includes/emojis.php:1189
+msgctxt "Emoji shortname"
+msgid "flag-mu"
+msgstr "drapeau-mu"
+
+#: includes/emojis.php:1190
+msgctxt "Emoji shortname"
+msgid "flag-mv"
+msgstr "drapeau-mv"
+
+#: includes/emojis.php:1191
+msgctxt "Emoji shortname"
+msgid "flag-mw"
+msgstr "drapeau-mw"
+
+#: includes/emojis.php:1192
+msgctxt "Emoji shortname"
+msgid "flag-mx"
+msgstr "drapeau-mx"
+
+#: includes/emojis.php:1193
+msgctxt "Emoji shortname"
+msgid "flag-my"
+msgstr "drapeau-my"
+
+#: includes/emojis.php:1194
+msgctxt "Emoji shortname"
+msgid "flag-mz"
+msgstr "drapeau-mz"
+
+#: includes/emojis.php:1195
+msgctxt "Emoji shortname"
+msgid "flag-na"
+msgstr "drapeau-na"
+
+#: includes/emojis.php:1196
+msgctxt "Emoji shortname"
+msgid "flag-nc"
+msgstr "drapeau-nc"
+
+#: includes/emojis.php:1197
+msgctxt "Emoji shortname"
+msgid "flag-ne"
+msgstr "drapeau-ne"
+
+#: includes/emojis.php:1198
+msgctxt "Emoji shortname"
+msgid "flag-nf"
+msgstr "drapeau-nf"
+
+#: includes/emojis.php:1199
+msgctxt "Emoji shortname"
+msgid "flag-ng"
+msgstr "drapeau-ng"
+
+#: includes/emojis.php:1200
+msgctxt "Emoji shortname"
+msgid "flag-ni"
+msgstr "drapeau-ni"
+
+#: includes/emojis.php:1201
+msgctxt "Emoji shortname"
+msgid "flag-nl"
+msgstr "drapeau-nl"
+
+#: includes/emojis.php:1202
+msgctxt "Emoji shortname"
+msgid "flag-no"
+msgstr "drapeau-no"
+
+#: includes/emojis.php:1203
+msgctxt "Emoji shortname"
+msgid "flag-np"
+msgstr "drapeau-np"
+
+#: includes/emojis.php:1204
+msgctxt "Emoji shortname"
+msgid "flag-nr"
+msgstr "drapeau-nr"
+
+#: includes/emojis.php:1205
+msgctxt "Emoji shortname"
+msgid "flag-nu"
+msgstr "drapeau-nu"
+
+#: includes/emojis.php:1206
+msgctxt "Emoji shortname"
+msgid "flag-nz"
+msgstr "drapeau-nz"
+
+#: includes/emojis.php:1207
+msgctxt "Emoji shortname"
+msgid "flag-om"
+msgstr "drapeau-om"
+
+#: includes/emojis.php:1208
+msgctxt "Emoji shortname"
+msgid "flag-pa"
+msgstr "drapeau-pa"
+
+#: includes/emojis.php:1209
+msgctxt "Emoji shortname"
+msgid "flag-pe"
+msgstr "drapeau-pe"
+
+#: includes/emojis.php:1210
+msgctxt "Emoji shortname"
+msgid "flag-pf"
+msgstr "drapeau-pf"
+
+#: includes/emojis.php:1211
+msgctxt "Emoji shortname"
+msgid "flag-pg"
+msgstr "drapeau-pg"
+
+#: includes/emojis.php:1212
+msgctxt "Emoji shortname"
+msgid "flag-ph"
+msgstr "drapeau-ph"
+
+#: includes/emojis.php:1213
+msgctxt "Emoji shortname"
+msgid "flag-pk"
+msgstr "drapeau-pk"
+
+#: includes/emojis.php:1214
+msgctxt "Emoji shortname"
+msgid "flag-pl"
+msgstr "drapeau-pl"
+
+#: includes/emojis.php:1215
+msgctxt "Emoji shortname"
+msgid "flag-pm"
+msgstr "drapeau-pm"
+
+#: includes/emojis.php:1216
+msgctxt "Emoji shortname"
+msgid "flag-pn"
+msgstr "drapeau-pn"
+
+#: includes/emojis.php:1217
+msgctxt "Emoji shortname"
+msgid "flag-pr"
+msgstr "drapeau-pr"
+
+#: includes/emojis.php:1218
+msgctxt "Emoji shortname"
+msgid "flag-ps"
+msgstr "drapeau-ps"
+
+#: includes/emojis.php:1219
+msgctxt "Emoji shortname"
+msgid "flag-pt"
+msgstr "drapeau-pt"
+
+#: includes/emojis.php:1220
+msgctxt "Emoji shortname"
+msgid "flag-pw"
+msgstr "drapeau-pw"
+
+#: includes/emojis.php:1221
+msgctxt "Emoji shortname"
+msgid "flag-py"
+msgstr "drapeau-py"
+
+#: includes/emojis.php:1222
+msgctxt "Emoji shortname"
+msgid "flag-qa"
+msgstr "drapeau-qa"
+
+#: includes/emojis.php:1223
+msgctxt "Emoji shortname"
+msgid "flag-re"
+msgstr "drapeau-re"
+
+#: includes/emojis.php:1224
+msgctxt "Emoji shortname"
+msgid "flag-ro"
+msgstr "drapeau-ro"
+
+#: includes/emojis.php:1225
+msgctxt "Emoji shortname"
+msgid "flag-rs"
+msgstr "drapeau-rs"
+
+#: includes/emojis.php:1226
+msgctxt "Emoji shortname"
+msgid "flag-ru"
+msgstr "drapeau-ru"
+
+#: includes/emojis.php:1227
+msgctxt "Emoji shortname"
+msgid "flag-rw"
+msgstr "drapeau-rw"
+
+#: includes/emojis.php:1228
+msgctxt "Emoji shortname"
+msgid "flag-sa"
+msgstr "drapeau-sa"
+
+#: includes/emojis.php:1229
+msgctxt "Emoji shortname"
+msgid "flag-sb"
+msgstr "drapeau-sb"
+
+#: includes/emojis.php:1230
+msgctxt "Emoji shortname"
+msgid "flag-sc"
+msgstr "drapeau-sc"
+
+#: includes/emojis.php:1231
+msgctxt "Emoji shortname"
+msgid "flag-sd"
+msgstr "drapeau-sd"
+
+#: includes/emojis.php:1232
+msgctxt "Emoji shortname"
+msgid "flag-se"
+msgstr "drapeau-se"
+
+#: includes/emojis.php:1233
+msgctxt "Emoji shortname"
+msgid "flag-sg"
+msgstr "drapeau-sg"
+
+#: includes/emojis.php:1234
+msgctxt "Emoji shortname"
+msgid "flag-sh"
+msgstr "drapeau-sh"
+
+#: includes/emojis.php:1235
+msgctxt "Emoji shortname"
+msgid "flag-si"
+msgstr "drapeau-si"
+
+#: includes/emojis.php:1236
+msgctxt "Emoji shortname"
+msgid "flag-sj"
+msgstr "drapeau-sj"
+
+#: includes/emojis.php:1237
+msgctxt "Emoji shortname"
+msgid "flag-sk"
+msgstr "drapeau-sk"
+
+#: includes/emojis.php:1238
+msgctxt "Emoji shortname"
+msgid "flag-sl"
+msgstr "drapeau-sl"
+
+#: includes/emojis.php:1239
+msgctxt "Emoji shortname"
+msgid "flag-sm"
+msgstr "drapeau-sm"
+
+#: includes/emojis.php:1240
+msgctxt "Emoji shortname"
+msgid "flag-sn"
+msgstr "drapeau-sn"
+
+#: includes/emojis.php:1241
+msgctxt "Emoji shortname"
+msgid "flag-so"
+msgstr "drapeau-so"
+
+#: includes/emojis.php:1242
+msgctxt "Emoji shortname"
+msgid "flag-sr"
+msgstr "drapeau-sr"
+
+#: includes/emojis.php:1243
+msgctxt "Emoji shortname"
+msgid "flag-ss"
+msgstr "drapeau-ss"
+
+#: includes/emojis.php:1244
+msgctxt "Emoji shortname"
+msgid "flag-st"
+msgstr "drapeau-st"
+
+#: includes/emojis.php:1245
+msgctxt "Emoji shortname"
+msgid "flag-sv"
+msgstr "drapeau-sv"
+
+#: includes/emojis.php:1246
+msgctxt "Emoji shortname"
+msgid "flag-sx"
+msgstr "drapeau-sx"
+
+#: includes/emojis.php:1247
+msgctxt "Emoji shortname"
+msgid "flag-sy"
+msgstr "drapeau-sy"
+
+#: includes/emojis.php:1248
+msgctxt "Emoji shortname"
+msgid "flag-sz"
+msgstr "drapeau-sz"
+
+#: includes/emojis.php:1249
+msgctxt "Emoji shortname"
+msgid "flag-ta"
+msgstr "drapeau-ta"
+
+#: includes/emojis.php:1250
+msgctxt "Emoji shortname"
+msgid "flag-tc"
+msgstr "drapeau-tc"
+
+#: includes/emojis.php:1251
+msgctxt "Emoji shortname"
+msgid "flag-td"
+msgstr "drapeau-td"
+
+#: includes/emojis.php:1252
+msgctxt "Emoji shortname"
+msgid "flag-tf"
+msgstr "drapeau-tf"
+
+#: includes/emojis.php:1253
+msgctxt "Emoji shortname"
+msgid "flag-tg"
+msgstr "drapeau-tg"
+
+#: includes/emojis.php:1254
+msgctxt "Emoji shortname"
+msgid "flag-th"
+msgstr "drapeau-th"
+
+#: includes/emojis.php:1255
+msgctxt "Emoji shortname"
+msgid "flag-tj"
+msgstr "drapeau-tj"
+
+#: includes/emojis.php:1256
+msgctxt "Emoji shortname"
+msgid "flag-tk"
+msgstr "drapeau-tk"
+
+#: includes/emojis.php:1257
+msgctxt "Emoji shortname"
+msgid "flag-tl"
+msgstr "drapeau-tl"
+
+#: includes/emojis.php:1258
+msgctxt "Emoji shortname"
+msgid "flag-tm"
+msgstr "drapeau-tm"
+
+#: includes/emojis.php:1259
+msgctxt "Emoji shortname"
+msgid "flag-tn"
+msgstr "drapeau-tn"
+
+#: includes/emojis.php:1260
+msgctxt "Emoji shortname"
+msgid "flag-to"
+msgstr "drapeau-to"
+
+#: includes/emojis.php:1261
+msgctxt "Emoji shortname"
+msgid "flag-tr"
+msgstr "drapeau-tr"
+
+#: includes/emojis.php:1262
+msgctxt "Emoji shortname"
+msgid "flag-tt"
+msgstr "drapeau-tt"
+
+#: includes/emojis.php:1263
+msgctxt "Emoji shortname"
+msgid "flag-tv"
+msgstr "drapeau-tv"
+
+#: includes/emojis.php:1264
+msgctxt "Emoji shortname"
+msgid "flag-tw"
+msgstr "drapeau-tw"
+
+#: includes/emojis.php:1265
+msgctxt "Emoji shortname"
+msgid "flag-tz"
+msgstr "drapeau-tz"
+
+#: includes/emojis.php:1266
+msgctxt "Emoji shortname"
+msgid "flag-ua"
+msgstr "drapeau-ua"
+
+#: includes/emojis.php:1267
+msgctxt "Emoji shortname"
+msgid "flag-ug"
+msgstr "drapeau-ug"
+
+#: includes/emojis.php:1268
+msgctxt "Emoji shortname"
+msgid "flag-um"
+msgstr "drapeau-um"
+
+#: includes/emojis.php:1269
+msgctxt "Emoji shortname"
+msgid "flag-us"
+msgstr "drapeau-us"
+
+#: includes/emojis.php:1270
+msgctxt "Emoji shortname"
+msgid "flag-uy"
+msgstr "drapeau-uy"
+
+#: includes/emojis.php:1271
+msgctxt "Emoji shortname"
+msgid "flag-uz"
+msgstr "drapeau-uz"
+
+#: includes/emojis.php:1272
+msgctxt "Emoji shortname"
+msgid "flag-va"
+msgstr "drapeau-va"
+
+#: includes/emojis.php:1273
+msgctxt "Emoji shortname"
+msgid "flag-vc"
+msgstr "drapeau-vc"
+
+#: includes/emojis.php:1274
+msgctxt "Emoji shortname"
+msgid "flag-ve"
+msgstr "drapeau-ve"
+
+#: includes/emojis.php:1275
+msgctxt "Emoji shortname"
+msgid "flag-vg"
+msgstr "drapeau-vg"
+
+#: includes/emojis.php:1276
+msgctxt "Emoji shortname"
+msgid "flag-vi"
+msgstr "drapeau-vi"
+
+#: includes/emojis.php:1277
+msgctxt "Emoji shortname"
+msgid "flag-vn"
+msgstr "drapeau-vn"
+
+#: includes/emojis.php:1278
+msgctxt "Emoji shortname"
+msgid "flag-vu"
+msgstr "drapeau-vu"
+
+#: includes/emojis.php:1279
+msgctxt "Emoji shortname"
+msgid "flag-wf"
+msgstr "drapeau-wf"
+
+#: includes/emojis.php:1280
+msgctxt "Emoji shortname"
+msgid "flag-ws"
+msgstr "drapeau-ws"
+
+#: includes/emojis.php:1281
+msgctxt "Emoji shortname"
+msgid "flag-xk"
+msgstr "drapeau-xk"
+
+#: includes/emojis.php:1282
+msgctxt "Emoji shortname"
+msgid "flag-ye"
+msgstr "drapeau-ye"
+
+#: includes/emojis.php:1283
+msgctxt "Emoji shortname"
+msgid "flag-yt"
+msgstr "drapeau-yt"
+
+#: includes/emojis.php:1284
+msgctxt "Emoji shortname"
+msgid "flag-za"
+msgstr "drapeau-za"
+
+#: includes/emojis.php:1285
+msgctxt "Emoji shortname"
+msgid "flag-zm"
+msgstr "drapeau-zm"
+
+#: includes/emojis.php:1286
+msgctxt "Emoji shortname"
+msgid "flag-zw"
+msgstr "drapeau-zw"
+
+#: includes/emojis.php:1287
+msgctxt "Emoji shortname"
+msgid "man-man-boy"
+msgstr "homme-homme-garçon"
+
+#: includes/emojis.php:1288
+msgctxt "Emoji shortname"
+msgid "man-man-boy-boy"
+msgstr "homme-homme-garçon-garçon"
+
+#: includes/emojis.php:1289
+msgctxt "Emoji shortname"
+msgid "man-man-girl"
+msgstr "homme-homme-fille"
+
+#: includes/emojis.php:1290
+msgctxt "Emoji shortname"
+msgid "man-man-girl-boy"
+msgstr "homme-homme-fille-garçon"
+
+#: includes/emojis.php:1291
+msgctxt "Emoji shortname"
+msgid "man-man-girl-girl"
+msgstr "homme-homme-fille-fille"
+
+#: includes/emojis.php:1292
+msgctxt "Emoji shortname"
+msgid "man-woman-boy-boy"
+msgstr "homme-femme-garçon-garçon"
+
+#: includes/emojis.php:1293
+msgctxt "Emoji shortname"
+msgid "man-woman-girl"
+msgstr "homme-femme-fille"
+
+#: includes/emojis.php:1294
+msgctxt "Emoji shortname"
+msgid "man-woman-girl-boy"
+msgstr "homme-femme-fille-garçon"
+
+#: includes/emojis.php:1295
+msgctxt "Emoji shortname"
+msgid "man-woman-girl-girl"
+msgstr "homme-femme-fille-fille"
+
+#: includes/emojis.php:1296
+msgctxt "Emoji shortname"
+msgid "man-heart-man"
+msgstr "homme-coeur-homme"
+
+#: includes/emojis.php:1297
+msgctxt "Emoji shortname"
+msgid "man-kiss-man"
+msgstr "homme-embrassant-homme"
+
+#: includes/emojis.php:1298
+msgctxt "Emoji shortname"
+msgid "woman-woman-boy"
+msgstr "femme-femme-garçon"
+
+#: includes/emojis.php:1299
+msgctxt "Emoji shortname"
+msgid "woman-woman-boy-boy"
+msgstr "femme-femme-garçon-garçon"
+
+#: includes/emojis.php:1300
+msgctxt "Emoji shortname"
+msgid "woman-woman-girl"
+msgstr "femme-femme-fille"
+
+#: includes/emojis.php:1301
+msgctxt "Emoji shortname"
+msgid "woman-woman-girl-boy"
+msgstr "femme-femme-fille-garçon"
+
+#: includes/emojis.php:1302
+msgctxt "Emoji shortname"
+msgid "woman-woman-girl-girl"
+msgstr "femme-femme-fille-fille"
+
+#: includes/emojis.php:1303
+msgctxt "Emoji shortname"
+msgid "woman-heart-woman"
+msgstr "femme-coeur-femme"
+
+#: includes/emojis.php:1304
+msgctxt "Emoji shortname"
+msgid "woman-kiss-woman"
+msgstr "femme-embrassant-femme"
+
+#: includes/filters.php:41
+msgctxt "My Account Activity Reactions sub nav"
+msgid "Reactions"
+msgstr "Mes réactions"
+
+#: includes/functions.php:297
+msgctxt "default reaction action string"
+msgid "%s reacted to an update"
+msgstr "%s a réagi à une mise à jour"
