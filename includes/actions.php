@@ -59,17 +59,37 @@ add_action( 'bp_before_activity_entry_comments', 'bp_reactions_container' );
  * @since 1.0.0
  */
 function bp_reactions_setup_subnav() {
-	$slug = bp_get_activity_slug();
+	$slug     = bp_get_activity_slug();
+	$position = 30;
 
-	bp_core_new_subnav_item( array(
-		'name'            => _x( 'Reactions', 'Displayed member activity reations sub nav', 'bp-reactions' ),
-		'slug'            => 'reactions',
-		'parent_url'      => trailingslashit( bp_displayed_user_domain() . $slug ),
-		'parent_slug'     => $slug,
-		'screen_function' => 'bp_activity_screen_my_activity',
-		'position'        => 30,
-		'item_css_id'     => 'activity-reactions'
-	), 'members' );
+	// A unique "Reactions" subnav
+	if ( bp_reactions_is_unique_subnav() ) {
+		bp_core_new_subnav_item( array(
+			'name'            => _x( 'Reactions', 'Displayed member activity reations sub nav', 'bp-reactions' ),
+			'slug'            => 'reactions',
+			'parent_url'      => trailingslashit( bp_displayed_user_domain() . $slug ),
+			'parent_slug'     => $slug,
+			'screen_function' => 'bp_activity_screen_my_activity',
+			'position'        => 30,
+			'item_css_id'     => 'activity-reactions'
+		), 'members' );
+
+	// A subnav for each registered reactions.
+	} else {
+		foreach ( (array) bp_reactions_get_reactions() as $reaction ) {
+			bp_core_new_subnav_item( array(
+				'name'            => $reaction->label,
+				'slug'            => $reaction->reaction_name,
+				'parent_url'      => trailingslashit( bp_displayed_user_domain() . $slug ),
+				'parent_slug'     => $slug,
+				'screen_function' => 'bp_activity_screen_my_activity',
+				'position'        => $position,
+				'item_css_id'     => 'activity-' . $reaction->reaction_name
+			), 'members' );
+
+			$position += 1;
+		}
+	}
 }
 add_action( 'bp_activity_setup_nav', 'bp_reactions_setup_subnav' );
 

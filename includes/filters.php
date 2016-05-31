@@ -35,13 +35,32 @@ add_filter( 'bp_activity_can_favorite', 'bp_reactions_override_favorites' );
  * @return array                The WP Admin Bar items.
  */
 function bp_reactions_setup_admin_nav( $wp_admin_nav = array() ) {
-	$wp_admin_nav[] = array(
-		'parent'   => 'my-account-activity',
-		'id'       => 'my-account-activity-reactions',
-		'title'    => _x( 'Reactions', 'My Account Activity Reactions sub nav', 'bp-reactions' ),
-		'href'     => trailingslashit( bp_loggedin_user_domain() . bp_get_activity_slug() ) . 'reactions/',
-		'position' => 30
-	);
+	$position = 30;
+
+	// A unique "Reactions" admin nav
+	if ( bp_reactions_is_unique_subnav() ) {
+		$wp_admin_nav[] = array(
+			'parent'   => 'my-account-activity',
+			'id'       => 'my-account-activity-reactions',
+			'title'    => _x( 'Reactions', 'My Account Activity Reactions sub nav', 'bp-reactions' ),
+			'href'     => trailingslashit( bp_loggedin_user_domain() . bp_get_activity_slug() ) . 'reactions/',
+			'position' => $position
+		);
+
+	// An admin nav for each registered reactions.
+	} else {
+		foreach ( (array) bp_reactions_get_reactions() as $reaction ) {
+			$wp_admin_nav[] = array(
+				'parent'   => 'my-account-activity',
+				'id'       => 'my-account-activity-' . $reaction->reaction_name,
+				'title'    => $reaction->label,
+				'href'     => trailingslashit( bp_loggedin_user_domain() . bp_get_activity_slug() ) . $reaction->reaction_name . '/',
+				'position' => $position
+			);
+
+			$position += 1;
+		}
+	}
 
 	return $wp_admin_nav;
 }
@@ -235,8 +254,19 @@ function bp_reactions_filter_user_scope( $retval = array(), $filter = array() ) 
 			: bp_loggedin_user_id();
 	}
 
+	$scope = bp_current_action();
+
 	// Determine the reactions.
-	$reactions = bp_reactions_get_user_reactions( $user_id );
+	if ( 'reactions' === $scope ) {
+		$reactions = bp_reactions_get_user_reactions( $user_id );
+	} else {
+		$reaction = bp_reactions_get_reaction( $scope );
+
+		if ( ! empty( $reaction->reaction_type ) ) {
+			$reactions = bp_reactions_get_user_reactions( $user_id, $reaction->reaction_type );
+		}
+	}
+
 	if ( empty( $reactions ) ) {
 		$reactions = array( 0 );
 	}
@@ -261,7 +291,7 @@ function bp_reactions_filter_user_scope( $retval = array(), $filter = array() ) 
 
 		// Overrides.
 		'override' => array(
-			'scope'            => 'reactions',
+			'scope'            => $scope,
 			'display_comments' => true,
 			'filter'           => array( 'user_id' => 0 ),
 			'show_hidden'      => true

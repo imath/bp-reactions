@@ -84,7 +84,9 @@ final class BP_Reactions {
 		$this->js_url        = trailingslashit( $this->plugin_url . 'js'  );
 		$this->css_url       = trailingslashit( $this->plugin_url . 'css' );
 		$this->minified      = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-		$this->reactions     = array();
+
+		$this->reactions        = array();
+		$this->is_unique_subnav = bp_get_option( '_bp_reactions_use_unique_subnav', 0 );
 	}
 
 	/**
@@ -117,6 +119,10 @@ final class BP_Reactions {
 			require( $this->includes_dir . 'ajax.php'      );
 			require( $this->includes_dir . 'filters.php'   );
 			require( $this->includes_dir . 'actions.php'   );
+
+			if ( is_admin() ) {
+				require( $this->includes_dir . 'admin.php'   );
+			}
 		}
 	}
 
@@ -134,6 +140,9 @@ final class BP_Reactions {
 
 			// Enqueue scripts and css.
 			add_action( 'bp_enqueue_scripts', array( $this, 'enqueue_script' ), 8 );
+
+			//
+			add_action( 'bp_register_activity_actions', array( $this, 'activity_scope_filters' ), 20 );
 
 			// Plugin's ready!
 			do_action( 'bp_reactions_ready' );
@@ -190,7 +199,8 @@ final class BP_Reactions {
 		}
 
 		wp_enqueue_script ( 'bp-reactions-script' );
-		wp_localize_script( 'bp-reactions-script', 'BP_Reactions', array(
+
+		$localization = array(
 			'ajaxurl'           => admin_url( 'admin-ajax.php', 'relative' ),
 			'nonces'            => array(
 				'fetch'         => wp_create_nonce( 'bp_reactions_fetch' ),
@@ -199,11 +209,35 @@ final class BP_Reactions {
 			'emojis'            => bp_reactions_get_emojis(),
 			'is_user_logged_in' => is_user_logged_in(),
 			'reaction_labels'   => wp_list_pluck( bp_reactions_get_reactions(), 'label' ),
-		) );
+		);
+
+		if ( bp_is_user() ) {
+			$localization['user_scope'] = bp_current_action();
+		}
+
+		wp_localize_script( 'bp-reactions-script', 'BP_Reactions', $localization );
 
 		wp_enqueue_style( 'bp-reactions-style' );
 
 		do_action( 'bp_reactions_enqueued' );
+	}
+
+	/**
+	 * Filter Activity scopes for each registered reactions.
+	 *
+	 * @since 1.0.0
+	 */
+	public function activity_scope_filters() {
+		// Don't need to filter scopes when a unique Reactions subnav is used.
+		if ( bp_reactions_is_unique_subnav() ) {
+			return;
+		}
+
+		$reactions = array_keys( (array) bp_reactions_get_reactions() );
+
+		foreach ( $reactions as $reaction ) {
+			add_filter( "bp_activity_set_{$reaction}_scope_args", 'bp_reactions_filter_user_scope', 10, 2 );
+		}
 	}
 
 	/**
