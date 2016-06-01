@@ -5,20 +5,21 @@
  * @package   BP Reactions
  * @author    imath
  * @license   GPL-2.0+
- * @link      https://imathi.eu
+ * @link      http://imathi.eu/tag/bp-reactions/
  *
- * @buddypress-plugin
+ * @buddypress-plugin {
  * Plugin Name:       BP Reactions
- * Plugin URI:        https://github.com/imath/bp-reactions
+ * Plugin URI:        http://imathi.eu/tag/bp-reactions/
  * Description:       React to BuddyPress activities!
- * Version:           1.0.0-alpha
+ * Version:           1.0.0
  * Author:            imath
- * Author URI:        https://imathi.eu
+ * Author URI:        http://imathi.eu
  * Text Domain:       bp-reactions
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Domain Path:       /languages/
  * GitHub Plugin URI: https://github.com/imath/bp-reactions
+ * }}
  */
 
 // Exit if accessed directly
@@ -71,7 +72,7 @@ final class BP_Reactions {
 	 */
 	private function setup_globals() {
 		/** Plugin globals ********************************************/
-		$this->version       = '1.0.0-alpha';
+		$this->version       = '1.0.0';
 		$this->domain        = 'bp-reactions';
 		$this->name          = 'BP Reactions';
 		$this->file          = __FILE__;
@@ -164,7 +165,7 @@ final class BP_Reactions {
 	 * @since 1.0.0
 	 */
 	public function register_cssjs() {
-		// JS
+		// Credits: @mathias https://mths.be/fromcodepoint
 		wp_register_script(
 			'fromcodepoint',
 			$this->js_url . "fromcodepoint{$this->minified}.js",
@@ -181,7 +182,6 @@ final class BP_Reactions {
 			true
 		);
 
-		// Css
 		wp_register_style(
 			'bp-reactions-style',
 			$this->css_url . "style{$this->minified}.css",
@@ -312,10 +312,12 @@ final class BP_Reactions {
 		$mofile_global = WP_LANG_DIR . '/bp-reactions/' . $mofile;
 
 		// Look in global /wp-content/languages/bp-reactions folder
-		load_textdomain( $this->domain, $mofile_global );
+		if ( ! load_textdomain( $this->domain, $mofile_global ) ) {
 
-		// Look in local /wp-content/plugins/bp-reactions/languages/ folder
-		load_textdomain( $this->domain, $mofile_local );
+			// Look in local /wp-content/plugins/bp-reactions/languages/ folder
+			// or /wp-content/languages/plugins/
+			load_plugin_textdomain( $this->domain, false, basename( $this->plugin_dir ) . '/languages' );
+		}
 	}
 }
 

@@ -45,6 +45,23 @@ function bp_reactions_admin_settings() {
 add_action( 'bp_register_admin_settings', 'bp_reactions_admin_settings', 20 );
 
 /**
+ * Plugin's Upgrader
+ *
+ * @since 1.0.0
+ */
+function bp_reactions_upgrade() {
+	$db_version = bp_get_option( '_bp_reactions_version', '' );
+
+	if ( version_compare( $db_version, bp_reactions()->version, '=' ) ) {
+		return;
+	}
+
+	// Finally upgrade plugin version
+	bp_update_option( '_bp_reactions_version', bp_reactions()->version );
+}
+add_action( 'bp_admin_init', 'bp_reactions_upgrade', 1000 );
+
+/**
  * Add a new Area to the BuddyPress Admin Tools to let site owners
  * migrate the BP Favorites to BP Reactions favorites.
  *
