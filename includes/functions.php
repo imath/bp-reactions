@@ -532,3 +532,71 @@ function bp_reactions_activity_can_react() {
 function bp_reactions_is_unique_subnav() {
 	return (int) bp_reactions()->is_unique_subnav;
 }
+
+/**
+ * Is BuddyPress favorites replacement disabled ?
+ *
+ * @since 1.0.0
+ *
+ * @return int 1 if disabled, 0 otherwise.
+ */
+function bp_reactions_disable_replace_favorites() {
+	return (int) bp_reactions()->disable_fav_replace;
+}
+
+/**
+ * How many users need to have their BuddyPress favorites migrated?
+ *
+ * @since  1.0.0
+ *
+ * @return int the number of users.
+ */
+function bp_reactions_get_users_to_migrate() {
+	global $wpdb;
+
+	return (int) $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->usermeta} WHERE meta_key = 'bp_favorite_activities'" );
+}
+
+/**
+ * Migrate BP Favorites to favorite reactions
+ *
+ * @since  1.0.0
+ *
+ * @param  int $step   starting point
+ * @param  int $offset number to migrate
+ * @return int         the amount of migrated users.
+ */
+function bp_reactions_migrate_favorites( $step = 0, $offset = 0 ) {
+	global $wpdb;
+
+	$user_favorites = $wpdb->get_results( $wpdb->prepare( "SELECT user_id, meta_value FROM {$wpdb->usermeta} WHERE meta_key = 'bp_favorite_activities' LIMIT %d, %d", $step, $offset ) );
+
+	if ( empty( $user_favorites ) ) {
+		return false;
+	}
+
+	foreach( $user_favorites as $user_favorite ) {
+		$activity_ids = maybe_unserialize( $user_favorite->meta_value );
+
+		if ( empty( $activity_ids ) ) {
+			continue;
+		}
+
+		// Validate Favorites
+		$favorites = bp_activity_get_specific( array( 'activity_ids' => $activity_ids, 'show_hidden' => true ) );
+
+		if ( empty( $favorites['activities'] ) ) {
+			continue;
+		}
+
+		foreach ( $favorites['activities'] as $activity ) {
+			bp_activity_reactions_add( $activity->id, array(
+				'user_id'       => $user_favorite->user_id,
+				'type'          => 'bp_activity_reaction_favorite',
+				'recorded_time' => $activity->date_recorded,
+			) );
+		}
+	}
+
+	return $offset;
+}

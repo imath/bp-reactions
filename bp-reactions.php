@@ -85,8 +85,9 @@ final class BP_Reactions {
 		$this->css_url       = trailingslashit( $this->plugin_url . 'css' );
 		$this->minified      = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
-		$this->reactions        = array();
-		$this->is_unique_subnav = bp_get_option( '_bp_reactions_use_unique_subnav', 0 );
+		$this->reactions           = array();
+		$this->is_unique_subnav    = bp_get_option( '_bp_reactions_use_unique_subnav', 0 );
+		$this->disable_fav_replace = bp_get_option( '_bp_reactions_disable_replace_favorites', 0 );
 	}
 
 	/**
@@ -136,12 +137,13 @@ final class BP_Reactions {
 		if ( $this->version_check() && bp_is_active( 'activity' ) ) {
 
 			// Register scripts and css.
-			add_action( 'bp_enqueue_scripts', array( $this, 'register_cssjs' ), 1 );
+			add_action( 'bp_enqueue_scripts',       array( $this, 'register_cssjs'       ), 1 );
+			add_action( 'bp_admin_enqueue_scripts', array( $this, 'register_admin_cssjs' ), 1 );
 
 			// Enqueue scripts and css.
 			add_action( 'bp_enqueue_scripts', array( $this, 'enqueue_script' ), 8 );
 
-			//
+			// Set the activity scope filter according to reactions
 			add_action( 'bp_register_activity_actions', array( $this, 'activity_scope_filters' ), 20 );
 
 			// Plugin's ready!
@@ -157,7 +159,7 @@ final class BP_Reactions {
 	}
 
 	/**
-	 * Register Scripts and styles
+	 * Register Front End Scripts and styles
 	 *
 	 * @since 1.0.0
 	 */
@@ -220,6 +222,34 @@ final class BP_Reactions {
 		wp_enqueue_style( 'bp-reactions-style' );
 
 		do_action( 'bp_reactions_enqueued' );
+	}
+
+	/**
+	 * Register Back End Scripts and styles
+	 *
+	 * @since 1.0.0
+	 */
+	public function register_admin_cssjs() {
+		$current_screen = get_current_screen();
+
+		if ( ! isset( $current_screen->id ) || false === strpos( $current_screen->id, 'tools_page_bp-tools' ) ) {
+			return;
+		}
+
+		wp_register_script(
+			'bp-reactions-migrates',
+			$this->js_url . "admin{$this->minified}.js",
+			array( 'jquery', 'json2', 'wp-backbone' ),
+			$this->version,
+			true
+		);
+
+		wp_register_style(
+			'bp-reactions-migrates',
+			$this->css_url . "admin{$this->minified}.css",
+			array(),
+			$this->version
+		);
 	}
 
 	/**

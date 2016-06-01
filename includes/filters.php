@@ -21,8 +21,7 @@ defined( 'ABSPATH' ) || exit;
  * @return bool               False to disable favorites. True otherwise.
  */
 function bp_reactions_override_favorites( $can_favorite ) {
-	// Filter here if you still want to use BP Favorite
-	return apply_filters( 'bp_reactions_do_not_override_bp_favorites', false, $can_favorite );
+	return 1 === bp_reactions_disable_replace_favorites();
 }
 add_filter( 'bp_activity_can_favorite', 'bp_reactions_override_favorites' );
 
