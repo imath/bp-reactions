@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BP Reactions 1.0.0-alpha\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bp-reactions\n"
-"POT-Creation-Date: 2016-05-15 16:23:47+00:00\n"
-"PO-Revision-Date: 2016-05-15 18:24+0100\n"
+"POT-Creation-Date: 2016-06-01 06:37:52+00:00\n"
+"PO-Revision-Date: 2016-06-01 08:45+0100\n"
 "Last-Translator: imath <mathchristo@yahoo.fr>\n"
 "Language-Team: ENGLISH <imath@chat.wordpress.org>\n"
 "Language: fr\n"
@@ -15,11 +15,11 @@ msgstr ""
 "X-Generator: Poedit 1.7.1\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: bp-reactions.php:218
+#: bp-reactions.php:282
 msgid "%s requires at least version %s of BuddyPress."
 msgstr "%s requiert à minima la version %s de BuddyPress"
 
-#: bp-reactions.php:222
+#: bp-reactions.php:286
 msgid "%s requires the BuddyPress Activity component to be active."
 msgstr "%s requiert que le composant des Activités de BuddyPress soit activé."
 
@@ -27,13 +27,68 @@ msgstr "%s requiert que le composant des Activités de BuddyPress soit activé."
 msgid "React"
 msgstr "Réagir"
 
-#: includes/actions.php:86
+#: includes/actions.php:106
 msgid "Popular updates"
 msgstr "Mises à jour populaires"
 
-#: includes/actions.php:87
+#: includes/actions.php:107
 msgid "Popular"
 msgstr "Populaire"
+
+#: includes/admin.php:16
+msgid "Do not replace the BuddyPress favorites with the BP Reactions favorites"
+msgstr "Ne pas remplacer les favoris de BuddyPress par ceux de BP Reactions"
+
+#: includes/admin.php:28
+msgid "Use a unique &quot;Reactions&quot; subnav for user profiles."
+msgstr ""
+"Utiliser une navigation unique &quot;Reactions&quot; pour les profils "
+"utilisateur."
+
+#: includes/admin.php:29
+msgid ""
+"When you have registered a lot of custom reactions, it can be interesting to "
+"group them into this unique subnav."
+msgstr ""
+"Lorsque beaucoup de réaction ont été initialisée, il peut être intéressant "
+"de les regrouper dans une navigation unique."
+
+#: includes/admin.php:39
+msgid "Activity favorites"
+msgstr "Activités favorites"
+
+#: includes/admin.php:42
+msgid "User's profile reactions subnav"
+msgstr "Navigation des réactions du profil utilisateur"
+
+#: includes/admin.php:66
+msgid "Migration tools"
+msgstr "Outil de migration"
+
+#. translators: accessibility text
+#: includes/admin.php:71
+msgid "Migrate"
+msgstr "Migrer"
+
+#: includes/admin.php:75
+msgid "Migrating user favorites to favorite reactions"
+msgstr "Migration des favoris vers des réactions en cours"
+
+#: includes/admin.php:76
+msgid "Migrate BuddyPress favorites to BP Reactions favorites."
+msgstr "Migrer les favoris BuddyPress vers les favoris de BP Reactions."
+
+#: includes/admin.php:88
+msgid "Migrate Items"
+msgstr "Migrer la sélection"
+
+#: includes/admin.php:95
+msgid "Please select a migration task."
+msgstr "Merci de choisir une tâche de migration"
+
+#: includes/admin.php:96
+msgid "Task completed with success."
+msgstr "Succès: la tâche est complétée."
 
 #: includes/ajax.php:24 includes/ajax.php:76
 msgid "The action was not sent correctly."
@@ -55,6 +110,10 @@ msgstr "﻿Oups action inconnue."
 msgid "Saving the reaction failed."
 msgstr "L&rsquo;ajout de votre réaction a échoué."
 
+#: includes/ajax.php:130
+msgid "The task could not process due to an error"
+msgstr "La tâche n&rsquo;a pu s&rsquo;accomplir en raison d&rsquo;une erreur."
+
 #: includes/functions.php:69
 msgid "Favorited an update"
 msgstr "A mis en favoris une mise à jour"
@@ -63,19 +122,19 @@ msgstr "A mis en favoris une mise à jour"
 msgid "Favorites"
 msgstr "Favoris"
 
-#: includes/functions.php:77
+#: includes/functions.php:81
 msgid "Liked an update"
 msgstr "A aimé une mise à jour"
 
-#: includes/functions.php:78
+#: includes/functions.php:82
 msgid "Likes"
 msgstr "Likes"
 
-#: includes/functions.php:320
+#: includes/functions.php:340
 msgid "%s favorited an update"
 msgstr "%s a mis en favoris une mise à jour"
 
-#: includes/functions.php:343
+#: includes/functions.php:363
 msgid "%s liked an update"
 msgstr "%s a aimé une mise à jour"
 
@@ -99,7 +158,7 @@ msgstr "imath"
 msgid "https://imathi.eu"
 msgstr "https://imathi.eu"
 
-#: includes/actions.php:65
+#: includes/actions.php:68
 msgctxt "Displayed member activity reations sub nav"
 msgid "Reactions"
 msgstr "Réactions"
@@ -6579,12 +6638,12 @@ msgctxt "Emoji shortname"
 msgid "woman-kiss-woman"
 msgstr "femme-embrassant-femme"
 
-#: includes/filters.php:41
+#: includes/filters.php:44
 msgctxt "My Account Activity Reactions sub nav"
 msgid "Reactions"
 msgstr "Mes réactions"
 
-#: includes/functions.php:297
+#: includes/functions.php:317
 msgctxt "default reaction action string"
 msgid "%s reacted to an update"
 msgstr "%s a réagi à une mise à jour"
