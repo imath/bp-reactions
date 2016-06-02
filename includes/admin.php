@@ -74,6 +74,12 @@ function bp_reactions_migrate_tool() {
 	if ( bp_activity_can_favorite() ) {
 		return;
 	}
+
+	$users_favorites = bp_reactions_get_users_to_migrate();
+
+	if ( ! $users_favorites ) {
+		return;
+	}
 	?>
 	<div class="wrap">
 		<form class="settings" method="post">
@@ -89,7 +95,7 @@ function bp_reactions_migrate_tool() {
 								?></span></legend>
 
 								<label for="bp_reactions_migrate_favorites">
-									<input type="checkbox" class="checkbox" data-number="1" data-message="<?php esc_attr_e( 'Migrating user favorites to favorite reactions', 'bp-reactions' ); ?>" id="bp_reactions_migrate_favorites" value="<?php echo esc_attr( bp_reactions_get_users_to_migrate() ); ?>" />
+									<input type="checkbox" class="checkbox" data-number="1" data-message="<?php esc_attr_e( 'Migrating user favorites to favorite reactions', 'bp-reactions' ); ?>" id="bp_reactions_migrate_favorites" value="<?php echo esc_attr( $users_favorites ); ?>" />
 									<?php _e( 'Migrate BuddyPress favorites to BP Reactions favorites.', 'bp-reactions' ) ?>
 								</label><br />
 
