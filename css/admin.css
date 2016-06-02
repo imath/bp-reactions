@@ -1,0 +1,68 @@
+#bp-reactions-migrate-tasks {
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+#bp-reactions-migrate-tasks li.bp-reactions-migrate-task {
+	list-style: none;
+	margin: 0;
+	padding: 1em 0.4em;
+}
+#bp-reactions-migrate-tasks li:not(:first-child) {
+ 	border-top: dotted 1px #f1f1f1;
+}
+
+#message.imath-upgrader-hide {
+	display:none;
+}
+
+#bp-reactions-migrate-tasks li.bp-reactions-migrate-task .task-description {
+ 	text-align: left;
+    line-height: 1.3em;
+    font-size: 14px;
+    padding: 0.4em;
+    color: #aaa;
+}
+
+#bp-reactions-migrate-tasks li.bp-reactions-migrate-task .task-description {
+	color: #555;
+}
+
+#bp-reactions-migrate-tasks li.bp-reactions-migrate-task .bp-reactions-progress {
+	background: none;
+	border: 1px solid #d1d1d1;
+	height: 5px;
+	margin: 0 auto;
+	margin-bottom: 2px;
+	padding: 0;
+	overflow: hidden;
+	width: 98%;
+}
+
+#bp-reactions-migrate-tasks li.bp-reactions-migrate-task .bp-reactions-progress.updated,
+#bp-reactions-migrate-tasks li.bp-reactions-migrate-task .bp-reactions-progress.error {
+	height: auto;
+	padding: 10px;
+	font-weight: bold;
+}
+
+#bp-reactions-migrate-tasks li.bp-reactions-migrate-task .bp-reactions-progress.error {
+	background-color: #fdc;
+	border-color: #a00;
+	color: #800;
+}
+
+#bp-reactions-migrate-tasks li.bp-reactions-migrate-task .bp-reactions-progress.updated {
+	background-color: #efc;
+	border: 1px solid #591;
+	color: #250;
+}
+
+#bp-reactions-migrate-tasks li.bp-reactions-migrate-task .bp-reactions-bar {
+	background-color: #0073aa;
+	width: 0;
+	height: 100%;
+	z-index: 9;
+}

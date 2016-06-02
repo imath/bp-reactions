@@ -116,3 +116,46 @@ function bp_activity_reactions_save() {
 	wp_send_json_success( $reacted );
 }
 add_action( 'wp_ajax_bp_activity_reactions_save', 'bp_activity_reactions_save' );
+
+/**
+ * Migrate the BP Favorites to favorite reactions from the
+ * BuddyPress tools screen.
+ *
+ * @since  1.0.0
+ *
+ * @return string a JSON encoded reply.
+ */
+function bp_reactions_migrate() {
+	$error = array(
+		'message'   => __( 'The task could not process due to an error', 'bp-reactions' ),
+		'type'      => 'error'
+	);
+
+	if ( empty( $_POST['id'] ) || ! isset( $_POST['count'] ) || ! isset( $_POST['done'] ) || ! isset( $_POST['step'] ) ) {
+		wp_send_json_error( $error );
+	}
+
+	// Add the action to the error
+	$callback          = sanitize_key( $_POST['id'] );
+	$error['callback'] = $callback;
+
+	// Check nonce
+	if ( empty( $_POST['nonce'] ) || ! wp_verify_nonce( $_POST['nonce'], 'bp-reactions-migrate' ) ) {
+		wp_send_json_error( $error );
+	}
+
+	// Check capability
+	if ( ! current_user_can( 'manage_options' ) || ! is_callable( $callback ) ) {
+		wp_send_json_error( $error );
+	}
+
+	$step   = (int) $_POST['step'];
+	$number = 1;
+	if ( ! empty( $_POST['number'] ) ) {
+		$number = (int) $_POST['number'];
+	}
+
+	$did = call_user_func_array( $callback, array( $step, $number ) );
+	wp_send_json_success( array( 'done' => $did, 'callback' => $callback ) );
+}
+add_action( 'wp_ajax_bp_reactions_migrate', 'bp_reactions_migrate' );

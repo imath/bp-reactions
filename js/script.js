@@ -145,10 +145,12 @@ window.bp  = window.bp  || {};
 					$reactButton.html( $reactButton.html().replace( $spanReact, newSpanReact ) );
 				}
 
-				// If on the member's reactions screen, eventually remove entries
-				if ( $( '#activity-reactions-personal-li' ).length && $( '#activity-reactions-personal-li' ).hasClass( 'selected' ) ) {
-					if ( ! $emojiButton.parent().find( '.reacted' ).length ) {
-						$emojiButton.closest( 'li' ).remove();
+				if ( 'undefined' !== typeof BP_Reactions.user_scope ) {
+					// If on the member's reactions screen, eventually remove entries
+					if ( $( '#activity-' + BP_Reactions.user_scope + '-personal-li' ).length && $( '#activity-' + BP_Reactions.user_scope + '-personal-li' ).hasClass( 'selected' ) ) {
+						if ( ( 'reactions' === BP_Reactions.user_scope && ! $emojiButton.parent().find( '.reacted' ).length ) || BP_Reactions.user_scope === postdata.reaction ) {
+							$emojiButton.closest( 'li' ).remove();
+						}
 					}
 				}
 

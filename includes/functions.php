@@ -70,6 +70,10 @@ function bp_reactions_register_default_reactions() {
 			'label'           => __( 'Favorites', 'bp-reactions' ),
 			'format_callback' => 'bp_reactions_favorite_format_callback'
 		) );
+
+		// Remove actions about BuddyPress favoriting
+		remove_action( 'bp_actions', 'bp_activity_action_mark_favorite' );
+		remove_action( 'bp_actions', 'bp_activity_action_remove_favorite' );
 	}
 
 	bp_reactions_register_reaction( 'like', array(
@@ -180,10 +184,11 @@ function bp_reactions_activity_get_users( $activity_id ) {
  * @since  1.0.0
  *
  * @global $wpdb
- * @param  int   $user_id The user ID.
- * @return array          The list of activity IDs the user reacted to.
+ * @param  int    $user_id The user ID.
+ * @param  string $type    The activity type
+ * @return array           The list of activity IDs the user reacted to.
  */
-function bp_reactions_get_user_reactions( $user_id = 0 ) {
+function bp_reactions_get_user_reactions( $user_id = 0, $type = '' ) {
 	global $wpdb;
 
 	if ( empty( $user_id ) ) {
@@ -192,7 +197,22 @@ function bp_reactions_get_user_reactions( $user_id = 0 ) {
 
 	$activity_table = buddypress()->activity->table_name;
 
-	return $wpdb->get_col( $wpdb->prepare( "SELECT DISTINCT a.item_id FROM {$activity_table} a WHERE a.component = 'reactions' AND a.user_id = %d", $user_id ) );
+	$sql = array(
+		'select' => "SELECT DISTINCT a.item_id FROM {$activity_table} a",
+		'where'  => array(
+			'component' => "a.component = 'reactions'",
+			'user'      => $wpdb->prepare( "a.user_id = %d", $user_id ),
+		)
+	);
+
+	if ( ! empty( $type ) ) {
+		$sql['where']['type'] = $wpdb->prepare( "a.type = %s", $type );
+	}
+
+	$where = ' WHERE ' . join( ' AND ', $sql['where'] );
+	$query = $sql['select'] . $where;
+
+	return $wpdb->get_col( $query );
 }
 
 /**
@@ -484,6 +504,13 @@ function bp_activity_reactions_remove( $activity_id = 0, $reaction_id = '', $use
 	return $deleted;
 }
 
+/**
+ * Can a reaction be added to the activity type
+ *
+ * @since 1.0.0
+ *
+ * @return bool True if the activity type can have a reaction, false otherwise.
+ */
 function bp_reactions_activity_can_react() {
 	if ( ! isset( $GLOBALS['activities_template'] ) ) {
 		$retval = false;
@@ -493,4 +520,83 @@ function bp_reactions_activity_can_react() {
 	}
 
 	return $retval;
+}
+
+/**
+ * Should we use a unique Reactions subnav ?
+ *
+ * @since 1.0.0
+ *
+ * @return int 1 to use a unique Reactions subnav, 0 otherwise.
+ */
+function bp_reactions_is_unique_subnav() {
+	return (int) bp_reactions()->is_unique_subnav;
+}
+
+/**
+ * Is BuddyPress favorites replacement disabled ?
+ *
+ * @since 1.0.0
+ *
+ * @return int 1 if disabled, 0 otherwise.
+ */
+function bp_reactions_disable_replace_favorites() {
+	return (int) bp_reactions()->disable_fav_replace;
+}
+
+/**
+ * How many users need to have their BuddyPress favorites migrated?
+ *
+ * @since  1.0.0
+ *
+ * @return int the number of users.
+ */
+function bp_reactions_get_users_to_migrate() {
+	global $wpdb;
+
+	return (int) $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->usermeta} WHERE meta_key = 'bp_favorite_activities'" );
+}
+
+/**
+ * Migrate BP Favorites to favorite reactions
+ *
+ * @since  1.0.0
+ *
+ * @param  int $step   starting point
+ * @param  int $offset number to migrate
+ * @return int         the amount of migrated users.
+ */
+function bp_reactions_migrate_favorites( $step = 0, $offset = 0 ) {
+	global $wpdb;
+
+	$user_favorites = $wpdb->get_results( $wpdb->prepare( "SELECT user_id, meta_value FROM {$wpdb->usermeta} WHERE meta_key = 'bp_favorite_activities' LIMIT %d, %d", $step, $offset ) );
+
+	if ( empty( $user_favorites ) ) {
+		return false;
+	}
+
+	foreach( $user_favorites as $user_favorite ) {
+		$activity_ids = maybe_unserialize( $user_favorite->meta_value );
+
+		if ( empty( $activity_ids ) ) {
+			continue;
+		}
+
+		// Validate Favorites
+		$favorites = bp_activity_get_specific( array( 'activity_ids' => $activity_ids, 'show_hidden' => true ) );
+
+		if ( empty( $favorites['activities'] ) ) {
+			continue;
+		}
+
+		foreach ( $favorites['activities'] as $activity ) {
+			bp_activity_reactions_add( $activity->id, array(
+				'user_id'       => $user_favorite->user_id,
+				'type'          => 'bp_activity_reaction_favorite',
+				'recorded_time' => $activity->date_recorded,
+			) );
+		}
+	}
+
+	return $offset;
 }

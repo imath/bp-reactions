@@ -5,20 +5,21 @@
  * @package   BP Reactions
  * @author    imath
  * @license   GPL-2.0+
- * @link      https://imathi.eu
+ * @link      http://imathi.eu/tag/bp-reactions/
  *
- * @buddypress-plugin
+ * @buddypress-plugin {
  * Plugin Name:       BP Reactions
- * Plugin URI:        https://github.com/imath/bp-reactions
+ * Plugin URI:        http://imathi.eu/tag/bp-reactions/
  * Description:       React to BuddyPress activities!
- * Version:           1.0.0-alpha
+ * Version:           1.0.0
  * Author:            imath
- * Author URI:        https://imathi.eu
+ * Author URI:        http://imathi.eu
  * Text Domain:       bp-reactions
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Domain Path:       /languages/
  * GitHub Plugin URI: https://github.com/imath/bp-reactions
+ * }}
  */
 
 // Exit if accessed directly
@@ -71,7 +72,7 @@ final class BP_Reactions {
 	 */
 	private function setup_globals() {
 		/** Plugin globals ********************************************/
-		$this->version       = '1.0.0-alpha';
+		$this->version       = '1.0.0';
 		$this->domain        = 'bp-reactions';
 		$this->name          = 'BP Reactions';
 		$this->file          = __FILE__;
@@ -84,7 +85,10 @@ final class BP_Reactions {
 		$this->js_url        = trailingslashit( $this->plugin_url . 'js'  );
 		$this->css_url       = trailingslashit( $this->plugin_url . 'css' );
 		$this->minified      = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-		$this->reactions     = array();
+
+		$this->reactions           = array();
+		$this->is_unique_subnav    = bp_get_option( '_bp_reactions_use_unique_subnav', 0 );
+		$this->disable_fav_replace = bp_get_option( '_bp_reactions_disable_replace_favorites', 0 );
 	}
 
 	/**
@@ -117,6 +121,10 @@ final class BP_Reactions {
 			require( $this->includes_dir . 'ajax.php'      );
 			require( $this->includes_dir . 'filters.php'   );
 			require( $this->includes_dir . 'actions.php'   );
+
+			if ( is_admin() ) {
+				require( $this->includes_dir . 'admin.php'   );
+			}
 		}
 	}
 
@@ -130,10 +138,14 @@ final class BP_Reactions {
 		if ( $this->version_check() && bp_is_active( 'activity' ) ) {
 
 			// Register scripts and css.
-			add_action( 'bp_enqueue_scripts', array( $this, 'register_cssjs' ), 1 );
+			add_action( 'bp_enqueue_scripts',       array( $this, 'register_cssjs'       ), 1 );
+			add_action( 'bp_admin_enqueue_scripts', array( $this, 'register_admin_cssjs' ), 1 );
 
 			// Enqueue scripts and css.
 			add_action( 'bp_enqueue_scripts', array( $this, 'enqueue_script' ), 8 );
+
+			// Set the activity scope filter according to reactions
+			add_action( 'bp_register_activity_actions', array( $this, 'activity_scope_filters' ), 20 );
 
 			// Plugin's ready!
 			do_action( 'bp_reactions_ready' );
@@ -148,12 +160,12 @@ final class BP_Reactions {
 	}
 
 	/**
-	 * Register Scripts and styles
+	 * Register Front End Scripts and styles
 	 *
 	 * @since 1.0.0
 	 */
 	public function register_cssjs() {
-		// JS
+		// Credits: @mathias https://mths.be/fromcodepoint
 		wp_register_script(
 			'fromcodepoint',
 			$this->js_url . "fromcodepoint{$this->minified}.js",
@@ -170,7 +182,6 @@ final class BP_Reactions {
 			true
 		);
 
-		// Css
 		wp_register_style(
 			'bp-reactions-style',
 			$this->css_url . "style{$this->minified}.css",
@@ -190,7 +201,8 @@ final class BP_Reactions {
 		}
 
 		wp_enqueue_script ( 'bp-reactions-script' );
-		wp_localize_script( 'bp-reactions-script', 'BP_Reactions', array(
+
+		$localization = array(
 			'ajaxurl'           => admin_url( 'admin-ajax.php', 'relative' ),
 			'nonces'            => array(
 				'fetch'         => wp_create_nonce( 'bp_reactions_fetch' ),
@@ -199,11 +211,63 @@ final class BP_Reactions {
 			'emojis'            => bp_reactions_get_emojis(),
 			'is_user_logged_in' => is_user_logged_in(),
 			'reaction_labels'   => wp_list_pluck( bp_reactions_get_reactions(), 'label' ),
-		) );
+		);
+
+		if ( bp_is_user() ) {
+			$localization['user_scope'] = bp_current_action();
+		}
+
+		wp_localize_script( 'bp-reactions-script', 'BP_Reactions', $localization );
 
 		wp_enqueue_style( 'bp-reactions-style' );
 
 		do_action( 'bp_reactions_enqueued' );
+	}
+
+	/**
+	 * Register Back End Scripts and styles
+	 *
+	 * @since 1.0.0
+	 */
+	public function register_admin_cssjs() {
+		$current_screen = get_current_screen();
+
+		if ( ! isset( $current_screen->id ) || false === strpos( $current_screen->id, 'tools_page_bp-tools' ) ) {
+			return;
+		}
+
+		wp_register_script(
+			'bp-reactions-migrates',
+			$this->js_url . "admin{$this->minified}.js",
+			array( 'jquery', 'json2', 'wp-backbone' ),
+			$this->version,
+			true
+		);
+
+		wp_register_style(
+			'bp-reactions-migrates',
+			$this->css_url . "admin{$this->minified}.css",
+			array(),
+			$this->version
+		);
+	}
+
+	/**
+	 * Filter Activity scopes for each registered reactions.
+	 *
+	 * @since 1.0.0
+	 */
+	public function activity_scope_filters() {
+		// Don't need to filter scopes when a unique Reactions subnav is used.
+		if ( bp_reactions_is_unique_subnav() ) {
+			return;
+		}
+
+		$reactions = array_keys( (array) bp_reactions_get_reactions() );
+
+		foreach ( $reactions as $reaction ) {
+			add_filter( "bp_activity_set_{$reaction}_scope_args", 'bp_reactions_filter_user_scope', 10, 2 );
+		}
 	}
 
 	/**
@@ -248,10 +312,12 @@ final class BP_Reactions {
 		$mofile_global = WP_LANG_DIR . '/bp-reactions/' . $mofile;
 
 		// Look in global /wp-content/languages/bp-reactions folder
-		load_textdomain( $this->domain, $mofile_global );
+		if ( ! load_textdomain( $this->domain, $mofile_global ) ) {
 
-		// Look in local /wp-content/plugins/bp-reactions/languages/ folder
-		load_textdomain( $this->domain, $mofile_local );
+			// Look in local /wp-content/plugins/bp-reactions/languages/ folder
+			// or /wp-content/languages/plugins/
+			load_plugin_textdomain( $this->domain, false, basename( $this->plugin_dir ) . '/languages' );
+		}
 	}
 }
 
