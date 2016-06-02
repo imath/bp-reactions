@@ -14,7 +14,7 @@ React to BuddyPress activities!
 BP Reactions is a BuddyPress (2.5+) plugin, requiring the Activity component to be active, that will allow your members to:
 
 * easily add emoji to the content of their activities thanks to an autocomplete feature (eg: type :heart for the heart emoji),
-* react to posted activities
+* react to posted activities.
 
 Built in reactions are "favorites" and "likes". The "favorites" one is replacing the BuddyPress Activity favorites feature by default, but you have the choice to keep BuddyPress favorites thanks to an option you can set into the BuddyPress settings screen.
 Plugin comes with an API to let developers add their custom reactions, the ones that will suit best in their community :)
@@ -29,7 +29,13 @@ Activate BP Reactions in the "Plugins" admin panel using the "Network Activate" 
 
 == Frequently Asked Questions ==
 
-= If you have any question =
+= Is it possible to migrate BuddyPress favorites to the favorite reactions ? =
+If you choose to let BP Reactions manage users favorites, you can migrate their favorites from the BuddyPress Tools Administration screen. Beneath the Repair tools, you will find a Migrate tool. Simply activate the checkbox to migrate the favorites and hit the "Migrate Items" button.
+
+= How can i add custom reactions ? =
+The video on the main description page of the plugin is explaining how to do it (timeline 2:25min to 3:44min). You can add your custom reactions within a bp-custom.php file. Here's a [code example](https://gist.github.com/imath/8b100a78c6fef5807e31c64c8e5eab17 "code example") for a recommandation reaction.
+
+= If you have any other questions =
 
 Please add a comment <a href="http://imathi.eu/tag/bp-reactions/">here</a>
 

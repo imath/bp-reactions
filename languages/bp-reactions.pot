@@ -2,9 +2,9 @@
 # This file is distributed under the GPL-2.0+.
 msgid ""
 msgstr ""
-"Project-Id-Version: BP Reactions 1.0.0-alpha\n"
+"Project-Id-Version: BP Reactions 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bp-reactions\n"
-"POT-Creation-Date: 2016-06-01 06:37:52+00:00\n"
+"POT-Creation-Date: 2016-06-02 15:02:46+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -55,32 +55,32 @@ msgstr ""
 msgid "User's profile reactions subnav"
 msgstr ""
 
-#: includes/admin.php:66
+#: includes/admin.php:89
 msgid "Migration tools"
 msgstr ""
 
-#: includes/admin.php:71
+#: includes/admin.php:94
 #. translators: accessibility text
 msgid "Migrate"
 msgstr ""
 
-#: includes/admin.php:75
+#: includes/admin.php:98
 msgid "Migrating user favorites to favorite reactions"
 msgstr ""
 
-#: includes/admin.php:76
+#: includes/admin.php:99
 msgid "Migrate BuddyPress favorites to BP Reactions favorites."
 msgstr ""
 
-#: includes/admin.php:88
+#: includes/admin.php:111
 msgid "Migrate Items"
 msgstr ""
 
-#: includes/admin.php:95
+#: includes/admin.php:118
 msgid "Please select a migration task."
 msgstr ""
 
-#: includes/admin.php:96
+#: includes/admin.php:119
 msgid "Task completed with success."
 msgstr ""
 
@@ -137,7 +137,7 @@ msgid "BP Reactions"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://github.com/imath/bp-reactions"
+msgid "http://imathi.eu/tag/bp-reactions/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -149,7 +149,7 @@ msgid "imath"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://imathi.eu"
+msgid "http://imathi.eu"
 msgstr ""
 
 #: includes/actions.php:68

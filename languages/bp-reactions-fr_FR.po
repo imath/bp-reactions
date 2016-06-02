@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BP Reactions 1.0.0-alpha\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bp-reactions\n"
-"POT-Creation-Date: 2016-06-01 06:37:52+00:00\n"
-"PO-Revision-Date: 2016-06-01 08:45+0100\n"
+"POT-Creation-Date: 2016-06-02 15:02:46+00:00\n"
+"PO-Revision-Date: 2016-06-02 17:04+0100\n"
 "Last-Translator: imath <mathchristo@yahoo.fr>\n"
 "Language-Team: ENGLISH <imath@chat.wordpress.org>\n"
 "Language: fr\n"
@@ -50,7 +50,7 @@ msgid ""
 "When you have registered a lot of custom reactions, it can be interesting to "
 "group them into this unique subnav."
 msgstr ""
-"Lorsque beaucoup de réaction ont été initialisée, il peut être intéressant "
+"Lorsque beaucoup de réactions ont été initialisées, il peut être intéressant "
 "de les regrouper dans une navigation unique."
 
 #: includes/admin.php:39
@@ -61,32 +61,32 @@ msgstr "Activités favorites"
 msgid "User's profile reactions subnav"
 msgstr "Navigation des réactions du profil utilisateur"
 
-#: includes/admin.php:66
+#: includes/admin.php:89
 msgid "Migration tools"
 msgstr "Outil de migration"
 
 #. translators: accessibility text
-#: includes/admin.php:71
+#: includes/admin.php:94
 msgid "Migrate"
 msgstr "Migrer"
 
-#: includes/admin.php:75
+#: includes/admin.php:98
 msgid "Migrating user favorites to favorite reactions"
 msgstr "Migration des favoris vers des réactions en cours"
 
-#: includes/admin.php:76
+#: includes/admin.php:99
 msgid "Migrate BuddyPress favorites to BP Reactions favorites."
 msgstr "Migrer les favoris BuddyPress vers les favoris de BP Reactions."
 
-#: includes/admin.php:88
+#: includes/admin.php:111
 msgid "Migrate Items"
 msgstr "Migrer la sélection"
 
-#: includes/admin.php:95
+#: includes/admin.php:118
 msgid "Please select a migration task."
 msgstr "Merci de choisir une tâche de migration"
 
-#: includes/admin.php:96
+#: includes/admin.php:119
 msgid "Task completed with success."
 msgstr "Succès: la tâche est complétée."
 
@@ -143,8 +143,8 @@ msgid "BP Reactions"
 msgstr "BP Reactions"
 
 #. Plugin URI of the plugin/theme
-msgid "https://github.com/imath/bp-reactions"
-msgstr "https://github.com/imath/bp-reactions"
+msgid "http://imathi.eu/tag/bp-reactions/"
+msgstr "http://imathi.eu/tag/bp-reactions/"
 
 #. Description of the plugin/theme
 msgid "React to BuddyPress activities!"
@@ -155,8 +155,8 @@ msgid "imath"
 msgstr "imath"
 
 #. Author URI of the plugin/theme
-msgid "https://imathi.eu"
-msgstr "https://imathi.eu"
+msgid "http://imathi.eu"
+msgstr "http://imathi.eu"
 
 #: includes/actions.php:68
 msgctxt "Displayed member activity reations sub nav"
