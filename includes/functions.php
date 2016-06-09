@@ -472,7 +472,8 @@ function bp_activity_reactions_remove( $activity_id = 0, $reaction_id = '', $use
 	}
 
 	$reaction_activity = bp_activity_get( array(
-		'filter' => array(
+		'show_hidden' => true,
+		'filter'      => array(
 			'user_id'    => $user_id,
 			'object'     => 'reactions',
 			'action'     => $reaction->reaction_type,

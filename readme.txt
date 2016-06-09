@@ -48,6 +48,7 @@ Please add a comment <a href="http://imathi.eu/tag/bp-reactions/">here</a>
 
 = 1.0.1 =
 * Make sure hidden activities are not reacted twice on the same type of reaction.
+* Make sure reactions about hidden activities can be deleted.
 * Improve the layout of the reactions horizontal bar for the single activity screen.
 
 = 1.0.0 =
