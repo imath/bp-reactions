@@ -11,7 +11,7 @@
  * Plugin Name:       BP Reactions
  * Plugin URI:        http://imathi.eu/tag/bp-reactions/
  * Description:       React to BuddyPress activities!
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            imath
  * Author URI:        http://imathi.eu
  * Text Domain:       bp-reactions
@@ -72,7 +72,7 @@ final class BP_Reactions {
 	 */
 	private function setup_globals() {
 		/** Plugin globals ********************************************/
-		$this->version       = '1.0.0';
+		$this->version       = '1.0.1';
 		$this->domain        = 'bp-reactions';
 		$this->name          = 'BP Reactions';
 		$this->file          = __FILE__;

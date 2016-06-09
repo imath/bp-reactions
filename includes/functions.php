@@ -413,7 +413,8 @@ function bp_activity_reactions_add( $activity_id = 0, $args = array() ) {
 
 	// Reaction already exists? (shouldn't happen)
 	$existing = bp_activity_get( array(
-		'filter' => array(
+		'show_hidden' => true,
+		'filter'      => array(
 			'user_id'    => $params['user_id'],
 			'object'     => 'reactions',
 			'action'     => $params['type'],
