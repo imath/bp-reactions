@@ -39,3 +39,7 @@
 	border-top: 1px solid #ccc;
 	padding-top: 0.6em;
 }
+
+body.activity-permalink #buddypress .activity-reactions.active {
+	margin: -7px 0 0 70px;
+}
