@@ -4,7 +4,7 @@ Donate link: http://imathi.eu/donations/
 Tags: BuddyPress, Reactions, Emoji
 Requires at least: 4.5
 Tested up to: 4.5.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2
 
 React to BuddyPress activities!
@@ -46,6 +46,11 @@ Please add a comment <a href="http://imathi.eu/tag/bp-reactions/">here</a>
 
 == Changelog ==
 
+= 1.0.1 =
+* Make sure hidden activities are not reacted twice on the same type of reaction.
+* Make sure reactions about hidden activities can be deleted.
+* Improve the layout of the reactions horizontal bar for the single activity screen.
+
 = 1.0.0 =
 * Requires BuddyPress 2.5.
 * Requires the BuddyPress Activity Component to be active.
@@ -55,6 +60,9 @@ Please add a comment <a href="http://imathi.eu/tag/bp-reactions/">here</a>
 * An API allows developer to add custom reactions.
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Nothing particular, but as usual, back-up your database.
 
 = 1.0.0 =
 first version of the plugin, so nothing particular.
