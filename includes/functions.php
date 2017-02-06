@@ -68,7 +68,11 @@ function bp_reactions_register_default_reactions() {
 			'emoji'           => '0x2B50',
 			'description'     => __( 'Favorited an update', 'bp-reactions' ),
 			'label'           => __( 'Favorites', 'bp-reactions' ),
-			'format_callback' => 'bp_reactions_favorite_format_callback'
+			'format_callback' => 'bp_reactions_favorite_format_callback',
+			'notification_texts' => array(
+				'singular' => __( '%s favorited one of your activities', 'bp-reactions' ),
+				'plural'   => __( 'Some users favorited one of your activities', 'bp-reactions' ),
+			),
 		) );
 
 		// Remove actions about BuddyPress favoriting
@@ -80,7 +84,11 @@ function bp_reactions_register_default_reactions() {
 		'emoji'           => '0x2764',
 		'description'     => __( 'Liked an update', 'bp-reactions' ),
 		'label'           => __( 'Likes', 'bp-reactions' ),
-		'format_callback' => 'bp_reactions_like_format_callback'
+		'format_callback' => 'bp_reactions_like_format_callback',
+		'notification_texts' => array(
+			'singular' => __( '%s liked one of your activities', 'bp-reactions' ),
+			'plural'   => __( 'Some users liked one of your activities', 'bp-reactions' ),
+		),
 	) );
 }
 
