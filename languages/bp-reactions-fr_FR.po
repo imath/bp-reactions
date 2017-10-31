@@ -4,28 +4,33 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BP Reactions 1.0.0-alpha\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bp-reactions\n"
-"POT-Creation-Date: 2016-06-09 16:03:57+00:00\n"
-"PO-Revision-Date: 2016-06-09 18:04+0100\n"
+"POT-Creation-Date: 2017-10-31 09:45:01+00:00\n"
+"PO-Revision-Date: 2017-10-31 10:49+0100\n"
 "Last-Translator: imath <mathchristo@yahoo.fr>\n"
 "Language-Team: ENGLISH <imath@chat.wordpress.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.1\n"
+"X-Generator: Poedit 1.5.7\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: bp-reactions.php:282
+#: bp-reactions.php:286
 msgid "%s requires at least version %s of BuddyPress."
 msgstr "%s requiert à minima la version %s de BuddyPress"
 
-#: bp-reactions.php:286
+#: bp-reactions.php:290
 msgid "%s requires the BuddyPress Activity component to be active."
 msgstr "%s requiert que le composant des Activités de BuddyPress soit activé."
 
 #: includes/actions.php:37 includes/actions.php:39
 msgid "React"
 msgstr "Réagir"
+
+#: includes/actions.php:68
+msgctxt "Displayed member activity reations sub nav"
+msgid "Reactions"
+msgstr "Réactions"
 
 #: includes/actions.php:106
 msgid "Popular updates"
@@ -113,65 +118,6 @@ msgstr "L&rsquo;ajout de votre réaction a échoué."
 #: includes/ajax.php:130
 msgid "The task could not process due to an error"
 msgstr "La tâche n&rsquo;a pu s&rsquo;accomplir en raison d&rsquo;une erreur."
-
-#: includes/functions.php:69
-msgid "Favorited an update"
-msgstr "A mis en favoris une mise à jour"
-
-#: includes/functions.php:70
-msgid "Favorites"
-msgstr "Favoris"
-
-#: includes/functions.php:81
-msgid "Liked an update"
-msgstr "A aimé une mise à jour"
-
-#: includes/functions.php:82
-msgid "Likes"
-msgstr "Likes"
-
-#: includes/functions.php:340
-msgid "%s favorited an update"
-msgstr "%s a mis en favoris une mise à jour"
-
-#: includes/functions.php:363
-msgid "%s liked an update"
-msgstr "%s a aimé une mise à jour"
-
-#. Plugin Name of the plugin/theme
-msgid "BP Reactions"
-msgstr "BP Reactions"
-
-#. Plugin URI of the plugin/theme
-msgid "http://imathi.eu/tag/bp-reactions/"
-msgstr "http://imathi.eu/tag/bp-reactions/"
-
-#. Description of the plugin/theme
-msgid "React to BuddyPress activities!"
-msgstr "Réagissez aux activités de BuddyPress !"
-
-#. Author of the plugin/theme
-msgid "imath"
-msgstr "imath"
-
-#. Author URI of the plugin/theme
-msgid "http://imathi.eu"
-msgstr "http://imathi.eu"
-
-#: includes/actions.php:68
-msgctxt "Displayed member activity reations sub nav"
-msgid "Reactions"
-msgstr "Réactions"
-
-#: includes/emojis.php:622
-msgctxt "Emoji shortname"
-msgid "100"
-msgstr "100"
-
-#: includes/emojis.php:736
-msgctxt "Emoji shortname"
-msgid "1234"
-msgstr "1234"
 
 #: includes/emojis.php:9
 msgctxt "Emoji shortname"
@@ -3233,6 +3179,11 @@ msgctxt "Emoji shortname"
 msgid "white_flower"
 msgstr "fleur_blanche"
 
+#: includes/emojis.php:622
+msgctxt "Emoji shortname"
+msgid "100"
+msgstr "100"
+
 #: includes/emojis.php:623
 msgctxt "Emoji shortname"
 msgid "moneybag"
@@ -3797,6 +3748,11 @@ msgstr "abcd_majuscules"
 msgctxt "Emoji shortname"
 msgid "abcd"
 msgstr "abcd"
+
+#: includes/emojis.php:736
+msgctxt "Emoji shortname"
+msgid "1234"
+msgstr "1234"
 
 #: includes/emojis.php:737
 msgctxt "Emoji shortname"
@@ -6643,7 +6599,75 @@ msgctxt "My Account Activity Reactions sub nav"
 msgid "Reactions"
 msgstr "Mes réactions"
 
-#: includes/functions.php:317
+#: includes/functions.php:69
+msgid "Favorited an update"
+msgstr "A mis en favoris une mise à jour"
+
+#: includes/functions.php:70
+msgid "Favorites"
+msgstr "Favoris"
+
+#: includes/functions.php:73
+msgid "%s favorited one of your activities"
+msgstr "%s a mis en favoris une de vos activités"
+
+#: includes/functions.php:74
+msgid "Some users favorited one of your activities"
+msgstr "Des utilisateurs ont mis en favoris une de vos activités"
+
+#: includes/functions.php:85
+msgid "Liked an update"
+msgstr "A aimé une mise à jour"
+
+#: includes/functions.php:86
+msgid "Likes"
+msgstr "Likes"
+
+#: includes/functions.php:89
+msgid "%s liked one of your activities"
+msgstr "%s a aimé une de vos activités"
+
+#: includes/functions.php:90
+msgid "Some users liked one of your activities"
+msgstr "Des utilisateurs ont aimé une de vos activités"
+
+#: includes/functions.php:325
 msgctxt "default reaction action string"
 msgid "%s reacted to an update"
 msgstr "%s a réagi à une mise à jour"
+
+#: includes/functions.php:348
+msgid "%s favorited an update"
+msgstr "%s a mis en favoris une mise à jour"
+
+#: includes/functions.php:371
+msgid "%s liked an update"
+msgstr "%s a aimé une mise à jour"
+
+#: includes/notifications.php:84
+msgid "Some users reacted to one of your activities"
+msgstr "Des utilisateurs ont réagi à une de vos activités"
+
+#: includes/notifications.php:92
+msgid "%s reacted to one of your activities"
+msgstr "%s a réagi à une de vos activités"
+
+#. Plugin Name of the plugin/theme
+msgid "BP Reactions"
+msgstr "BP Reactions"
+
+#. Plugin URI of the plugin/theme
+msgid "http://imathi.eu/tag/bp-reactions/"
+msgstr "http://imathi.eu/tag/bp-reactions/"
+
+#. Description of the plugin/theme
+msgid "React to BuddyPress activities!"
+msgstr "Réagissez aux activités de BuddyPress !"
+
+#. Author of the plugin/theme
+msgid "imath"
+msgstr "imath"
+
+#. Author URI of the plugin/theme
+msgid "http://imathi.eu"
+msgstr "http://imathi.eu"

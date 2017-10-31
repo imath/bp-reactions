@@ -150,7 +150,6 @@ function bp_reactions_delete_notifications( $activity_ids_deleted = array() ) {
 
 	foreach ( $activity_ids_deleted as $activity_id ) {
 		BP_Notifications_Notification::delete( array(
-			'user_id'           => $user_id,
 			'item_id'           => $activity_id,
 			'component_name'    => 'reactions',
 		) );
